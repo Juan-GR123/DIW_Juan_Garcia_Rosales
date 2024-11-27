@@ -1,112 +1,131 @@
-body{
-    margin: 0;
-    font-family:'Ibarra-Real-Nova', sans-serif;
-    color: #2b3a42;
+body {
+  margin: 0;
+  font-family: 'Ibarra real Nova', sans-serif;
+  color: #2b3a42;
 }
 
 header {
-    display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #a4c3cf;
   padding: 10px 20px;
-  }
+}
 
-  header img {
-    width: 40px;
-    height: auto;
-    border-radius: 50%;
-  }
+header img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
 
 
-  header .enlaces a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    margin-left: 10px;
-  }
+header .enlaces a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
 
-  header .enlaces .registrar {
-    background-color: #ffb347;
-    font-weight: bold;
-  }
-  
-  
-  main {
-    text-align: center;
-    padding: 50px;
-  }
+header .enlaces .registrar {
+  background-color: #ffb347;
+  font-weight: bold;
+}
 
-  main h1 {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 1.6;
-    color: #2b3a42;
-    margin-bottom: 40px;
-    max-width: 560px;
-    margin:auto;/*La propiedad CSS margin establece el margen para los cuatro lados.*/
-  }
 
-  main .botones {
-    margin: 20px;
-    padding: 15px;
-    font-size: 18px;
-  }
+main {
+  text-align: center;
+  padding: 50px;
+}
 
-  main .botones .boton1 {
-    background-color: #ffb347;
-    color: white;
-  }
+main h1 {
+  font-family: 'Permanent Marker';
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #2b3a42;
+  margin-bottom: 40px;
+  max-width: 560px;
+  margin: auto;
+  /*La propiedad CSS margin establece el margen para los cuatro lados.*/
+}
 
-  main .botones .boton2 {
-    background-color: transparent;
-    color: #2b3a42;
-    border: none;
-  }
+main .botones {
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
 
-  main .colaboradores {
-    display: flex;
-    justify-content: center;
-    gap: 50px;/*Es parecido ha padding*/
-    margin-top: 40px;
-  }
+main .botones .boton1 {
+  background-color: #ffb347;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 50px;
+  border-radius: 30%;
+}
 
-  main .colaboradores .secciones {
-    text-align: center;
-  }
+main .botones .boton2 {
 
-  main .colaboradores .secciones img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 50px;
+}
 
-  main .colaboradores .secciones p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #2b3a42;
-  }
- 
-  /* Footer */
+main .colaboradores {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  /*Es parecido ha padding*/
+  margin-top: 40px;
+}
+
+main .colaboradores .secciones {
+  text-align: center;
+  margin-inline: 50px;
+  /*Sirve para poner un margen entre los componentes de una misma linea*/
+
+}
+
+main .colaboradores .secciones img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+main .colaboradores .secciones p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Footer */
 footer {
-    background-color: #a4c3cf;
-    color: white;
-    padding: 20px 10px; /*arriba | derecha | abajo | izquierda */
-  }
-  
-  footer .pie {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 20px;
-    align-items: flex-start;/*controla la alineación de todos los elementos en el eje transversal.*/
-    flex-wrap: wrap;/*Los elementos flex son colocados en varias líneas. */
-  }
+  background-color: #a4c3cf;
+  color: white;
+  padding: 20px 10px;
+  /*arriba | derecha | abajo | izquierda */
+}
 
-.redes_S > img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+.redes_S>img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.linea {
+  height: 1px;
+  background-color: black;
+}
+
+footer .pie {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 footer .contacto p,
@@ -119,6 +138,7 @@ footer .terminos a {
   text-decoration: none;
 }
 
-footer .terminos a:hover {/*Hover es para cuando se posa el cursor sobre algo*/
+footer .terminos a:hover {
+  /*Hover es para cuando se posa el cursor sobre algo*/
   text-decoration: underline;
 }
