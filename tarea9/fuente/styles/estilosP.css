@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: 'Ibarra real Nova', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a4c3cf;
+  padding: 10px 20px;
+}
+
+header img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+
+header .busca {
+  padding: 10px;
+  width: 500px;
+}
+
+header .enlaces a {
+  text-decoration: none;
+  color: white;
+  background-color: #36566A;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+header .enlaces a:hover {
+  background-color: white;
+  color: black;
+}
+
+header .categorias {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+header .menu li {
+  display: inline-block;
+}
+
+
+
+/*Main*/
+main .titulo {
+  background-color: #36566A;
+  margin-bottom: 50px;
+  padding: 30px;
+}
+
+main .titulo h1 {
+  margin: 0;
+  font-family: 'Permanent Marker';
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: white;
+}
+
+main .titulo button {
+  text-decoration: none;
+  color: black;
+  background-color:#ffb347;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 1350px;
+}
+
+main .eventos {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+main .libros {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+main .libros img {
+  width: 150px;
+  height: 200px;
+}
+
+
+main .categorias2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #a4c3cf;
+  color: white;
+  padding: 20px 10px;
+  /*arriba | derecha | abajo | izquierda */
+}
+
+.redes_S>img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.linea {
+  height: 1px;
+  background-color: black;
+}
+
+footer .pie {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .link a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .link a:hover {
+  /*Hover es para cuando se posa el cursor sobre algo*/
+  text-decoration: underline;
+}
+
+footer .terminos a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+footer .terminos a:hover {
+  /*Hover es para cuando se posa el cursor sobre algo*/
+  text-decoration: underline;
+}

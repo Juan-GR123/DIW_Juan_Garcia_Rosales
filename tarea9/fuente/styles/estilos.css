@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: 'Ibarra real Nova', sans-serif;
-  color: #2b3a42;
 }
 
 header {
@@ -128,8 +127,7 @@ footer .pie {
   padding: 20px;
 }
 
-footer .contacto p,
-footer .terminos p {
+footer p{
   margin: 0;
 }
 
