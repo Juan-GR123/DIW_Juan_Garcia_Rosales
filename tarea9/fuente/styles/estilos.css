@@ -192,17 +192,18 @@ footer .terminos a:hover {
     border-radius: 30%;
   }
   main h1{
-    font-size: 18px;
+    font-size: 20px;
   }
   main .botones {
     margin: 0px;
     padding: 0;
     display: block;
+    margin: 10px;
   }
   main .botones .boton1{
     background-color: #ffb347;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   margin-right: 0;
   border-radius: 30%;
@@ -212,7 +213,7 @@ footer .terminos a:hover {
     background-color: transparent;
     border: none;
     padding: 0px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: lighter;
     margin-left: 0px;
   }

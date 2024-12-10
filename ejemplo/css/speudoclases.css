@@ -1,0 +1,115 @@
+/*
+interactive states
+- hover: cuando pones el cursor encima
+- active: cuando interaccionas con el elemento
+- focus: cuando esta seleccionado
+*/
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+button:focus {
+    outline: blue solid 15px;
+}
+
+/*
+historical state
+- link: enlaces no visitados
+- visited: enlaces visitados 
+*/
+
+a:link {
+    color: aquamarine;
+}
+
+#enlace1:visited {
+    color: coral;
+}
+
+/*
+structural
+    root
+    first-child
+*/
+/*
+
+li:first-child{
+    background-color: aquamarine;
+}
+
+li:last-child,
+p:last-child{
+    background-color: brown;
+}
+
+p:nth-child(3),
+li:nth-child(3){
+background-color: blue;
+}*/
+
+/*
+even=pares === 2n
+odd=impares ===2n-1
+*/
+/*
+li:nth-child(even){
+    border: red solid 2px;
+}
+
+li:nth-child(odd){
+    border: green solid 2px;
+}
+*/
+/*
+#parrafos :nth-child(2 of .destacado){
+    border: blue dotted 2px;
+}
+
+article>p:first-of-type{
+    border: coral dashed 3px;
+}
+
+article>p:last-of-type{
+    border: aquamarine dashed 3px ;
+}*/
+
+article :last-of-type {
+    border: aquamarine dashed 3px;
+}
+
+
+/*
+logical pseudoclasses
+ - is
+ -where
+ -not
+ -has
+(a,b,c)
+    -a -> nº de ids en el selector
+    -b -> nº de clases o speudoclases
+    -c -> nº de elementos o speudoelementos
+ */
+
+
+p.normal,
+p .especial,
+p {
+    background-color: aquamarine;
+}
+
+p:is(.normal, .especial, p) {
+    background-color: red;
+}
+
+/*como p:is es mas especifica tiene prioridad de aplicacion*/
+
+p:where(.normal, .especial, p) {
+    background-color: blue;
+}
+/*Menor prioridad posible*/
+
