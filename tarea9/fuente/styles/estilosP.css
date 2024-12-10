@@ -131,30 +131,6 @@ main .categorias2 p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 footer {
   background-color: #a4c3cf;
@@ -205,4 +181,149 @@ footer .terminos a {
 footer .terminos a:hover {
   /*Hover es para cuando se posa el cursor sobre algo*/
   text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  /* Header */
+  header {
+    flex-direction:row;
+    padding: 10px;
+  }
+
+  header img {
+    width: 50px;
+  }
+
+  header .busca {
+    width: 50%;
+    margin: 10px 0;
+  }
+
+  header .enlaces {
+    display: flex;
+    gap: 5px;
+  }
+
+ body .categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* Main */
+  main .titulo {
+   
+    text-align:initial;
+    padding: 20px;
+  }
+
+  main .titulo h1 {
+    font-size: 24px;
+  }
+
+  main .titulo button {
+    display: flex;
+    justify-self: right;
+    margin-top: 20px;
+    padding: 10px;
+    padding-inline: 30px;
+  }
+
+  main .eventos, main .libros, main .categorias2 {
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    
+  }
+
+  main .eventos .evento p{
+    margin-left: 50px;
+  }
+
+  main .eventos .evento img,
+  main .libros img {
+    margin-left: 50px;
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  main .categorias2 img {
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+  }
+
+  main .categorias2 p {
+    text-align: center;
+  }
+
+  /* Footer */
+  footer .pie {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .redes_S {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .redes_S>img {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    align-items: center;
+  }
+
+  header .busca {
+    width: 50%;
+  }
+
+  body .categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Main */
+  main .titulo h1 {
+    font-size: 20px;
+  }
+
+  main .eventos, main .libros, main .categorias2 {
+    gap: 10px;
+  }
+
+  main .eventos .evento img,
+  main .libros img {
+    width: 50%;
+    max-width: 100px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  main .categorias2 img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Footer */
+  footer .pie {
+    gap: 10px;
+  }
+
+  .redes_S {
+    gap: 10px;
+  }
+
+  .redes_S>img {
+    width: 30px;
+    height: 30px;
+  }
 }
