@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Position</title>
+        <meta name="description" content="Ejemplos de posicionamiento usando position">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/2.-position.css">
+    </head>
+    <body>
+        <header class="pegajoso">
+          <h1>Posicionamiento</h1>
+          <h2>Let's see how normal box flow can be changed by using position property. Possible values: sticky, absolute, relative, fixed</h2>
+          <h3>Esto es un encabezado pegajoso. Tiene un z-index para quedar por encima del resto de cajas</h3>
+        </header>
+        <section>
+          <article>
+            <h3>Artículo 1</h3>
+            <p class="absoluto">
+              Pertenezco al primer artículo pero, al estar posicionado de forma absoluta, me salgo del flujo normal y me posiciono respecto al elemento padre que tenga un posicionamiento. 
+              Si ninguno tiene, respecto a la etiqueta HTML
+            </p>
+            <p class="relativo">
+              Pertenezco al primer artículo. Estoy posicionado de forma relativa, así que ocupo mi flujo normal y luego me muevo respecto a esa posición inicial
+            </p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+          </article>
+          <article class="relativo">
+            <h3>Artículo 2. Estoy posicionado de forma relativa. Al no especificar coordenadas se queda donde le toca según el flujo normal</h3>
+            <p class="absoluto">Pertenezco al artículo 2. Estoy posicionado de forma absoluta, así que me salgo del flujo normal y me posiciono respecto al contenedor de nivel superior más próximo que esté posicionado. En este caso, el elemento padre (article), posicionado de forma relativa.</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto.</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto.</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto.</p>
+          </article>
+          <article>
+            <h3>Artículo 3</h3>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p class="fijo_sin_coordenadas">Soy un párrafo del artículo 3. Al no tener coordenadas, ocupo el sitio que ocuparía en el flujo normal, pero al estar posicionado de forma fija, me salgo del flujo normal y mi sitio no se respeta. </p>
+          </article>            
+          <article>
+            <h3>Artículo 4</h3>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p class="fijo">Soy un párrafo del artículo 4 posicionado de forma fija con coordenadas determinadas. Me salgo del flujo normal y mi sitio en el artículo 4 no se respeta. </p>
+          </article>            
+          <article>
+            <h3>Título del artículo</h3>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+          </article>            
+          <article>
+            <h3>Título del artículo</h3>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+            <p>Soy un elemento de bloque, sin anchura ni altura, posicionado por defecto</p>
+          </article>            
+        </section>
+    </body>
+</html>

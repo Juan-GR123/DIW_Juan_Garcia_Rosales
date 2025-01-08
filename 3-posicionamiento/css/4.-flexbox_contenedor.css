@@ -1,0 +1,150 @@
+body{
+  /*width: 50%;*/
+  width: 700px;
+  margin: 0 auto;
+  background-color: lightblue;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+h3{
+  font-size: 1.25rem;
+}
+
+h1, h2, h3{
+  text-align: center;
+  /*line-height: 100px;*/
+  margin:0px;
+  margin-bottom: 10px;
+}
+
+.contenedor-flex-nv1{
+  background-color: bisque;
+  padding: 10px 50px 50px 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ }
+
+.borde{
+  border: 3px solid lightblue;
+  padding: 10px 30px 30px 30px;
+  width: 80%; 
+/*  flex-basis: 200px;  /*cada caja mide 200px de alto (porque el eje principal de su contenedor es vertical, en columna)*/
+}
+
+.contenedor-flex-nv2 {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.columna {
+  flex-direction: column;
+}
+
+.columna-al-reves{
+  flex-direction: column-reverse;
+}
+
+/*flex-basis vs width
+  -flex-basis applies to main axis which is not always width
+  -flex-basis applies only to flex items, not containers
+  -flex-basis is the initial size (it may not be the final one) before shrink or grow comes into play*/
+
+.contenedor-flex-nv2 > li{
+  background:azure;
+  flex-basis: 50px;
+  color: black;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.gap{
+  gap:10px;
+  /*atajo para row-gap y column-gap*/
+}
+
+/*Wrap: Los elementos que no caben se desbordan, es decir, el contenedor no cambia de tamaño, así que las cajas no pueden pasar a la siguiente línea y se salen del contenedor (se desbordan) */
+.wrap{
+  flex-wrap: wrap;
+}
+
+.fila-al-reves{
+  flex-direction: row-reverse;
+}
+
+.jc-space-around{
+    justify-content: space-around;
+}
+
+.jc-space-between{
+  justify-content: space-between;
+}
+
+.jc-flex-end{
+  justify-content: flex-end;
+}
+
+.jc-center{
+  justify-content: center;
+}
+
+.jc-start{
+  justify-content: flex-start;
+}
+
+.jc-space-evenly{
+  justify-content: space-evenly;
+}
+
+.min-height{
+  min-height: 250px;
+  border: 1px solid;
+}
+
+.ai-start{
+  align-items: start;
+}
+
+.ai-end{
+  align-items: end;
+}
+
+.ai-center{
+  align-items: center;
+}
+
+.ai-stretch{
+  align-items: stretch;
+}
+
+.ac-start{
+  align-content: flex-start;
+}
+
+.ac-end{
+  align-content: flex-end;
+}
+
+.ac-stretch{
+  align-content: stretch;
+}
+
+/*shortcuts
+gap: 10px -> row-gap y column-gap
+flex-flow: column wrap -> flex-direction y flex-wrap
+*/

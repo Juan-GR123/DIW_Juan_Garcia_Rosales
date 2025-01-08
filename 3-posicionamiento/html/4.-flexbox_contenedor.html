@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Posicionamiento con flex</title>
+        <meta name="description" content="Posicionamiento con flex">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/4.-flexbox_contenedor.css">
+    </head>
+    <body>
+        <section class="contenedor-flex-nv1 gap">
+            <header>
+                <h1>Basic flex therminology</h1>
+                <p>Flex is meant to place elements in one single line, but it allows overflow, meaning that elements not fitting will go to the next line.</p>                
+                <p>Elements are organized as the following image suggests</p>
+                <img src="../img/00-basic-terminology-flexbox.svg">
+                <p>A container with display: flex; has to be created</p>
+                <p>In this document some examples are shown. Nevertheless Not every value of every property is shown</p>
+                <p>column-gap and row-gap have been used everywhere in order to let a gap between elements avoiding using margins or paddings</p>
+                <h2>Properties affecting flex container</h2>
+<!--            <p>Flex está pensado para colocar elementos en una sola línea, pero permite desbordamiento, es decir, que los elementos que no quepan se vayan a la siguiente línea.</p>
+                <p>Los elementos se organizan según la siguiente imagen</p>
+                <img src="../img/00-basic-terminology-flexbox.svg">
+                <p>Hay que definir un contenedor con display: flex;</p>
+                <p>Aquí se muestran algunos ejemplos, no se muestran todas los valores de todas las propiedades</p>
+                <p>En todos los contenedores flex se ha usado column-gap y row-gap para dejar un espacio entre elementos sin tener que usar márgenes o rellenos</p>
+                <h2>Propiedades que actúan sobre el contenedor</h2>
+                </header>-->
+            </header>
+            <section class="contenedor-flex-nv2 columna ai-center gap">
+                <article>
+                    <h3>flex-direction y flex-wrap</h3>
+                    <p>Define el eje principal y controla si los elementos se pueden desbordar</p>
+                    <p>Posibles valores de flex-direction: row, column, row-reverse y column-reverse </p>
+                    <p>Posibles valores de flex-wrap: wrap y nowrap </p>
+                </article>
+                <article class="borde">
+                    <h3>flex-direction</h3>
+                    <p>Los elementos se organizan en una columna inversa (flex-direction: column-reverse). Hay un espacio entre ellos</p>
+                    <ul class="contenedor-flex-nv2 columna-al-reves gap">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                </article>            
+                <article class="borde">
+                    <h3>flex-direction y flex-wrap</h3>
+                    <p>Los elementos se organizan en una fila inversa (flex-direction: row-reverse) y no se permite el desbordamiento, los elementos reducen su tamaño para caber en la misma línea, no se van a la siguiente (comportamiento por defecto o flex-wrap: nowrap)</p>
+                    <ul class="contenedor-flex-nv2 fila-al-reves gap">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                </article>            
+                <article class="borde">
+                    <h3>flex-direction y flex-wrap</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row) y se permite desbordamiento (flex-wrap: wrap)
+                    </p>
+                    <ul class="contenedor-flex-nv2 wrap gap">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="contenedor-flex-nv2 columna ai-center gap">
+                <article>
+                    <h2>justify-content</h2>
+                    <p>Justify-content alinea objetos en el eje principal que por defecto es el horizontal, pero se puede cambiar</p>
+                    <p>Posibles valores: flex-start, flex-end, center, space-between, space-around y space-evenly </p>
+                </article>
+                <article class="borde">
+                    <h3>justify-content</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row) y se deja un espacio equitativo entre los elementos (justify-content: space-around)</p>
+                    <ul class="contenedor-flex-nv2 gap jc-space-around">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </article>
+                <article class="borde">
+                    <h3>justify-content</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row) y se colocan los elementos en el principio (justify-content: flex-start)</p>
+                    <ul class="contenedor-flex-nv2 gap jc-start">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </article>
+                <article class="borde">
+                    <h3>justify-content</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row) y se alinean los elementos al final de su eje (justify-content: flex-end)</p>
+                    <ul class="contenedor-flex-nv2 gap jc-flex-end">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </article>
+                <article class="borde">
+                    <h3>justify-content</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row) y se centran los elementos en su eje (justify-content: center)</p>
+                    <ul class="contenedor-flex-nv2 gap jc-center">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="contenedor-flex-nv2 columna ai-center gap">
+                <article>
+                    <h2>align-items</h2>
+                    <p>Alinea los elementos en el eje secundario</p>
+                    <p>align-items sólo tiene sentido cuando le damos un tamaño al contenedor y es más grande que los elementos que contiene</p>
+                    <p>Posibles valores: flex-start, flex-end, center, strech y baseline </p>
+                </article>
+                <article class="borde">
+                    <h3>justify-content y align-items</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row)
+                        se centran los elementos en su eje principal (fila) al centro (justify-content: center) y en su eje secundario (columna) arriba (align-items: start)</p>
+                    <ul class="contenedor-flex-nv2 gap min-height jc-center ai-start">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </article>
+                <article class="borde">
+                    <h3>justify-content y align-items</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row)
+                        se centran los elementos en su eje principal (fila) al centro (justify-content: flex-end) y en su eje secundario (columna) arriba (align-items: end)</p>
+                    <ul class="contenedor-flex-nv2 gap min-height jc-flex-end ai-end">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </article>
+                <article class="borde">
+                    <h3>justify-content y align-items</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row)
+                        se reparte el espacio entre los elementos en su eje principal (fila) (justify-content: space-evenly) y en su eje secundario (columna) se estira para ocupar todo el sitio (align-items: stretch)</p>
+                    <ul class="contenedor-flex-nv2 gap min-height jc-space-evenly ai-stretch">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </article>
+                <article class="borde">
+                    <h3>justify-content y align-items</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row)
+                        se pegan los elementos a los extremos en su eje principal (justify-content: space-between) y en su eje secundario (columna) al centro (align-items: center)</p>
+                    <ul class="contenedor-flex-nv2 gap min-height jc-space-between ai-center">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </article>
+            </section>
+
+
+            <section class="contenedor-flex-nv2 columna ai-center gap">
+                <article>
+                    <h2>align-content</h2>
+                    <p>Justify-content alinea en el eje principal, align-items alinea en el eje secundario (si el contenedor es más grande) y hay desbordamiento</p>
+                    <p>Align-content alinea a la vez en el eje principal y el secundario. valores: flex-start, flex-end, center, stretch, space-between, space-around </p></p>
+                </article>
+                <article class="borde">
+                    <h3>align-content</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row) y se alinean al comienzo de los dos ejes (align-content: flex-start)</p>
+                    <ul class="contenedor-flex-nv2 gap wrap min-height ac-start">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                </article>
+                <article class="borde">
+                    <h3>align-content</h3>
+                    <p>Los elementos se organizan en una fila (flex-direction: row) y se alinean al final de los dos ejes (align-content: flex-end)</p>
+                    <ul class="contenedor-flex-nv2 gap wrap min-height ac-end">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </body>
+</html>

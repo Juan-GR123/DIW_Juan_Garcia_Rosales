@@ -1,0 +1,58 @@
+body {
+  width: 800px;
+  max-width: 900px;
+  margin: 0 auto;
+  font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+}
+
+article{
+    background-color:azure;
+    border: 3px solid rgb(131, 255, 255);
+    margin: 10px 0px;
+    padding: 10px
+}
+
+
+.flota-izquierda {
+    float: left;
+}
+
+.flota-derecha {
+    float: right;
+}
+
+.estilo-flota{
+    margin: 15px;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(207, 232, 220);
+    padding: 1em;
+}
+
+p{
+    background-color:cornsilk;
+}
+
+.salto-ambos{
+    clear:both;
+}
+
+.salto-izquierdo{
+    clear:left;
+}
+
+.salto-derecho{
+    clear:right;
+}
+
+.destacado{
+    color: red;
+}
+
+.envolver{
+    background-color: cornsilk;
+    padding: 10px;
+    display: flow-root;
+    clear:both;
+}

@@ -1,0 +1,226 @@
+body{
+    width: 50vw;
+    margin: 0 auto;
+    background-color: lightblue;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    max-width:100%;
+    max-height:100%;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
+h1, h2, h3, h4{
+    text-align: center;
+    /*line-height: 100px;*/
+    margin: 10px;
+}
+  
+article>p{
+    margin-bottom: 0px;
+}
+
+.borde-externo{
+    border: 4px solid lightblue;
+    padding: 10px 30px 30px 30px;
+    width: 80%;     
+}
+
+.borde-interno{
+    border: 1px solid black;
+}
+
+.gap{
+    /*shortcut for column-gap and row-gap
+    gap: row-gap column-gap*/
+    gap: 10px;
+}
+
+.contenedor-grid-nv1{
+	display: grid;
+/*	grid-template-columns: 200px 100px 200px 100px;
+    grid-template-rows: auto auto;*/
+    /* Dejo en espacio de 10px en las líneas entre filas y columnas */
+    /* Creación de tres columnas (creación explícita). La de enmedio tiene el doble de tamaño que las otras. Usando fr, el navegador calcula el tamaño de cada columna en función del tamaño de su contenedor
+        Se crean tantas filas como sea necesario para acomodar las cajas que se hayan definido (creación implícita)
+    */
+    background-color: bisque;
+    grid-template-columns: 1fr;
+    padding: 10px 50px 50px 50px;
+    align-items: center;
+}
+
+.contenedor-grid-nv2{
+    display: grid;
+    background-color: bisque;
+    margin:0px;
+}
+
+.contenedor-grid-nv3{
+    display:grid;
+    margin:0px;
+}
+
+.disposicion-tres-columnas{
+    grid-template-columns: 1fr 2fr 1fr; 
+}
+
+.disposicion-cuatro-columnas{
+    grid-template-columns: 20% 2fr 1fr 100px;   /*primero se asigna el 20% del espacio, luego los 100px y el resto se divide en 3 partes*/
+}
+
+.disposicion-tres-columnas-repetitivas{
+    grid-template-columns: 1fr repeat(3, 2fr) 0.5fr;  /*Se crean 5 columnas y tantas filas como sean necesarias para acomodar elementos (filas implícitas)*/
+}
+
+.disposicion-minmax{
+    grid-auto-rows: minmax(75px, auto); /*Las filas auto creadas son de entre 75px y el máximo de la anchura del contenedor*/
+}
+
+.disposicion-tres-columnas-minmax{
+    grid-template-columns: 1fr minmax(40px, 3fr) 0.5fr;
+}
+
+.disposicion-columnas-y-filas-nombres{
+    grid-template-columns: [columna1] 150px [columna2] minmax(50px, 10%) [columna3] 1fr [columna4] 0.5fr [columna5] 1fr [fin-columnas];
+    grid-template-rows: [fila1] 35% [fila2] 2fr [fila3] auto [fin-filas];
+}
+
+.disposicion-tres-filas-repeat-minmax{
+    grid-template-rows: repeat(3, minmax(100px, 2fr));
+    grid-auto-flow: column;
+}
+
+.disposicion-dos-columnas{
+    grid-template-columns: 1fr 2fr;    
+}
+
+.disposicion-dos-filas{
+    grid-template-rows: 1fr 2fr;
+}
+
+.disposicion-areas {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(2, 1fr) auto;
+    grid-template-areas: 
+      "header header header header"
+      "sidebar main main main"
+      "footer footer footer footer";
+}
+
+.elemento-grid{
+    margin:0;
+    padding: 15px;
+    background:azure;
+    text-align: center;
+}
+
+.elemento-grid-encabezado{
+    grid-area: header;
+}
+
+.elemento-grid-lateral{
+    grid-area: sidebar;
+}
+
+
+.elemento-grid-principal{
+    grid-area: main;
+}
+
+.elemento-grid-pie{
+    grid-area: footer;
+}
+
+.min-height{
+    min-height: 200px;
+}
+
+.max-width{
+/*pertentages with fr when creating columns and rows provide with weird behaviour*/
+    max-width: 300px;
+    border: 1px solid;
+}
+
+.ji-center{
+    justify-items: center;
+}
+
+.ji-end{
+    justify-items: end;
+}
+
+.ai-start{
+    align-items: start;
+}
+
+.ai-end{
+    align-items: end;
+}
+
+.pi-center{
+    place-items: center;
+}
+
+.pi-start-end{
+    place-items: start end;
+}
+
+.jc-end{
+    justify-content: end;
+}
+
+.jc-space-around{
+    justify-content: space-around;
+}
+
+.ac-center{
+    align-content: center;
+}
+
+.ac-end{
+    align-content: end;
+}
+
+.pc-start-end{
+    place-content: start end;
+}
+
+.gar{
+    grid-auto-rows: 60px;
+}
+
+.gac{
+    grid-auto-columns: 75px;
+}
+
+.gaf-column{
+    grid-auto-flow: column;
+}
+
+.gaf-dense{
+    grid-auto-flow: dense;
+}
+
+#dense < li:nth-child(3n){
+    grid-column: span 2;
+    grid-row: span 2;
+}
