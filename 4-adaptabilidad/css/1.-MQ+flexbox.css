@@ -1,0 +1,39 @@
+.contenedor-flexbox-nv1 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 80vw;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Crea 4 columnas*/
+.tamaño{
+    /*atajo para combinar tres propiedades: flex-grow, flex-shrink y flex-basis. 
+    Si sólo se especifica un valor, es equivalente a flex: 1 1 50%
+    ojo porque flex-grow:1 no es lo mismo que flex-grow:0. Igual pasa con flex-shrink*/        
+    flex: 25%;
+}
+
+/*Crea dos columnas cuando el viewport mide menos de 1000px*/
+@media screen and (max-width: 1000px) {
+    .tamaño {
+        flex: 50%;
+    }
+
+    .contenedor-flexbox-nv1{
+        max-width: 100vw;
+    }
+}
+
+/*Crea una columna cuando el viewport mide menos de 500px*/
+@media screen and (max-width: 500px) {
+    .tamaño {
+        flex: 100%;
+    }
+
+    .contenedor-flexbox-nv1{
+        max-width: 100vw;
+    }
+}
