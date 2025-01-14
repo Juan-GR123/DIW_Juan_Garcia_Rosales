@@ -1,0 +1,31 @@
+/*comentario que si va compilado SALVO que use el modo COMPRIMIDO*/
+/*comentario que siempre va en el CSS*/
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style: none;
+}
+
+.boton.primario {
+  background-color: lightgreen;
+}
+.boton.secundario {
+  background-color: lightblue;
+}
+
+a:hover {
+  background-color: cadetblue;
+}
+a::before {
+  content: "antes";
+  margin: 5px;
+}
+
+.caja {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 15px;
+}/*# sourceMappingURL=estilos.css.map */
