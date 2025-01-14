@@ -1,3 +1,9 @@
+@use 'variables' as var;
+@use 'sass:color';
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:math';
+@use 'sass:string';
 //comentarios
 //este comentario no se compila
 /*comentario que si va compilado SALVO que use el modo COMPRIMIDO*/
@@ -72,3 +78,211 @@ $error:(
 );
 
 //interpolación 
+//insertar dinamicamente valores
+$autor:"condemor";
+
+/*Web desarrollada por #{$autor}*/
+$color: red;
+
+.button-#{$color}{
+    background-color: $color;
+}
+//
+$propiedad:'color';
+$valor:blue;
+
+.destacado{
+    background-#{$propiedad}:$valor; 
+}
+
+///
+/// 
+ $ruta-imagen:'../img/logo.png';
+
+ .fondo{
+    background-image: url('#{$ruta-imagen}') ;
+ }
+
+ //operators//
+ //aritmetics
+ //+,-,*,/,%
+
+ $tamanyo_base:16px;
+
+ .contenedor{
+    font-size: $tamanyo_base*3;
+ }
+
+ //comparison == !== < > <= >=
+    $size:10px;
+    .contenedor{
+        @if $size>5{
+         font-size:10px;
+        }
+    }
+
+
+
+
+.contenedor{
+    background-color: if(var.$secundario and var.$color-secundario, var.$color-secundario, 
+    lightpink);
+    //condicion,verdadera,falsa
+}
+
+//user modules
+//name: _miModulo.scss
+//@use 'miModulo';
+
+//namespace espacio de nombres
+//@forwarding
+
+/*
+
+_variables.scss
+_funciones.scss
+_mixins.scss
+
+//_main.scss
+//lo llamas con @use
+@use 'variables';
+@use 'funciones';
+@use 'mixins';
+
+
+//el forward reenvia las importaciones
+@forward 'variables'; 
+@forward 'funciones';
+@forward 'mixins';
+
+//estilos.scss
+@use main;*/
+
+
+/*recomendación
+    -por proposito: _variables.scss, _funciones.scss, _mixins.scss,
+    _medios.scss,etc...
+    -por disposicion: _cabecera.scss, _pie.scss, _grid.scss, etc...
+    -por proposito y disposición:
+        -base
+            -_reinicio.scss
+            -_tipografia.scss
+        -componentes
+            -_header.scss
+            -_footer.scss
+            -_main.scss
+            -_carrusel.scss
+            -_disposicion.scss
+        -utilidades
+            -_funciones.scss
+            -_medios.scss
+            -_mixins.scss
+            -_variables.scss
+            -_
+*/
+
+
+//built-in modules
+/*
+-math
+-color
+-string
+-map
+-list
+-meta
+-selector
+
+
+*/
+
+$color-base:#56acd0;
+$color-nuevo:color.adjust($color-base,$lightness: 20%, $saturation: 10%);
+.color-chillon{
+    background-color: $color-nuevo;
+}
+
+
+$color-nuevo2:color.change($color-base,$hue: 180deg, $alpha: 0.8);
+.color-saturado{
+    background-color: $color-nuevo2;
+}
+
+$variacion-color: color.scale($color-base, $lightness: -10%, $saturation: 20%);
+
+//listas
+$colores-fuertes: red, blue, green;
+$colores-suaves: lightcoral, lightblue, lightgreen;
+
+$numero: list.length($colores-fuertes);// te dice la longitud
+$ultimo: list.nth($colores-suaves, 1); //te dice el que esta en la posicion que le pides
+$colores-suaves: list.append($colores-suaves,lightyellow);
+$todos-los-colores:list.join($colores-suaves, $colores-fuertes);
+/*
+list.index // el indice que ocupa cada numero 
+list.slice // te da una sublista
+
+sass.lang.com
+*/
+
+//mapas
+$colores: ( 
+    primario:lightblue,
+    secundario: lightgreen,
+    refuerzo: red
+);
+
+.boton-primario{
+    background-color: map.get($colores, primario);
+}
+
+$colores-actualizados: map.set($colores,refuerzo, lightcoral);
+$menos-colores: map.remove($colores,refuerzo);
+$presente: map.has-key($colores,refuerzos); // le preguntas si una llave existe
+$llaves: map.keys($colores); //le pides que te devuelvan las llaves de una variable
+$valores: map.values($colores);
+
+$nuevos-colores: map.merge($colores,$colores-actualizados);
+
+
+//sass:math
+$anchura: 500px;
+$columnas:4;
+$anchura-columnas: math.div($anchura,$columnas);
+
+/*
+math.pow
+math.abs
+math.sqrt
+math.min
+math.max
+math.ceil
+math.floor
+math.random
+math.mod para el modulo
+math.clamp devuelve el valor entre un minimo y su maximo
+*/
+
+$texto: "hoy es un día estupendo para aprender SASS";
+$longitud: string.length($texto);
+//$incluye: string.includes("estupendo");
+
+///estructuras de control///
+//if
+$tema: "oscuro";
+header{
+    @if $tema=="oscuro"{
+        background-color: black;
+        color: white;
+    }
+    @else{
+        background-color: white;
+        color: black;
+    }
+}
+
+//for
+@for $i from 1 through list.length($colores-suaves){
+    p:nth-of-type(#{$i}){
+        background-color: list.nth($colores-suaves,$i);
+    }
+}

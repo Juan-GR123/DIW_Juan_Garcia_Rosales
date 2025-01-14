@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*comentario que si va compilado SALVO que use el modo COMPRIMIDO*/
 /*comentario que siempre va en el CSS*/
 nav ul {
@@ -32,4 +33,112 @@ a::before {
 
 .boton-primario, .enlace-primario, .aviso-primario {
   background-color: antiquewhite;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*Web desarrollada por condemor*/
+.button-red {
+  background-color: red;
+}
+
+.destacado {
+  background-color: blue;
+}
+
+.fondo {
+  background-image: url("../img/logo.png");
+}
+
+.contenedor {
+  font-size: 48px;
+}
+
+.contenedor {
+  font-size: 10px;
+}
+
+.contenedor {
+  background-color: lightcoral;
+}
+
+/*
+
+_variables.scss
+_funciones.scss
+_mixins.scss
+
+//_main.scss
+//lo llamas con @use
+@use 'variables';
+@use 'funciones';
+@use 'mixins';
+
+
+//el forward reenvia las importaciones
+@forward 'variables'; 
+@forward 'funciones';
+@forward 'mixins';
+
+//estilos.scss
+@use main;*/
+/*recomendación
+    -por proposito: _variables.scss, _funciones.scss, _mixins.scss,
+    _medios.scss,etc...
+    -por disposicion: _cabecera.scss, _pie.scss, _grid.scss, etc...
+    -por proposito y disposición:
+        -base
+            -_reinicio.scss
+            -_tipografia.scss
+        -componentes
+            -_header.scss
+            -_footer.scss
+            -_main.scss
+            -_carrusel.scss
+            -_disposicion.scss
+        -utilidades
+            -_funciones.scss
+            -_medios.scss
+            -_mixins.scss
+            -_variables.scss
+            -_
+*/
+/*
+-math
+-color
+-string
+-map
+-list
+-meta
+-selector
+
+
+*/
+.color-chillon {
+  background-color: #a0d6ec;
+}
+
+.color-saturado {
+  background-color: rgba(86, 208, 208, 0.8);
+}
+
+/*
+list.index // el indice que ocupa cada numero 
+list.slice // te da una sublista
+
+sass.lang.com
+*/
+.boton-primario {
+  background-color: lightblue;
+}
+
+/*
+math.pow
+math.abs
+math.sqrt
+math.min
+math.max
+math.ceil
+math.floor
+math.random
+math.mod para el modulo
+math.clamp devuelve el valor entre un minimo y su maximo
+*//*# sourceMappingURL=estilos.css.map */
