@@ -38,9 +38,37 @@ a{
     margin: {
         top:10px;
         bottom:15px;
-    };
+    }
     padding: {
         left: 10px;
         right: 15px;
-    };
+    }
 }
+
+.boton, .enlace, .aviso{
+    &-primario{
+        background-color: antiquewhite;
+    }
+}
+
+
+////data structure///
+// variable global
+$variable:#a01256;
+
+//locales
+body{
+    $variable_local:red;
+    $tamaño_fuente:16px;
+}
+
+//listas 
+$tamanyo:(10px,15px,20px);
+
+//mapas
+$error:(
+    "leve": lightcoral,
+    "grave": red
+);
+
+//interpolación 

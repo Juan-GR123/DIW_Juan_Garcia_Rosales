@@ -28,4 +28,8 @@ a::before {
   margin-bottom: 15px;
   padding-left: 10px;
   padding-right: 15px;
+}
+
+.boton-primario, .enlace-primario, .aviso-primario {
+  background-color: antiquewhite;
 }/*# sourceMappingURL=estilos.css.map */
