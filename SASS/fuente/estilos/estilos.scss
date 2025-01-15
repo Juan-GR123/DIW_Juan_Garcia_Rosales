@@ -10,7 +10,6 @@
 /*comentario que siempre va en el CSS*/
 
 //nested rules//
-
 nav{
     ul{
         margin: 0;
@@ -283,6 +282,65 @@ header{
 //for
 @for $i from 1 through list.length($colores-suaves){
     p:nth-of-type(#{$i}){
+        @debug(list.nth($colores-suaves,$i));
         background-color: list.nth($colores-suaves,$i);
     }
 }
+
+//while
+/*while*/
+$num:1;
+@while $num<list.length($colores-fuertes){
+    td:nth-child(#{$num}){
+        color:list.nth($colores-fuertes,$num);
+    }
+    $num:$num+1;
+}
+
+//each
+/*each*/
+$botones: (
+    error: (red,lightcoral),
+    exito: (green,lightgreen),
+    aviso: (blue, lightblue)
+);
+
+.texto{
+    @each $prop, $valor in $botones{
+        $color-fondo:list.nth($valor,1);
+        $color-texto:list.nth($valor,2);
+        &-#{$prop}{ //el & sustituye a color-$botones
+            background-color: $color-fondo;
+            color: $color-texto;
+        }
+    }
+}
+
+//depuracion
+/*depuracion*/
+@debug(color.adjust($color-base,$lightness: 20%, $saturation: -10%));
+
+//funciones
+/*funciones*/
+@function escalar-texto($tamanyo-texto, $escala:3){
+    @return $tamanyo-texto*$escala;
+}
+
+.boton3{
+    font-size:escalar-texto(16px,4);
+}
+
+//mixins
+/*mixins*/
+//reutilizar código
+@mixin contenedor-flex($orientacion,$alineacion:center){
+    display: flex;
+    flex-direction: $orientacion;
+    justify-content: $alineacion;
+}
+
+.contenedor-nv1, .contenedor-nv2{
+    @include contenedor-flex(row);
+    font-size: escalar-texto(16px,4);
+}
+
