@@ -4,6 +4,12 @@
 @use 'sass:map';
 @use 'sass:math';
 @use 'sass:string';
+//_mixins.scss
+@use 'variables';
+
+
+
+
 //comentarios
 //este comentario no se compila
 /*comentario que si va compilado SALVO que use el modo COMPRIMIDO*/
@@ -81,6 +87,9 @@ $error:(
 $autor:"condemor";
 
 /*Web desarrollada por #{$autor}*/
+
+
+
 $color: red;
 
 .button-#{$color}{
@@ -193,7 +202,6 @@ _mixins.scss
 
 
 */
-
 $color-base:#56acd0;
 $color-nuevo:color.adjust($color-base,$lightness: 20%, $saturation: 10%);
 .color-chillon{
@@ -222,7 +230,6 @@ list.slice // te da una sublista
 
 sass.lang.com
 */
-
 //mapas
 $colores: ( 
     primario:lightblue,
@@ -289,6 +296,7 @@ header{
 
 //while
 /*while*/
+
 $num:1;
 @while $num<list.length($colores-fuertes){
     td:nth-child(#{$num}){
@@ -299,6 +307,7 @@ $num:1;
 
 //each
 /*each*/
+
 $botones: (
     error: (red,lightcoral),
     exito: (green,lightgreen),
@@ -318,10 +327,12 @@ $botones: (
 
 //depuracion
 /*depuracion*/
+
 @debug(color.adjust($color-base,$lightness: 20%, $saturation: -10%));
 
 //funciones
 /*funciones*/
+
 @function escalar-texto($tamanyo-texto, $escala:3){
     @return $tamanyo-texto*$escala;
 }
@@ -333,6 +344,7 @@ $botones: (
 //mixins
 /*mixins*/
 //reutilizar código
+
 @mixin contenedor-flex($orientacion,$alineacion:center){
     display: flex;
     flex-direction: $orientacion;
@@ -344,3 +356,81 @@ $botones: (
     font-size: escalar-texto(16px,4);
 }
 
+
+//_variables.scss
+$pequenyo: 480px;
+$mediano: 900px;
+$color-boton: lightgreen;
+
+
+//@content
+@mixin mixin_media_query($tamanyo){
+    @if $tamanyo==$pequenyo{
+        @media (max-width:480px){
+            @content;
+        }
+    }@else if $tamanyo==$mediano{
+         @media (max-width:900px){
+            @content;
+         }
+    }@else{
+        @media (max-width:1200px){
+            @content;
+        }
+    }
+}
+
+
+.texto{
+    @include mixin_media_query($pequenyo){
+        font-size:10px;
+    }
+    @include mixin_media_query($mediano){
+        font-size:15px;
+    }
+    @include mixin_media_query(g){
+        font-size: 20px;
+    }
+}
+
+
+//herencia
+/*herencia*/
+%boton{
+    background-color: $color-boton;
+    border: 2px solid black;
+    border-radius:5px; 
+}
+
+.boton-error{
+    @extend %boton;
+    color:red;
+    font-weight: bold;
+
+}
+
+.boton-informacion{
+    @extend %boton;
+    color: blue;
+    font-weight: 300;
+}
+
+/*Lo mismo pero con mixins*/
+@mixin mixin_boton{
+    background-color: $color-boton;
+    border: 2px solid black;
+    border-radius:5px; 
+}
+
+.boton-error2{
+   @include mixin_boton();
+   color:red;
+font-weight: bold;
+
+}
+
+.boton-informacion2{
+    @include mixin_boton();
+    color: blue;
+    font-weight: 300;
+}
