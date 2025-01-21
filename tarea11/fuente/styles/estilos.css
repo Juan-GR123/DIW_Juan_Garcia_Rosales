@@ -264,6 +264,11 @@ header {
   background-color: #a4c3cf;
   padding: 10px 20px;
 }
+header picture img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
 header .enlaces a {
   text-decoration: none;
   color: black;
@@ -275,6 +280,7 @@ header .enlaces a.registrar {
   background-color: #ffb347;
   font-weight: bold;
 }
+
 /*estructuras-control*/
 /*funciones*/
 /*mixins*/

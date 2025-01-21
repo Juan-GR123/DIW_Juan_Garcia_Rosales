@@ -5,6 +5,7 @@
 @use './estruc-control';
 @use './media-queries';
 
+
 /*Selectores*/
 /*
 body {
@@ -269,7 +270,11 @@ header {
   align-items: center;
   background-color: #a4c3cf;
   padding: 10px 20px;
-
+  picture img{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+  }
   .enlaces {
     a {
       text-decoration: none;
