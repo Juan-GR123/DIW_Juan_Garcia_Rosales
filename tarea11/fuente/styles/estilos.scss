@@ -1,24 +1,24 @@
-@import './variables';
-@import './mixins';
-@import './funciones';
-@import './selecctores';
-@import './estruc-control';
+@use './variables';
+@use './mixins';
+@use './funciones';
+@use './selecctores';
+@use './estruc-control';
+@use './media-queries';
 
-
-$primary-bg-color: #a4c3cf;
-$accent-color: #ffb347;
-$text-color: black;
-
+/*Selectores*/
+/*
 body {
   margin: 0;
   font-family: 'Ibarra real Nova', sans-serif;
 }
-
+*/
+/*header*/
+/*
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $primary-bg-color;
+  background-color: #a4c3cf;
   padding: 10px 20px;
 
   img {
@@ -30,19 +30,21 @@ header {
   .enlaces {
     a {
       text-decoration: none;
-      color: $text-color;
+      color: black;
       padding: 10px;
       border-radius: 5px;
       margin-left: 10px;
 
       &.registrar {
-        background-color: $accent-color;
+        background-color: #ffb347;
         font-weight: bold;
       }
     }
   }
 }
-
+*/
+/*main*/
+/*
 main {
   text-align: center;
   padding: 50px;
@@ -65,7 +67,7 @@ main {
     justify-content: center;
 
     .boton1 {
-      background-color: $accent-color;
+      background-color: #ffb347;
       padding: 10px;
       font-size: 25px;
       font-weight: bold;
@@ -82,6 +84,7 @@ main {
       margin-left: 50px;
     }
   }
+
 
   .colaboradores {
     display: flex;
@@ -106,14 +109,16 @@ main {
     }
   }
 }
-
+*/
+/*Footer*/
+/*
 footer {
-  background-color: $primary-bg-color;
+  background-color: #a4c3cf;
   color: white;
   padding: 20px 10px;
 
   .redes_S {
-    > img {
+    >img {
       height: 40px;
       width: 40px;
       border-radius: 50%;
@@ -147,9 +152,9 @@ footer {
     }
   }
 }
-
-/* Responsive Media Queries */
-
+*/
+/* tamaños de Media Queries */
+/*
 @media only screen and (min-width: 753px) and (max-width: 1000px) {
   main {
     text-align: center;
@@ -235,7 +240,7 @@ footer {
     top: 100px;
 
     .redes_S {
-      > img {
+      >img {
         align-items: center;
       }
     }
@@ -251,3 +256,40 @@ footer {
     }
   }
 }
+*/
+/*selectores*/
+body {
+  margin: 0;
+  font-family: 'Ibarra real Nova', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a4c3cf;
+  padding: 10px 20px;
+
+  .enlaces {
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      margin-left: 10px;
+
+      &.registrar {
+        background-color: #ffb347;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/*estructuras-control*/
+
+/*funciones*/
+
+/*mixins*/
+
+/*media-queries*/

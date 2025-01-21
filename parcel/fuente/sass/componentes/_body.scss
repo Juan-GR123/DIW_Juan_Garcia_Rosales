@@ -1,0 +1,4 @@
+@use 'global/variables';
+.tarjeta{
+    background-color: variables.$color-fondo;
+}
