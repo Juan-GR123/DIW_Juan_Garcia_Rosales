@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "compilar-sass": "sass --watch fuente/styles/estilos:fuente/styles/estilos"
+    "compilar-sass": "sass --watch fuente/styles:fuente/styles"
   },
   "keywords": [
     "sass"
