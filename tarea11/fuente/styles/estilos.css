@@ -123,6 +123,11 @@ footer .terminos a:hover {
 }
 
 /*estructuras-control*/
+header {
+  background-color: #a4c3cf;
+  color: white;
+}
+
 /*funciones*/
 /*mixins*/
 /*media-queries*/

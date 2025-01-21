@@ -1,0 +1,13 @@
+
+/*estructuras-control*/
+$tema: "azul-claro";
+header{
+    @if $tema=="azul-claro"{
+        background-color: #a4c3cf;
+        color: white;
+    }
+    @else{
+        background-color: #36566a;
+        color: white;
+    }
+}
