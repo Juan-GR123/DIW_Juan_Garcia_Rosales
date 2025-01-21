@@ -1,4 +1,6 @@
-@use 'global/variables';
+@use '../global/variables';
 .tarjeta{
     background-color: variables.$color-fondo;
+    border:3px solid variables.$color-borde;
+    border-radius: 0.35rem;
 }
