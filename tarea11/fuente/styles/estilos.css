@@ -1,262 +1,11 @@
 @charset "UTF-8";
-/*Selectores*/
-/*
-body {
-  margin: 0;
-  font-family: 'Ibarra real Nova', sans-serif;
-}
-*/
-/*header*/
-/*
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #a4c3cf;
-  padding: 10px 20px;
-
-  img {
-    width: 40px;
-    height: auto;
-    border-radius: 50%;
-  }
-
-  .enlaces {
-    a {
-      text-decoration: none;
-      color: black;
-      padding: 10px;
-      border-radius: 5px;
-      margin-left: 10px;
-
-      &.registrar {
-        background-color: #ffb347;
-        font-weight: bold;
-      }
-    }
-  }
-}
-*/
-/*main*/
-/*
-main {
-  text-align: center;
-  padding: 50px;
-
-  h1 {
-    font-family: 'Permanent Marker';
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 1.6;
-    color: #2b3a42;
-    margin-bottom: 40px;
-    max-width: 560px;
-    margin: auto;
-  }
-
-  .botones {
-    margin: 20px;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-
-    .boton1 {
-      background-color: #ffb347;
-      padding: 10px;
-      font-size: 25px;
-      font-weight: bold;
-      margin-right: 50px;
-      border-radius: 30%;
-    }
-
-    .boton2 {
-      background-color: transparent;
-      border: none;
-      padding: 5px;
-      font-size: 20px;
-      font-weight: lighter;
-      margin-left: 50px;
-    }
-  }
-
-
-  .colaboradores {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 40px;
-
-    .secciones {
-      text-align: center;
-      margin-inline: 50px;
-
-      img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-      }
-
-      p {
-        margin-top: 10px;
-        font-size: 16px;
-      }
-    }
-  }
-}
-*/
-/*Footer*/
-/*
-footer {
-  background-color: #a4c3cf;
-  color: white;
-  padding: 20px 10px;
-
-  .redes_S {
-    >img {
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      margin-left: 50px;
-    }
-  }
-
-  .linea {
-    height: 1px;
-    background-color: black;
-  }
-
-  .pie {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .terminos {
-    a {
-      color: white;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-*/
-/* tamaños de Media Queries */
-/*
-@media only screen and (min-width: 753px) and (max-width: 1000px) {
-  main {
-    text-align: center;
-    padding-block: 100px;
-    position: relative;
-    top: 150px;
-    margin-right: 30px;
-  }
-
-  footer {
-    position: relative;
-    top: 300px;
-  }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1360px) {
-  main {
-    text-align: center;
-    position: relative;
-    margin-right: 30px;
-
-    h1 {
-      font-size: 40px;
-    }
-
-    .botones {
-      padding: 130px;
-    }
-  }
-
-  footer {
-    position: relative;
-    top: 170px;
-  }
-}
-
-@media only screen and (min-width: 300px) and (max-width: 768px) {
-  header {
-    a {
-      padding: 0;
-      font-size: 13px;
-      margin-right: 0;
-      border-radius: 30%;
-    }
-  }
-
-  main {
-    h1 {
-      font-size: 20px;
-    }
-
-    .botones {
-      margin: 0;
-      padding: 0;
-      display: block;
-      margin: 10px;
-
-      .boton1 {
-        font-size: 20px;
-        margin-block: 50px;
-      }
-
-      .boton2 {
-        padding: 0;
-        margin-left: 0;
-      }
-    }
-
-    .colaboradores {
-      display: block;
-      justify-content: center;
-      gap: 0;
-      margin-top: 40px;
-
-      .secciones {
-        margin-inline: 30px;
-      }
-    }
-  }
-
-  footer {
-    position: relative;
-    top: 100px;
-
-    .redes_S {
-      >img {
-        align-items: center;
-      }
-    }
-
-    .pie {
-      display: block;
-      text-align: center;
-      padding-bottom: 20px;
-    }
-
-    .contacto {
-      padding-bottom: 30px;
-    }
-  }
-}
-*/
 /*selectores*/
 body {
   margin: 0;
   font-family: "Ibarra real Nova", sans-serif;
 }
 
+/*header*/
 header {
   display: flex;
   justify-content: space-between;
@@ -264,7 +13,7 @@ header {
   background-color: #a4c3cf;
   padding: 10px 20px;
 }
-header picture img {
+header img {
   width: 40px;
   height: auto;
   border-radius: 50%;
@@ -280,10 +29,191 @@ header .enlaces a.registrar {
   background-color: #ffb347;
   font-weight: bold;
 }
+header .fa-user {
+  margin-left: 1150px;
+}
+
+/*main*/
+main {
+  text-align: center;
+  padding: 50px;
+}
+main h1 {
+  font-family: "Permanent Marker";
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #2b3a42;
+  margin-bottom: 40px;
+  max-width: 560px;
+  margin: auto;
+}
+main .botones {
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+main .botones .boton1 {
+  background-color: #ffb347;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 50px;
+  border-radius: 30%;
+}
+main .botones .boton2 {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 50px;
+}
+main .colaboradores {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+main .colaboradores .secciones {
+  text-align: center;
+  margin-inline: 50px;
+}
+main .colaboradores .secciones img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+main .colaboradores .secciones p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/*Footer*/
+footer {
+  background-color: #a4c3cf;
+  color: white;
+  padding: 20px 10px;
+}
+footer .redes_S > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+footer .linea {
+  height: 1px;
+  background-color: black;
+}
+footer .pie {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+}
+footer .terminos a {
+  color: white;
+  text-decoration: none;
+}
+footer .terminos a:hover {
+  text-decoration: underline;
+}
 
 /*estructuras-control*/
 /*funciones*/
 /*mixins*/
 /*media-queries*/
+/* tamaños de Media Queries */
+@media only screen and (min-width: 753px) and (max-width: 1000px) {
+  header .fa-user {
+    margin-left: 400px;
+  }
+  main {
+    text-align: center;
+    padding-block: 100px;
+    position: relative;
+    top: 150px;
+    margin-right: 30px;
+  }
+  footer {
+    position: relative;
+    top: 300px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1360px) {
+  header .fa-user {
+    margin-left: 450px;
+  }
+  main {
+    text-align: center;
+    position: relative;
+    margin-right: 30px;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  main .botones {
+    padding: 130px;
+  }
+  footer {
+    position: relative;
+    top: 170px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  header a {
+    padding: 0;
+    font-size: 13px;
+    margin-right: 0;
+    border-radius: 30%;
+  }
+  header .fa-user {
+    margin-left: 40px;
+  }
+  main h1 {
+    font-size: 20px;
+  }
+  main .botones {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  main .botones .boton1 {
+    font-size: 20px;
+    margin-block: 50px;
+    margin-right: 10px;
+  }
+  main .botones .boton2 {
+    padding: 0;
+    margin-left: 0;
+  }
+  main .colaboradores {
+    display: block;
+    justify-content: center;
+    gap: 0;
+    margin-top: 40px;
+  }
+  main .colaboradores .secciones {
+    margin-inline: 30px;
+  }
+  footer {
+    position: relative;
+    top: 100px;
+  }
+  footer .redes_S > img {
+    align-items: center;
+  }
+  footer .pie {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  footer .contacto {
+    padding-bottom: 30px;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
