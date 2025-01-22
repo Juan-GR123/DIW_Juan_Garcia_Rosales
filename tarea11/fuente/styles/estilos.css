@@ -113,6 +113,32 @@ main .colaboradores .secciones p {
   margin-top: 10px;
   font-size: 16px;
 }
+main .titulo {
+  background-image: url("../img/foto-libreria-1920px.jpg");
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+}
+main .titulo h1 {
+  color: white;
+}
+main .titulo button {
+  background-color: #ffb347;
+}
+main .eventos {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+main .eventos .evento {
+  margin: 30px;
+}
+main .eventos p {
+  background-color: black;
+  color: white;
+  border: 10px solid black;
+}
 
 /*Footer*/
 footer {

@@ -104,6 +104,7 @@ body {
         font-weight: lighter;
         margin-left: 50px;
       }
+    
     }
   
   
@@ -129,6 +130,37 @@ body {
         }
       }
     }
+
+    .titulo{
+      background-image: url("../img/foto-libreria-1920px.jpg");
+      padding: 100px;
+      display: flex;
+      flex-direction: row;
+      h1{
+        color: white;
+      }
+      button{
+        background-color: #ffb347;
+      }
+    }
+
+    .eventos{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      
+      .evento{
+        margin: 30px;
+      }
+      p{
+        background-color: black;
+        color: white;
+        border: 10px solid black;
+      }
+    }
+    
+
   }
   
   /*Footer*/
