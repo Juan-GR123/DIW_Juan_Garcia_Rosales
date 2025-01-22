@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*mixins*/
+/*funciones*/
 /*selectores*/
 body {
   margin: 0;
@@ -20,7 +22,6 @@ header img {
 }
 header .enlaces a {
   text-decoration: none;
-  color: black;
   padding: 10px;
   border-radius: 5px;
   margin-left: 10px;
@@ -31,6 +32,29 @@ header .enlaces a.registrar {
 }
 header .fa-user {
   margin-left: 1150px;
+}
+header .iniciar {
+  background-color: #2b3a42;
+  color: white;
+}
+header .comprar {
+  background-color: #2b3a42;
+  color: white;
+}
+header #valor {
+  padding: 5px;
+  width: 300px;
+}
+
+section .categorias {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+section li {
+  background-color: #a4c3cf;
 }
 
 /*main*/
@@ -128,8 +152,6 @@ header {
   color: white;
 }
 
-/*funciones*/
-/*mixins*/
 /*media-queries*/
 /* tamaños de Media Queries */
 @media only screen and (min-width: 753px) and (max-width: 1000px) {

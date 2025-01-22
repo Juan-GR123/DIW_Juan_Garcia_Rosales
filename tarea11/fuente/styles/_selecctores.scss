@@ -22,7 +22,6 @@ body {
     .enlaces {
       a {
         text-decoration: none;
-        color: black;
         padding: 10px;
         border-radius: 5px;
         margin-left: 10px;
@@ -36,9 +35,35 @@ body {
     .fa-user{
       margin-left: 1150px;
     }
+    .iniciar{
+        background-color: #2b3a42;
+        color: white;
+    }
+    .comprar{
+        background-color: #2b3a42;
+        color: white;
+    }
+    #valor{
+      padding: 5px;
+      width: 300px;
+    }
   }
   
-  
+  section{
+    .categorias{
+        list-style-type: none; /* Elimina los puntos de la lista */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li{
+        background-color: #a4c3cf;
+    
+    }
+  }
+
+
   /*main*/
   
   main {
