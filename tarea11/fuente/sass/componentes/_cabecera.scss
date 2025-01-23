@@ -1,0 +1,58 @@
+  /*header*/
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a4c3cf;
+    padding: 10px 20px;
+  
+    img {
+      width: 40px;
+      height: auto;
+      border-radius: 50%;
+    }
+  
+    .enlaces {
+      a {
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin-left: 10px;
+  
+        &.registrar {
+          background-color: #ffb347;
+          font-weight: bold;
+        }
+      }
+    }
+    .fa-user{
+      margin-left: 1150px;
+    }
+    .iniciar{
+        background-color: #2b3a42;
+        color: white;
+    }
+    .comprar{
+        background-color: #2b3a42;
+        color: white;
+    }
+    #valor{
+      padding: 5px;
+      width: 300px;
+    }
+  }
+  
+  section{
+    .categorias{
+        list-style-type: none; /* Elimina los puntos de la lista */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li{
+        background-color: #a4c3cf;
+    
+    }
+  }
