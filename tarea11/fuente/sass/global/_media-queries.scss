@@ -2,9 +2,9 @@
 /* tamaños de Media Queries */
 @media only screen and (min-width: 753px) and (max-width: 1000px) {
     header{
-      .fa-user{
-        margin-left: 400px;
-      }
+     // .fa-user{
+     //   margin-left: 400px;
+     // }
     }
     main {
       text-align: center;
@@ -22,9 +22,9 @@
   
   @media only screen and (min-width: 1000px) and (max-width: 1360px) {
     header{
-      .fa-user{
-        margin-left: 450px;
-      }
+      //.fa-user{
+      //  margin-left: 450px;
+      //}
     }
     main {
       text-align: center;
@@ -54,9 +54,9 @@
         margin-right: 0;
         border-radius: 30%;
       }
-      .fa-user{
-        margin-left: 40px;
-      }
+      //.fa-user{
+      //  margin-left: 40px;
+     // }
     }
   
     main {
