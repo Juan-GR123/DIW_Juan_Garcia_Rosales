@@ -116,18 +116,34 @@ main .colaboradores .secciones p {
 main .titulo {
   background-image: url("../img/foto-libreria-1920px.jpg");
   padding: 100px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 main .titulo h1 {
-  color: white;
+  color: #2b3a42;
+  font-size: 40px;
 }
-main .titulo button {
+main .titulo .iniciar_sesion {
+  margin-top: 100px;
   background-color: #ffb347;
+  grid-row: 2;
+  grid-column: 4/5;
+}
+main .titulo .iniciar_sesion:hover {
+  background-color: #ce9039;
+}
+main .titulo .texto {
+  background-color: rgba(255, 255, 255, 0.514);
+  padding: 10px;
+  border-radius: 30px;
+  grid-row: 1;
+  grid-column: 1/5;
 }
 main .eventos {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
 }
@@ -139,7 +155,22 @@ main .eventos p {
   color: white;
   border: 10px solid black;
 }
-
+main .eventos .derecha {
+  border: 1px solid;
+  height: 50px;
+}
+main .eventos .derecha:hover {
+  background-color: #2b3a42;
+  color: white;
+}
+main .eventos .izquierda {
+  border: 1px solid;
+  height: 50px;
+}
+main .eventos .izquierda:hover {
+  background-color: #2b3a42;
+  color: white;
+}
 /*Footer*/
 footer {
   background-color: #a4c3cf;
