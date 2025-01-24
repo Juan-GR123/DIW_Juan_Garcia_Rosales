@@ -1,8 +1,11 @@
 /*main*/
 main {
     text-align: center;
-    padding: 150px;
 
+
+    .index{
+      padding: 150px;
+    }
   
     h1 {
       font-family: 'Permanent Marker';
@@ -68,7 +71,7 @@ main {
 
     .titulo{
       background-image: url("../img/foto-libreria-1920px.jpg");
-      padding: 100px;
+      padding: 50px;
       display: grid;
       grid-template-columns: repeat(3,1fr);
       grid-template-rows:repeat(2,1fr) ;

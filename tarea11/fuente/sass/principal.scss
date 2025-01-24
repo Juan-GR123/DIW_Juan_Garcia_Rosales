@@ -2,7 +2,6 @@
 @use '../sass/global/mixins';
 @use '../sass/global/estruc-control';
 @use '../sass/global/funciones';
-@use '../sass/global/media-queries';
 @use '../sass/base/normalizacion';
 @use '../sass/base/reinicio';
 @use '../sass/base/tipografia';
@@ -13,5 +12,5 @@
 @use '../sass/posicion/posicion-comun';
 @use '../sass/posicion/posicion_cabecera';
 @use '../sass/posicion/posicion_pie';
-
+@use '../sass/global/media-queries';
 
