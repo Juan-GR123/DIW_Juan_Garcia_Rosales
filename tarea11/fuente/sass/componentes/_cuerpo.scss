@@ -102,18 +102,19 @@ main {
     .eventos{
     
       display: flex;
+      gap: 50px;
       justify-content:center;
       align-items: center;
       flex-direction: row;
+      margin-block: 30px;
+      margin-inline: 30px;
       
-      .evento{
-        margin: 30px;
-      }
       p{
         background-color: black;
         color: white;
         border: 10px solid black;
       }
+
       .derecha{
         border: 1px solid;
         height: 50px;
@@ -164,6 +165,8 @@ main {
       justify-content:center;
       align-items: center;
       flex-direction: row;
+      margin-bottom: 100px;
+
         img{
         border-radius: 50%;
         }
