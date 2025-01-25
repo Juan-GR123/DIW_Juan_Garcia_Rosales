@@ -279,6 +279,7 @@ main .eventos {
   flex-direction: row;
   margin-block: 30px;
   margin-inline: 30px;
+  overflow: hidden; /* Oculta imágenes que están fuera del contenedor */
 }
 main .eventos p {
   background-color: black;
@@ -301,11 +302,8 @@ main .eventos .izquierda:hover {
   background-color: #2b3a42;
   color: white;
 }
-main .eventos article {
-  display: none;
-}
 main .eventos article.active {
-  display: block; /* Mostrar solo el artículo activo */
+  display: block;
 }
 main .libros {
   display: flex;
@@ -313,6 +311,7 @@ main .libros {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  overflow: hidden;
 }
 main .libros .derecha2 {
   border: 1px solid;
@@ -330,23 +329,47 @@ main .libros .izquierda2:hover {
   background-color: #2b3a42;
   color: white;
 }
-main .libros .libro {
-  display: none;
-}
-main .libros .libro.active {
-  display: block; /* Mostrar solo el libro que este activo*/
+main .libros article.active {
+  display: block;
 }
 main .categorias2 {
   display: flex;
   gap: 200px;
-  margin-top: 100px;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
-main .categorias2 img {
+main .categorias2 .desplazamiento {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease-in-out; /* Suaviza el desplazamiento */
+}
+main .categorias2 .cat {
+  flex: 0 0 100px;
+  text-align: center;
+}
+main .categorias2 .cat img {
   border-radius: 50%;
+}
+main .categorias2 .derecha3 {
+  border: 1px solid;
+  height: 50px;
+}
+main .categorias2 .derecha3:hover {
+  background-color: #2b3a42;
+  color: white;
+}
+main .categorias2 .izquierda3 {
+  border: 1px solid;
+  height: 50px;
+}
+main .categorias2 .izquierda3:hover {
+  background-color: #2b3a42;
+  color: white;
+}
+main .categorias2 article.active {
+  display: block;
 }
 
 /*Footer*/
@@ -448,6 +471,24 @@ footer .terminos a:hover {
   }
   main .colaboradores .secciones {
     margin-inline: 30px;
+  }
+  main .eventos article {
+    display: none;
+  }
+  main .eventos article.active {
+    display: block;
+    /* Mostrar solo el artículo activo */
+  }
+  main .libros .libro {
+    display: none;
+  }
+  main .libros .libro.active {
+    display: block;
+    /* Mostrar solo el libro que este activo*/
+  }
+  main .categorias2 {
+    gap: 0;
+    flex-direction: column;
   }
   footer {
     position: relative;
