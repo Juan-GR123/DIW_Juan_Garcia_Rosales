@@ -131,6 +131,13 @@ main {
         background-color: #2b3a42;
         color: white;
       }
+      article{
+        display: none;
+      }
+      
+      article.active{
+        display: block; /* Mostrar solo el artículo activo */
+      }
 
     }
     
@@ -140,21 +147,28 @@ main {
       justify-content:center;
       align-items: center;
       flex-direction: row;
-      .derecha{
+      .derecha2{
         border: 1px solid;
         height: 50px;
       }
-      .derecha:hover{
+      .derecha2:hover{
         background-color: #2b3a42;
         color: white;
       }
-      .izquierda{
+      .izquierda2{
         border: 1px solid;
        height: 50px;
       }
-      .izquierda:hover{
+      .izquierda2:hover{
         background-color: #2b3a42;
         color: white;
+      }
+      .libro{
+        display: none; //oculto los libros
+      }
+
+      .libro.active{
+        display: block; /* Mostrar solo el libro que este activo*/
       }
     }
 

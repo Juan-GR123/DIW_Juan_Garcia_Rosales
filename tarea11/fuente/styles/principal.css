@@ -60,7 +60,6 @@ p {
 }
 
 body {
-  font-family: "Mali", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -302,6 +301,12 @@ main .eventos .izquierda:hover {
   background-color: #2b3a42;
   color: white;
 }
+main .eventos article {
+  display: none;
+}
+main .eventos article.active {
+  display: block; /* Mostrar solo el artículo activo */
+}
 main .libros {
   display: flex;
   gap: 200px;
@@ -309,21 +314,27 @@ main .libros {
   align-items: center;
   flex-direction: row;
 }
-main .libros .derecha {
+main .libros .derecha2 {
   border: 1px solid;
   height: 50px;
 }
-main .libros .derecha:hover {
+main .libros .derecha2:hover {
   background-color: #2b3a42;
   color: white;
 }
-main .libros .izquierda {
+main .libros .izquierda2 {
   border: 1px solid;
   height: 50px;
 }
-main .libros .izquierda:hover {
+main .libros .izquierda2:hover {
   background-color: #2b3a42;
   color: white;
+}
+main .libros .libro {
+  display: none;
+}
+main .libros .libro.active {
+  display: block; /* Mostrar solo el libro que este activo*/
 }
 main .categorias2 {
   display: flex;
