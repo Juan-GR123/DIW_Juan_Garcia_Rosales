@@ -186,16 +186,11 @@ main {
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
-
+    overflow: hidden;
+    
     .desplazamiento{
       display: flex;
-      gap: 30px;
-      transition: transform 0.5s ease-in-out; /* Suaviza el desplazamiento */ 
-    }
-
-    .cat{
-      flex: 0 0 100px;
-      text-align: center;
+      gap: 50px;
     }
 
     .cat img {
@@ -222,7 +217,7 @@ main {
       color: white;
     }
 
-    article.active {
+    .cat.active {
       display: block;
     }
   }

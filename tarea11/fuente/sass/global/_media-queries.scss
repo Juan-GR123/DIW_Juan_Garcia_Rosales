@@ -1,10 +1,11 @@
 /*media-queries*/
 /* tamaños de Media Queries */
-@media only screen and (min-width: 753px) and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
   header {
-    // .fa-user{
-    //   margin-left: 400px;
-    // }
+    #valor {
+      padding: 5px;
+      width: 300px;
+    }
   }
 
   main {
@@ -15,9 +16,60 @@
     margin-right: 30px;
   }
 
+  .mainP {
+    text-align: center;
+    padding-block: 0;
+    position: relative;
+    margin-right: 0;
+
+    .categorias2 {
+      margin-bottom: 0px;
+    }
+  }
+
   footer {
     position: relative;
     top: 300px;
+  }
+
+  .footerP {
+    top: 100px;
+  }
+
+  .eventos {
+    article {
+      display: none;
+    }
+
+    article.active {
+      display: block;
+      /* Mostrar solo el artículo activo */
+    }
+  }
+
+  .libros {
+    .libro {
+      display: none; //oculto los libros
+    }
+
+    .libro.active {
+      display: block;
+      /* Mostrar solo el libro que este activo*/
+    }
+  }
+
+  .categorias2 {
+    gap: 50px;
+
+    article {
+      display: none;
+    }
+
+    article.active {
+      display: block;
+      /* Mostrar solo el artículo activo */
+    }
+
   }
 }
 
@@ -43,19 +95,74 @@
     }
   }
 
+  .mainP {
+    text-align: center;
+    padding-block: 0;
+    position: relative;
+    margin-right: 0;
+
+    .categorias2 {
+      margin-bottom: 0px;
+    }
+  }
+
   footer {
     position: relative;
     top: 170px;
   }
+
+  .footerP {
+    top: 100px;
+  }
+
+  .eventos {
+    article {
+      display: none;
+    }
+
+    article.active {
+      display: block;
+      /* Mostrar solo el artículo activo */
+    }
+  }
+
+  .libros {
+    .libro {
+      display: none; //oculto los libros
+    }
+
+    .libro.active {
+      display: block;
+      /* Mostrar solo el libro que este activo*/
+    }
+  }
+
+  .categorias2 {
+    gap: 50px;
+
+    article {
+      display: none;
+    }
+
+    article.active {
+      display: block;
+      /* Mostrar solo el artículo activo */
+    }
+
+  }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
   header {
-    a {
-      padding: 0;
+    .enlaces a {
       font-size: 13px;
       margin-right: 0;
-      border-radius: 30%;
+      margin-left: 0;
+    }
+
+    #valor {
+      padding: 5px;
+      width: 100px;
     }
 
     //.fa-user{
@@ -121,10 +228,20 @@
         /* Mostrar solo el libro que este activo*/
       }
     }
-      .categorias2{
-        gap:0;
-        flex-direction: column;
+
+    .categorias2 {
+      gap: 50px;
+
+      article {
+        display: none;
       }
+
+      article.active {
+        display: block;
+        /* Mostrar solo el artículo activo */
+      }
+
+    }
   }
 
   footer {
@@ -153,4 +270,9 @@
   main {
     margin-bottom: 350px;
   }
+
+  .mainP {
+    margin-bottom: 100px;
+  }
+
 }

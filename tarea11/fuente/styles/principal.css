@@ -339,15 +339,11 @@ main .categorias2 {
   align-items: center;
   margin-top: 100px;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 main .categorias2 .desplazamiento {
   display: flex;
-  gap: 30px;
-  transition: transform 0.5s ease-in-out; /* Suaviza el desplazamiento */
-}
-main .categorias2 .cat {
-  flex: 0 0 100px;
-  text-align: center;
+  gap: 50px;
 }
 main .categorias2 .cat img {
   border-radius: 50%;
@@ -368,7 +364,7 @@ main .categorias2 .izquierda3:hover {
   background-color: #2b3a42;
   color: white;
 }
-main .categorias2 article.active {
+main .categorias2 .cat.active {
   display: block;
 }
 
@@ -406,16 +402,56 @@ footer .terminos a:hover {
 
 /*media-queries*/
 /* tamaños de Media Queries */
-@media only screen and (min-width: 753px) and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  header #valor {
+    padding: 5px;
+    width: 300px;
+  }
   main {
     text-align: center;
     padding-block: 100px;
     position: relative;
     margin-right: 30px;
   }
+  .mainP {
+    text-align: center;
+    padding-block: 0;
+    position: relative;
+    margin-right: 0;
+  }
+  .mainP .categorias2 {
+    margin-bottom: 0px;
+  }
   footer {
     position: relative;
     top: 300px;
+  }
+  .footerP {
+    top: 100px;
+  }
+  .eventos article {
+    display: none;
+  }
+  .eventos article.active {
+    display: block;
+    /* Mostrar solo el artículo activo */
+  }
+  .libros .libro {
+    display: none;
+  }
+  .libros .libro.active {
+    display: block;
+    /* Mostrar solo el libro que este activo*/
+  }
+  .categorias2 {
+    gap: 50px;
+  }
+  .categorias2 article {
+    display: none;
+  }
+  .categorias2 article.active {
+    display: block;
+    /* Mostrar solo el artículo activo */
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1360px) {
@@ -431,17 +467,56 @@ footer .terminos a:hover {
   main .botones {
     padding: 130px;
   }
+  .mainP {
+    text-align: center;
+    padding-block: 0;
+    position: relative;
+    margin-right: 0;
+  }
+  .mainP .categorias2 {
+    margin-bottom: 0px;
+  }
   footer {
     position: relative;
     top: 170px;
   }
+  .footerP {
+    top: 100px;
+  }
+  .eventos article {
+    display: none;
+  }
+  .eventos article.active {
+    display: block;
+    /* Mostrar solo el artículo activo */
+  }
+  .libros .libro {
+    display: none;
+  }
+  .libros .libro.active {
+    display: block;
+    /* Mostrar solo el libro que este activo*/
+  }
+  .categorias2 {
+    gap: 50px;
+  }
+  .categorias2 article {
+    display: none;
+  }
+  .categorias2 article.active {
+    display: block;
+    /* Mostrar solo el artículo activo */
+  }
 }
-@media only screen and (min-width: 300px) and (max-width: 768px) {
-  header a {
-    padding: 0;
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  header .enlaces a {
     font-size: 13px;
     margin-right: 0;
-    border-radius: 30%;
+    margin-left: 0;
+  }
+  header #valor {
+    padding: 5px;
+    width: 100px;
   }
   main h1 {
     font-size: 20px;
@@ -487,8 +562,14 @@ footer .terminos a:hover {
     /* Mostrar solo el libro que este activo*/
   }
   main .categorias2 {
-    gap: 0;
-    flex-direction: column;
+    gap: 50px;
+  }
+  main .categorias2 article {
+    display: none;
+  }
+  main .categorias2 article.active {
+    display: block;
+    /* Mostrar solo el artículo activo */
   }
   footer {
     position: relative;
@@ -509,6 +590,9 @@ footer .terminos a:hover {
 @media only screen and (min-width: 2000px) and (max-width: 3000px) {
   main {
     margin-bottom: 350px;
+  }
+  .mainP {
+    margin-bottom: 100px;
   }
 }
 
