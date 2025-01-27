@@ -279,7 +279,8 @@ main .eventos {
   flex-direction: row;
   margin-block: 30px;
   margin-inline: 30px;
-  overflow: hidden; /* Oculta imágenes que están fuera del contenedor */
+  overflow: hidden;
+  /* Oculta imágenes que están fuera del contenedor */
 }
 main .eventos p {
   background-color: black;
@@ -366,6 +367,49 @@ main .categorias2 .izquierda3:hover {
 }
 main .categorias2 .cat.active {
   display: block;
+}
+
+.bodyR {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bodyR .mainRegistro {
+  align-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 700px;
+}
+.bodyR .mainRegistro .divR {
+  background-color: #a4c3cf;
+  border-radius: 10%;
+  height: 500px;
+}
+.bodyR .mainRegistro .divR h2 {
+  margin-bottom: 50px;
+}
+.bodyR .mainRegistro .divR .cerrar {
+  color: red;
+  cursor: pointer;
+  font-size: 50px;
+  margin-left: 300px;
+}
+.bodyR .mainRegistro .divR label {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.bodyR .mainRegistro .divR .botonRegistro {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #2b3a42;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bodyR .mainRegistro .divR .botonRegistro:hover {
+  background: #ffb347;
 }
 
 /*Footer*/

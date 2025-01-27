@@ -111,7 +111,8 @@ main {
     flex-direction: row;
     margin-block: 30px;
     margin-inline: 30px;
-    overflow: hidden; /* Oculta imágenes que están fuera del contenedor */
+    overflow: hidden;
+    /* Oculta imágenes que están fuera del contenedor */
 
     p {
       background-color: black;
@@ -153,6 +154,7 @@ main {
     align-items: center;
     flex-direction: row;
     overflow: hidden;
+
     .derecha2 {
       border: 1px solid;
       height: 50px;
@@ -176,7 +178,7 @@ main {
     article.active {
       display: block;
     }
-  
+
   }
 
   .categorias2 {
@@ -187,8 +189,8 @@ main {
     margin-top: 100px;
     margin-bottom: 100px;
     overflow: hidden;
-    
-    .desplazamiento{
+
+    .desplazamiento {
       display: flex;
       gap: 50px;
     }
@@ -221,5 +223,56 @@ main {
       display: block;
     }
   }
+}
 
+.bodyR {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .mainRegistro {
+    align-content: center;
+    flex-direction: column;
+    //border: 1px solid black;
+    width: 400px;
+    height: 700px;
+
+
+    .divR {
+      background-color: #a4c3cf;
+      border-radius: 10%;
+      height: 500px;
+
+      h2 {
+        margin-bottom: 50px;
+      }
+
+      .cerrar {
+        color: red;
+        cursor: pointer;
+        font-size: 50px;
+        margin-left: 300px;
+      }
+
+      label {
+        font-size: 20px;
+        font-weight: bolder;
+      }
+
+      .botonRegistro {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background: #2b3a42;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .botonRegistro:hover {
+        background: #ffb347;
+      }
+    }
+  }
 }
