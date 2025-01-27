@@ -91,15 +91,20 @@ header .enlaces a {
   margin-left: 10px;
   color: black;
 }
-header .enlaces a.registrar {
-  background-color: #ffb347;
-  font-weight: bold;
-}
 header .enlaces a.iniciar {
   color: white;
 }
 header .enlaces a.comprar {
   color: white;
+}
+header .enlaces .registrar {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: #ffb347;
+  font-weight: bold;
+  cursor: pointer;
 }
 header .iniciar {
   background-color: #2b3a42;
@@ -209,6 +214,7 @@ main .botones {
   justify-content: center;
   margin-top: 100px;
   gap: 100px;
+  z-index: 1; /* Botón en la capa principal */
 }
 main .botones .boton1 {
   background-color: #ffb347;
@@ -371,28 +377,25 @@ main .categorias2 .cat.active {
 
 .bodyR {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .bodyR .mainRegistro {
+  position: fixed;
   align-content: center;
   flex-direction: column;
-  width: 400px;
+  width: 450px;
   height: 700px;
+  z-index: 9999; /* Asegura que quede por encima de todo */
 }
 .bodyR .mainRegistro .divR {
   background-color: #a4c3cf;
   border-radius: 10%;
   height: 500px;
+  display: none;
+  align-content: center;
 }
 .bodyR .mainRegistro .divR h2 {
   margin-bottom: 50px;
-}
-.bodyR .mainRegistro .divR .cerrar {
-  color: red;
-  cursor: pointer;
-  font-size: 50px;
-  margin-left: 300px;
 }
 .bodyR .mainRegistro .divR label {
   font-size: 20px;
@@ -409,6 +412,19 @@ main .categorias2 .cat.active {
   cursor: pointer;
 }
 .bodyR .mainRegistro .divR .botonRegistro:hover {
+  background: #ffb347;
+}
+.bodyR .mainRegistro .divR .cerrar {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #2b3a42;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bodyR .mainRegistro .divR .cerrar:hover {
   background: #ffb347;
 }
 

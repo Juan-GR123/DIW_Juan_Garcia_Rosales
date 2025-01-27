@@ -23,11 +23,6 @@
         margin-left: 10px;
         color: black;
 
-        &.registrar {
-          background-color: #ffb347;
-          font-weight: bold;
-        }
-
         &.iniciar {
           color: white;
         }
@@ -35,6 +30,15 @@
         &.comprar {
           color: white;
         }
+      }
+      .registrar {
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin-left: 10px;
+        background-color: #ffb347;
+        font-weight: bold;
+        cursor: pointer;
       }
     }
 

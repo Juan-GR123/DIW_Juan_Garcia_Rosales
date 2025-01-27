@@ -24,7 +24,7 @@ main {
     justify-content: center;
     margin-top: 100px;
     gap: 100px;
-
+    z-index: 1; /* Botón en la capa principal */
     .boton1 {
       background-color: #ffb347;
       padding: 10px;
@@ -225,33 +225,30 @@ main {
   }
 }
 
+
 .bodyR {
   display: flex;
-  align-items: center;
   justify-content: center;
 
   .mainRegistro {
+    position: fixed;
     align-content: center;
     flex-direction: column;
     //border: 1px solid black;
-    width: 400px;
+    width: 450px;
     height: 700px;
-
-
+    z-index: 9999; /* Asegura que quede por encima de todo */
     .divR {
+
       background-color: #a4c3cf;
       border-radius: 10%;
       height: 500px;
+      display: none;
+      align-content: center;
+      
 
       h2 {
         margin-bottom: 50px;
-      }
-
-      .cerrar {
-        color: red;
-        cursor: pointer;
-        font-size: 50px;
-        margin-left: 300px;
       }
 
       label {
@@ -271,6 +268,19 @@ main {
       }
 
       .botonRegistro:hover {
+        background: #ffb347;
+      }
+      .cerrar{
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background: #2b3a42;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .cerrar:hover {
         background: #ffb347;
       }
     }

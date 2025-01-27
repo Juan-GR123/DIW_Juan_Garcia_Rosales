@@ -1,20 +1,23 @@
-const mainRegistro = document.getElementsByClassName('mainRegistro');
-const Formulario = document.getElementById('FormularioRegistro');
-// Array para guardar los usuarios
-const usuarios = [];
+const body = document.getElementById('body');
+const divR =document.getElementById('divR'); 
+const cerrar = document.getElementById('cerrar');
+const registrar= document.getElementById('registrar');
+// Mostrar
+registrar.addEventListener('click', () => {
+  divR.style.display = 'grid';
+  body.style.backgroundColor= "rgba(0, 0, 0, 0.5)";
+});
 
-  // Registrar usuario
-  Formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const usuario = document.getElementById('usuario').value;
-    const email = document.getElementById('email').value;
+// Cerrar 
+cerrar.addEventListener('click', () => {
+  divR.style.display = 'none';
+  body.style.backgroundColor="white";
+});
 
-    // Guardar en el array
-    usuarios.push({ usuario, email });
-
-    console.log('Usuarios registrados:', usuarios);
-
-    // Limpiar el formulario y cerrar la ventana
-    Formulario.reset();
-    //mainRegistro.style.display = 'none';
-  });
+// Cerrar al hacer clic fuera de la ventana
+divR.addEventListener('click', (e) => {
+  if (e.target === divR) {
+    divR.style.display = 'none';
+    body.style.backgroundColor= "white";
+  }
+});
