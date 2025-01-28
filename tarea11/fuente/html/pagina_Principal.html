@@ -15,13 +15,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Permanent+Marker&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./styles/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">    
    <script src="../js/eventos.js" defer></script>  
    <script src="../js/libros.js" defer></script>  
-   <script src="../js/categorias.js" defer></script> 
+   <script src="../js/categorias.js" defer></script>  
 </head>
 <body>
     <!--Para esta pagina poner clases a las etiquetas para diferenciarlas en estilos.scss-->
-    <header>
+    <header class="headerP">
         <picture>
             <source srcset="../img/icono-libro-256px.webp" type="image/webp">
               <source srcset="../img/icono-libro-256px.png" type="image/png">
@@ -29,8 +31,9 @@
           </picture>
         <input name="busca" id="valor" placeholder="Buscador" class="busca">
         <section class="enlaces">
-            <a href="#" class="iniciar">Iniciar sesión</a>
-            <a href="#" class="comprar">Comprar</a>
+            <i class="fa-solid fa-user"></i>
+            <button class="iniciar">Iniciar sesión</button>
+            <button class="comprar">Comprar</button>
         </section>
     </header>
     <section>
@@ -70,7 +73,7 @@
                 <picture>
                     <source srcset="../img/foto-libreria2-480px.webp" type="image/webp" media="(min-width: 480px)" width="390px"> 
                     <source srcset="../img/foto-libreria2-480px.png" type="image/png" media="(min-width: 480px)" width="390px">
-                    <img src="../img/foto-libreria2-480px.jpg" width="390px">
+                    <img src="../img/foto-libreria2-480px.jpg">
                 </picture>
 
                 <p>Evento: “Curso de Narrativa de lunes a jueves de 17:00 a 18:00” </p>
@@ -79,14 +82,14 @@
                
                     <source srcset="../img/estanteria-iluminada-480px.webp" type="image/webp" media="(min-width: 480px)" width="390px"> 
                     <source srcset="../img/estanteria-iluminada-480px.png" type="image/png" media="(min-width: 480px)" width="390px">
-                <img src="../img/estanteria-iluminada-480px.jpg"  width="390px">
+                <img src="../img/estanteria-iluminada-480px.jpg"  >
                 <p>Evento: “¡¡¡J.K. Rowling viene a visitarnos el viernes 29 de Enero a las 12:00!!!”</p>
             </article>
             <article class="evento3">
                 <picture>
                     <source srcset="../img/estanteria-antigua-480px.webp" type="image/webp" media="(min-width: 480px)" width="390px"> 
                     <source srcset="../img/estanteria-antigua-480px.png" type="image/png" media="(min-width: 480px)" width="390px">
-                    <img src="../img/estanteria-antigua-480px.jpg"  width="390px">
+                    <img src="../img/estanteria-antigua-480px.jpg">
                 </picture>
                 
                 <p>Evento: ”Club de lectura para aficionados. Los sábados y domingos de 10:00 a 

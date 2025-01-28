@@ -18,6 +18,19 @@
     // }
   }
 
+  .headerP {
+    .enlaces {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      button {
+        padding: 2px;
+      }
+    }
+
+  }
+
   main {
     h1 {
       font-size: 20px;
@@ -56,6 +69,9 @@
     }
 
     .eventos {
+      gap: 0;
+      display: block;
+
       article {
         display: none;
       }
@@ -67,6 +83,8 @@
     }
 
     .libros {
+      gap: 0;
+
       .libro {
         display: none; //oculto los libros
       }
@@ -89,6 +107,12 @@
         /* Mostrar solo el artículo activo */
       }
 
+    }
+
+    .titulo {
+      .iniciar_sesion {
+        margin-top: 150px;
+      }
     }
   }
 
@@ -277,6 +301,11 @@
       }
     }
 
+    #valor {
+      padding: 20px;
+      width: 500px;
+    }
+
     .enlaces {
       .fa-user {
         font-size: 50px;
@@ -285,6 +314,25 @@
 
       button {
         font-size: 40px;
+
+        &.iniciar {
+          font-size: 30px;
+          color: black;
+        }
+
+        &.comprar {
+          font-size: 30px;
+          color: black;
+        }
+      }
+
+    }
+  }
+
+  section {
+    .categorias {
+      li {
+        font-size: 30px;
       }
     }
   }
@@ -321,10 +369,43 @@
         }
       }
     }
+
+    .titulo {
+      h1 {
+        font-size: 70px;
+      }
+    }
+
+    .eventos {
+      article {
+        img {
+          width: 500px;
+        }
+      }
+
+      p {
+        font-size: 30px;
+      }
+    }
+
+    .categorias2 {
+      gap: 50px;
+
+      .cat {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
   }
 
   .mainP {
     margin-bottom: 100px;
+
+    h2 {
+      font-size: 50px;
+      font-family: 'Ibarra real Nova', sans-serif;
+    }
   }
 
   footer {
@@ -337,13 +418,19 @@
     .pie {
       .contacto {
         p {
-          font-size: 40px;
+          font-size: 30px;
+        }
+      }
+
+      .link {
+        p {
+          font-size: 30px;
         }
       }
 
       .terminos {
         p {
-          font-size: 40px;
+          font-size: 30px;
         }
       }
     }
@@ -363,14 +450,37 @@
       }
     }
 
+    #valor {
+      padding: 20px;
+      width: 500px;
+    }
+
     .enlaces {
       .fa-user {
         font-size: 100px;
         margin-right: 50px;
       }
 
+
       button {
-        font-size: 40px;
+
+        &.iniciar {
+          font-size: 40px;
+          color: black;
+        }
+
+        &.comprar {
+          font-size: 40px;
+          color: black;
+        }
+      }
+    }
+  }
+
+  section {
+    .categorias {
+      li {
+        font-size: 50px;
       }
     }
   }
@@ -378,10 +488,13 @@
   main {
     margin-bottom: 200px;
 
-    h1 {
-      font-size: xxx-large;
-      max-width: none;
+    .titulo {
+      h1 {
+        font-size: 100px;
+        max-width: none;
+      }
     }
+
 
     .botones {
       .boton1 {
@@ -390,6 +503,41 @@
 
       .boton2 {
         font-size: 50px;
+      }
+    }
+
+    .eventos {
+      article {
+        img {
+          width: 700px;
+        }
+      }
+
+      p {
+        font-size: 40px;
+      }
+    }
+
+    .libros {
+      article {
+        img {
+          width: 400px;
+        }
+      }
+    }
+
+    .categorias2 {
+      gap: 50px;
+
+      .cat {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+
+        p {
+          font-size: 50px;
+        }
       }
     }
 
@@ -411,6 +559,11 @@
 
   .mainP {
     margin-bottom: 100px;
+
+    h2 {
+      font-size: 50px;
+      font-family: 'Ibarra real Nova', sans-serif;
+    }
   }
 
   footer {
@@ -424,6 +577,12 @@
       .contacto {
         p {
           font-size: 40px;
+        }
+      }
+
+      .link {
+        p {
+          font-size: 30px;
         }
       }
 

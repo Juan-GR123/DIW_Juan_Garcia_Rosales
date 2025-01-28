@@ -23,6 +23,7 @@
         margin-left: 10px;
         color: black;
         background-color: #a4c3cf;
+        cursor: pointer;
 
         &.iniciar {
           color: white;
@@ -30,8 +31,15 @@
 
         &.comprar {
           color: white;
+          text-decoration: none;
+          padding: 10px;
+          background-color: #ffb347;
+          border-radius: 5px;
+          margin-left: 10px;
+          cursor: pointer;
         }
       }
+
       .registrar {
         text-decoration: none;
         padding: 10px;
@@ -45,21 +53,13 @@
     //.fa-user{
     //  margin-left: 1150px;
     //}
-    .iniciar {
+
+    .iniciar:hover {
       background-color: #2b3a42;
-      color: white;
     }
 
-    .iniciar:hover{
-      background-color: #ffb347;
-    }
 
-    .comprar {
-      background-color: #2b3a42;
-      color: white;
-    }
-
-    .comprar:hover{
+    .comprar:hover {
       background-color: #ffb347;
     }
 

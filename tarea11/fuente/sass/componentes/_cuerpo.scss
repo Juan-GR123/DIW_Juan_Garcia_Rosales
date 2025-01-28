@@ -113,6 +113,11 @@ main {
     overflow: hidden;
     /* Oculta imágenes que están fuera del contenedor */
 
+    article{
+        img{
+          width: 390px;
+        }
+    }
     p {
       background-color: black;
       color: white;
