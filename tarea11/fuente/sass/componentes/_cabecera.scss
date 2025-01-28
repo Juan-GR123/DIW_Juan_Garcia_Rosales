@@ -16,12 +16,13 @@
     }
 
     .enlaces {
-      a {
+      button {
         text-decoration: none;
         padding: 10px;
         border-radius: 5px;
         margin-left: 10px;
         color: black;
+        background-color: #a4c3cf;
 
         &.iniciar {
           color: white;
@@ -37,7 +38,6 @@
         border-radius: 5px;
         margin-left: 10px;
         background-color: #ffb347;
-        font-weight: bold;
         cursor: pointer;
       }
     }

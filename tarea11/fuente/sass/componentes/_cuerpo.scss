@@ -29,9 +29,8 @@ main {
       background-color: #ffb347;
       padding: 10px;
       font-size: 25px;
-      font-weight: bold;
       margin-right: 50px;
-      border-radius: 30%;
+      border-radius: 10%;
     }
 
     .boton2 {
@@ -149,7 +148,7 @@ main {
 
   .libros {
     display: flex;
-    gap: 200px;
+    gap: 100px;
     justify-content: center;
     align-items: center;
     flex-direction: row;
