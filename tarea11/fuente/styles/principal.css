@@ -466,6 +466,48 @@ footer .terminos a:hover {
   text-decoration: underline;
 }
 
+main {
+  text-align: center;
+}
+main .titulo {
+  background-image: url(../img/foto-libreria-1920px.jpg);
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+main .eventos {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-block: 30px;
+  margin-inline: 30px;
+  overflow: hidden;
+}
+main .libros {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-grow: 2;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .pie {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
 /*media-queries*/
 /* tamaños de Media Queries */
 @media only screen and (min-width: 300px) and (max-width: 767px) {
