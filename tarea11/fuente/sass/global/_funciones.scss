@@ -1,8 +1,5 @@
 /*funciones*/
-@use "sass:color";
-@use "sass:math";
 
-@function aclarar($color, $porcentaje: 10%) {
-    $color-blanco: rgb(255, 255, 255);
-    @return color.mix($color-blanco, $color, $porcentaje);
+  @function pequenio($tam, $porcentaje: 10%) {
+    @return $tam * (1 - ($porcentaje / 100));
   }

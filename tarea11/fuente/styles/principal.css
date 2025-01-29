@@ -429,6 +429,11 @@ main .categorias2 .cat.active {
   background: #ffb347;
 }
 
+img {
+  text-align: center;
+  margin: 20px;
+}
+
 /*Footer*/
 footer {
   background-color: #a4c3cf;

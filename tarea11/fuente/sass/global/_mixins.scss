@@ -1,1 +1,7 @@
 /*mixins*/
+@mixin estilos-lib(){ //mixin que genera un estilos a las letras y les aplicara un color negro con fondo blanco
+    font-family: 'Ibarra Real Nova', sans-serif;
+    background-color: white;
+    color: black;
+  }
+  
