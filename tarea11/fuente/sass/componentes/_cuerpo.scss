@@ -2,7 +2,6 @@
 main {
   text-align: center;
 
-
   .index {
     padding: 150px;
   }
@@ -159,6 +158,11 @@ main {
     flex-direction: row;
     overflow: hidden;
 
+    article {
+      img {
+        width: 200px;
+      }
+    }
     .derecha2 {
       border: 1px solid;
       height: 50px;
@@ -183,6 +187,7 @@ main {
       display: block;
     }
 
+
   }
 
   .categorias2 {
@@ -193,6 +198,13 @@ main {
     margin-top: 100px;
     margin-bottom: 100px;
     overflow: hidden;
+
+    article {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
 
     .desplazamiento {
       display: flex;

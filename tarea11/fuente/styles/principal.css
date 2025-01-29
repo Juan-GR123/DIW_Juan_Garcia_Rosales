@@ -321,6 +321,9 @@ main .libros {
   flex-direction: row;
   overflow: hidden;
 }
+main .libros article img {
+  width: 200px;
+}
 main .libros .derecha2 {
   border: 1px solid;
   height: 50px;
@@ -348,6 +351,10 @@ main .categorias2 {
   margin-top: 100px;
   margin-bottom: 100px;
   overflow: hidden;
+}
+main .categorias2 article img {
+  width: 100px;
+  height: 100px;
 }
 main .categorias2 .desplazamiento {
   display: flex;
@@ -455,8 +462,27 @@ footer .pie {
   justify-content: space-around;
   padding: 20px;
 }
+footer .pie .contacto p strong {
+  font-size: larger;
+}
+footer .pie .link {
+  margin-bottom: 20px;
+}
+footer .pie .link p strong {
+  font-size: larger;
+}
+footer .pie .link a {
+  color: white;
+  text-decoration: none;
+}
+footer .pie .link a:hover {
+  text-decoration: underline;
+}
 footer p {
   margin: 0;
+}
+footer .terminos p strong {
+  font-size: larger;
 }
 footer .terminos a {
   color: white;
@@ -683,7 +709,6 @@ footer .pie {
   }
   footer {
     position: relative;
-    top: 170px;
   }
   .footerP {
     top: 100px;
@@ -739,9 +764,6 @@ footer .pie {
   }
   section .categorias li {
     font-size: 30px;
-  }
-  main {
-    margin-bottom: 200px;
   }
   main h1 {
     font-size: xxx-large;
@@ -819,8 +841,9 @@ footer .pie {
   section .categorias li {
     font-size: 50px;
   }
-  main {
-    margin-bottom: 200px;
+  main h1 {
+    font-size: 70px;
+    max-width: none;
   }
   main .titulo h1 {
     font-size: 100px;

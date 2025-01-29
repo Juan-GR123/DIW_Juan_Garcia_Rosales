@@ -4,7 +4,7 @@ footer {
     color: white;
     //margin-top: 190px;
     padding: 20px 0;
-  
+
     .redes_S {
       >img {
         height: 40px;
@@ -23,6 +23,31 @@ footer {
       display: flex;
       justify-content: space-around;
       padding: 20px;
+      
+      .contacto{
+        p{
+          strong{
+            font-size: larger;
+          }
+        }
+      }
+      
+      .link{
+        margin-bottom: 20px;
+      p{
+        strong{
+          font-size: larger;
+        }
+      }
+        a{
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
     }
   
     p {
@@ -30,6 +55,11 @@ footer {
     }
   
     .terminos {
+      p{
+        strong{
+          font-size: larger;
+        }
+      }
       a {
         color: white;
         text-decoration: none;
