@@ -800,6 +800,9 @@ footer .pie {
   main .titulo h1 {
     font-size: 70px;
   }
+  main .titulo .iniciar_sesion {
+    font-size: 40px;
+  }
   main .eventos article img {
     width: 500px;
   }
@@ -863,6 +866,9 @@ footer .pie {
   main .titulo h1 {
     font-size: 100px;
     max-width: none;
+  }
+  main .titulo .iniciar_sesion {
+    font-size: 40px;
   }
   main .botones .boton1 {
     font-size: 50px;
