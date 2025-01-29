@@ -1,5 +1,5 @@
 /*funciones*/
-
-  @function pequenio($tam, $porcentaje: 10%) {
-    @return $tam * (1 - ($porcentaje / 100));
-  }
+//reducir tamaño de la letra
+@function pequenio($tam, $porcentaje: 10%) {
+  @return $tam * (1 - ($porcentaje / 100));
+}

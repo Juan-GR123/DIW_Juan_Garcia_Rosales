@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,20 +16,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Permanent+Marker&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./styles/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">    
-   <script src="../js/eventos.js" defer></script>  
-   <script src="../js/libros.js" defer></script>  
-   <script src="../js/categorias.js" defer></script>  
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="../js/eventos.js" defer></script>
+    <script src="../js/libros.js" defer></script>
+    <script src="../js/categorias.js" defer></script>
 </head>
+
 <body>
     <!--Para esta pagina poner clases a las etiquetas para diferenciarlas en estilos.scss-->
     <header class="headerP">
         <picture>
             <source srcset="../img/icono-libro-256px.webp" type="image/webp">
-              <source srcset="../img/icono-libro-256px.png" type="image/png">
-              <a href="./pagina_Principal.html"><img src="../img/icono-libro-256px.jpg" alt="Logo"></a>
-          </picture>
+            <source srcset="../img/icono-libro-256px.png" type="image/png">
+            <a href="./pagina_Principal.html"><img src="../img/icono-libro-256px.jpg" alt="Logo"></a>
+        </picture>
         <input name="busca" id="valor" placeholder="Buscador" class="busca">
         <section class="enlaces">
 
@@ -62,96 +64,117 @@
     <main class="mainP">
         <section class="titulo">
             <div class="texto">
-            <h1>Bienvenido a la página principal</h1>
+                <h1>Bienvenido a la página principal</h1>
             </div>
             <button class="iniciar_sesion">Iniciar sesion</button>
         </section>
 
         <h2>Eventos</h2>
         <section class="eventos">
-            <button class="izquierda"><<</button>
-            <article class="evento1">
-                <picture>
-                    <source srcset="../img/foto-libreria2-480px.webp" type="image/webp" media="(min-width: 480px)" width="390px"> 
-                    <source srcset="../img/foto-libreria2-480px.png" type="image/png" media="(min-width: 480px)" width="390px">
-                    <img src="../img/foto-libreria2-480px.jpg">
-                </picture>
+            <button class="izquierda">
+                <<< /button>
+                    <article class="evento1">
+                        <picture>
+                            <source srcset="../img/foto-libreria2-480px.webp" type="image/webp"
+                                media="(min-width: 480px)" width="390px">
+                            <source srcset="../img/foto-libreria2-480px.png" type="image/png" media="(min-width: 480px)"
+                                width="390px">
+                            <img src="../img/foto-libreria2-480px.jpg">
+                        </picture>
 
-                <p>Evento: “Curso de Narrativa de lunes a jueves de 17:00 a 18:00” </p>
-            </article>
-            <article class="evento2">
-               
-                    <source srcset="../img/estanteria-iluminada-480px.webp" type="image/webp" media="(min-width: 480px)" width="390px"> 
-                    <source srcset="../img/estanteria-iluminada-480px.png" type="image/png" media="(min-width: 480px)" width="390px">
-                <img src="../img/estanteria-iluminada-480px.jpg"  >
-                <p>Evento: “¡¡¡J.K. Rowling viene a visitarnos el viernes 29 de Enero a las 12:00!!!”</p>
-            </article>
-            <article class="evento3">
-                <picture>
-                    <source srcset="../img/estanteria-antigua-480px.webp" type="image/webp" media="(min-width: 480px)" width="390px"> 
-                    <source srcset="../img/estanteria-antigua-480px.png" type="image/png" media="(min-width: 480px)" width="390px">
-                    <img src="../img/estanteria-antigua-480px.jpg">
-                </picture>
-                
-                <p>Evento: ”Club de lectura para aficionados. Los sábados y domingos de 10:00 a 
-                    11:00”</p>
-            </article>
-            <button class="derecha">>></button>
+                        <p>Evento: “Curso de Narrativa de lunes a jueves de 17:00 a 18:00” </p>
+                    </article>
+                    <article class="evento2">
+
+                        <source srcset="../img/estanteria-iluminada-480px.webp" type="image/webp"
+                            media="(min-width: 480px)" width="390px">
+                        <source srcset="../img/estanteria-iluminada-480px.png" type="image/png"
+                            media="(min-width: 480px)" width="390px">
+                        <img src="../img/estanteria-iluminada-480px.jpg">
+                        <p>Evento: “¡¡¡J.K. Rowling viene a visitarnos el viernes 29 de Enero a las 12:00!!!”</p>
+                    </article>
+                    <article class="evento3">
+                        <picture>
+                            <source srcset="../img/estanteria-antigua-480px.webp" type="image/webp"
+                                media="(min-width: 480px)" width="390px">
+                            <source srcset="../img/estanteria-antigua-480px.png" type="image/png"
+                                media="(min-width: 480px)" width="390px">
+                            <img src="../img/estanteria-antigua-480px.jpg">
+                        </picture>
+
+                        <p>Evento: ”Club de lectura para aficionados. Los sábados y domingos de 10:00 a
+                            11:00”</p>
+                    </article>
+                    <button class="derecha">>></button>
         </section>
         <h2>Libros novedosos</h2>
         <section class="libros">
-            <button class="izquierda2"><<</button>
-            <article class="libro">
-                <picture>
-                    <source srcset="../img/Amor_de_verano_portada-2560px.webp" type="image/webp" media="(min-width: 2560px)"> 
-                    <source srcset="../img/Amor_de_verano_portada-2560px.png" type="image/png" media="(min-width: 2560px)">
-                    <img src="../img/Amor_de_verano_portada-2560px.jpg" alt="libro1">
-                </picture>
-            </article>
-            <article class="libro">
-                <picture>
-                    <source srcset="../img/libro-exilio-2560px.webp" type="image/webp" media="(min-width: 2560px)"> 
-                    <source srcset="../img/libro-exilio-2560px.png" type="image/png" media="(min-width: 2560px)"> 
-                    <img src="../img/libro-exilio-2560px.jpg" alt="libro2">
-                </picture>      
-            </article>
-            <article class="libro">
-                <picture>
-                    <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-2560px.webp" type="image/webp" media="(min-width: 2560px)"> 
-                    <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-2560px.png" type="image/png" media="(min-width: 2560px)"> 
-                    <img src="../img/Portada_del_libro_La_Sinfonía_del_Mar-2560px.jpg" alt="libro3">
-                </picture>
-            </article>
-            <button class="derecha2">>></button>
+            <button class="izquierda2">
+                <<< /button>
+                    <article class="libro">
+                        <picture>
+                            <source srcset="../img/Amor_de_verano_portada-2560px.webp" type="image/webp"
+                                media="(min-width: 2560px)">
+                            <source srcset="../img/Amor_de_verano_portada-2560px.png" type="image/png"
+                                media="(min-width: 2560px)">
+                            <img src="../img/Amor_de_verano_portada-2560px.jpg" alt="libro1">
+                        </picture>
+                    </article>
+                    <article class="libro">
+                        <picture>
+                            <source srcset="../img/libro-exilio-2560px.webp" type="image/webp"
+                                media="(min-width: 2560px)">
+                            <source srcset="../img/libro-exilio-2560px.png" type="image/png"
+                                media="(min-width: 2560px)">
+                            <img src="../img/libro-exilio-2560px.jpg" alt="libro2">
+                        </picture>
+                    </article>
+                    <article class="libro">
+                        <picture>
+                            <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-2560px.webp" type="image/webp"
+                                media="(min-width: 2560px)">
+                            <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-2560px.png" type="image/png"
+                                media="(min-width: 2560px)">
+                            <img src="../img/Portada_del_libro_La_Sinfonía_del_Mar-2560px.jpg" alt="libro3">
+                        </picture>
+                    </article>
+                    <button class="derecha2">>></button>
         </section>
         <section class="categorias2">
-            <button class="izquierda3"><<</button>
-            <div class="desplazamiento">
-            <article class="cat">
-                <picture>
-                    <source srcset="../img/categoria-terror--480px.webp" type="image/webp" media="(min-width: 480px)">
-                    <source srcset="../img/categoria-terror--480px.png" type="image/png" media="(min-width: 480px)"> 
-                    <img src="../img/categoria-terror--480px.jpg" alt="terror">
-                </picture> 
-                <p>Terror</p>
-            </article>
-            <article class="cat">
-                <picture>
-                    <source srcset="../img/categoria-fantasia-480px.webp" type="image/webp" media="(min-width: 480px)">
-                    <source srcset="../img/categoria-fantasia-480px.png" type="image/png" media="(min-width: 480px)">
-                    <img src="../img/categoria-fantasia-480px.jpg" alt="fantasia">
-                </picture>
-                <p>Fantasia</p>
-            </article>
-            <article class="cat">
-                <picture>
-                    <source srcset="../img/categoria-ciencia-ficcion-480px.webp" type="image/webp" media="(min-width: 480px)">
-                    <source srcset="../img/categoria-ciencia-ficcion-480px.png" type="image/png" media="(min-width: 480px)">
-                    <img src="../img/categoria-ciencia-ficcion-480px.jpg" alt="ficcion">
-                </picture>
-                <p>Ciencia ficcion</p>
-            </article>
-            <!--  <article class="cat">
+            <button class="izquierda3">
+                <<< /button>
+                    <div class="desplazamiento">
+                        <article class="cat">
+                            <picture>
+                                <source srcset="../img/categoria-terror--480px.webp" type="image/webp"
+                                    media="(min-width: 480px)">
+                                <source srcset="../img/categoria-terror--480px.png" type="image/png"
+                                    media="(min-width: 480px)">
+                                <img src="../img/categoria-terror--480px.jpg" alt="terror">
+                            </picture>
+                            <p>Terror</p>
+                        </article>
+                        <article class="cat">
+                            <picture>
+                                <source srcset="../img/categoria-fantasia-480px.webp" type="image/webp"
+                                    media="(min-width: 480px)">
+                                <source srcset="../img/categoria-fantasia-480px.png" type="image/png"
+                                    media="(min-width: 480px)">
+                                <img src="../img/categoria-fantasia-480px.jpg" alt="fantasia">
+                            </picture>
+                            <p>Fantasia</p>
+                        </article>
+                        <article class="cat">
+                            <picture>
+                                <source srcset="../img/categoria-ciencia-ficcion-480px.webp" type="image/webp"
+                                    media="(min-width: 480px)">
+                                <source srcset="../img/categoria-ciencia-ficcion-480px.png" type="image/png"
+                                    media="(min-width: 480px)">
+                                <img src="../img/categoria-ciencia-ficcion-480px.jpg" alt="ficcion">
+                            </picture>
+                            <p>Ciencia ficcion</p>
+                        </article>
+                        <!--  <article class="cat">
                 <img src="../img/categoria-accion-6000px.jpeg" alt="accion" width="100px" height="100px">
                 <p>Accion</p>
             </article>
@@ -159,11 +182,11 @@
                 <img src="../img/categoria-misterio-1024px.jpg" alt="accion" width="100px" height="100px">
                 <p>Misterio</p>
             </article>  -->
-            </div>
-            <button class="derecha3">>></button>
+                    </div>
+                    <button class="derecha3">>></button>
         </section>
-       
-        
+
+
     </main>
     <footer class="footerP">
         <article class="redes_S">
@@ -175,8 +198,8 @@
         <section class="pie">
             <article class="contacto">
                 <p><strong>Contacto</strong><br></p>
-                <p>  Madrid: 000 00 00 00</p>
-                 <p> Granada: 000 00 00 00</p>
+                <p> Madrid: 000 00 00 00</p>
+                <p> Granada: 000 00 00 00</p>
             </article>
             <article class="link">
                 <p><strong>Links</strong></p>
@@ -184,11 +207,12 @@
             </article>
             <article class="terminos">
                 <p><strong>Términos y condiciones</strong><br></p>
-                 <p>   Política de privacidad: <a href="https://www.politicapri.com/">https://www.politicapri.com/</a></p>
-                  <p>  Términos de uso: <a href="https://www.terminosuso.com/">https://www.terminosuso.com/</a></p>
+                <p> Política de privacidad: <a href="https://www.politicapri.com/">https://www.politicapri.com/</a></p>
+                <p> Términos de uso: <a href="https://www.terminosuso.com/">https://www.terminosuso.com/</a></p>
             </article>
         </section>
     </footer>
- 
+
 </body>
+
 </html>

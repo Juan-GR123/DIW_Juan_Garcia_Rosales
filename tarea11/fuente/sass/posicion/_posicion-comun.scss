@@ -1,26 +1,26 @@
-main{
+main {
     text-align: center;
 
-    .titulo{
-    background-image: url(../img/foto-libreria-1920px.jpg);
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    .titulo {
+        background-image: url(../img/foto-libreria-1920px.jpg);
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
-    .eventos{
-            display: flex;
-            gap: 50px;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            margin-block: 30px;
-            margin-inline: 30px;
-            overflow: hidden;
+    .eventos {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-block: 30px;
+        margin-inline: 30px;
+        overflow: hidden;
     }
 
-    .libros{
+    .libros {
         display: flex;
         gap: 100px;
         justify-content: center;

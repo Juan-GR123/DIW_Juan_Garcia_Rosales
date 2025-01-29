@@ -1,72 +1,75 @@
 /*Footer*/
 footer {
-    background-color: #a4c3cf;
-    color: white;
-    //margin-top: 190px;
-    padding: 20px 0;
+  background-color: #a4c3cf;
+  color: white;
+  //margin-top: 190px;
+  padding: 20px 0;
 
-    .redes_S {
-      >img {
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        margin-left: 50px;
-      }
+  .redes_S {
+    >img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-left: 50px;
     }
-  
-    .linea {
-      height: 1px;
-      background-color: black;
-    }
-  
-    .pie {
-      display: flex;
-      justify-content: space-around;
-      padding: 20px;
-      
-      .contacto{
-        p{
-          strong{
-            font-size: larger;
-          }
-        }
-      }
-      
-      .link{
-        margin-bottom: 20px;
-      p{
-        strong{
+  }
+
+  .linea {
+    height: 1px;
+    background-color: black;
+  }
+
+  .pie {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    .contacto {
+      p {
+        strong {
           font-size: larger;
         }
       }
-        a{
-          color: white;
-          text-decoration: none;
+    }
 
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  
-    p {
-      margin: 0;
-    }
-  
-    .terminos {
-      p{
-        strong{
+    .link {
+      margin-bottom: 20px;
+
+      p {
+        strong {
           font-size: larger;
         }
       }
+
       a {
         color: white;
         text-decoration: none;
-  
+
         &:hover {
           text-decoration: underline;
         }
       }
     }
-  }  
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .terminos {
+    p {
+      strong {
+        font-size: larger;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

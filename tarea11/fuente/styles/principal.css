@@ -26,12 +26,19 @@ html {
   font-size: 100%;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -39,7 +46,13 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, nav {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
   font-weight: bold;
 }
 
@@ -213,7 +226,8 @@ main .botones {
   justify-content: center;
   margin-top: 100px;
   gap: 100px;
-  z-index: 1; /* Botón en la capa principal */
+  z-index: 1;
+  /* Botón en la capa principal */
 }
 main .botones .boton1 {
   background-color: #ffb347;
@@ -393,7 +407,8 @@ main .categorias2 .cat.active {
   flex-direction: column;
   width: 450px;
   height: 700px;
-  z-index: 9999; /* Asegura que quede por encima de todo */
+  z-index: 9999;
+  /* Asegura que quede por encima de todo */
 }
 .bodyR .mainRegistro .divR {
   background-color: #a4c3cf;

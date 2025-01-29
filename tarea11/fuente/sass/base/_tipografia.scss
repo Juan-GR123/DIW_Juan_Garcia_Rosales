@@ -1,7 +1,13 @@
-@use '../global/variables'; 
+@use '../global/variables';
 @use '../global/funciones';
 
-h1, h2, h3, h4, h5, h6, nav {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
   font-weight: bold;
 }
 
@@ -26,7 +32,7 @@ body {
   line-height: 1.5;
 }
 
-footer{
+footer {
   color: variables.$color-menu;
   font-size: variables.$tamaño-fuente-reducida;
   font-weight: bold;

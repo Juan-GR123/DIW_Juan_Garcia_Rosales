@@ -23,7 +23,9 @@ main {
     justify-content: center;
     margin-top: 100px;
     gap: 100px;
-    z-index: 1; /* Botón en la capa principal */
+    z-index: 1;
+
+    /* Botón en la capa principal */
     .boton1 {
       background-color: #ffb347;
       padding: 10px;
@@ -112,11 +114,12 @@ main {
     overflow: hidden;
     /* Oculta imágenes que están fuera del contenedor */
 
-    article{
-        img{
-          width: 390px;
-        }
+    article {
+      img {
+        width: 390px;
+      }
     }
+
     p {
       background-color: black;
       color: white;
@@ -163,6 +166,7 @@ main {
         width: 200px;
       }
     }
+
     .derecha2 {
       border: 1px solid;
       height: 50px;
@@ -253,7 +257,9 @@ main {
     //border: 1px solid black;
     width: 450px;
     height: 700px;
-    z-index: 9999; /* Asegura que quede por encima de todo */
+    z-index: 9999;
+
+    /* Asegura que quede por encima de todo */
     .divR {
 
       background-color: #a4c3cf;
@@ -261,7 +267,7 @@ main {
       height: 500px;
       display: none;
       align-content: center;
-      
+
 
       h2 {
         margin-bottom: 50px;
@@ -286,7 +292,8 @@ main {
       .botonRegistro:hover {
         background: #ffb347;
       }
-      .cerrar{
+
+      .cerrar {
         display: inline-block;
         padding: 10px 20px;
         margin-top: 10px;
@@ -296,6 +303,7 @@ main {
         border-radius: 5px;
         cursor: pointer;
       }
+
       .cerrar:hover {
         background: #ffb347;
       }
