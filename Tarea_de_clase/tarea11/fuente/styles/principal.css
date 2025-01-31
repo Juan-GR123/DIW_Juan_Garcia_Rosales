@@ -397,33 +397,6 @@ main .categorias2 .izquierda3:hover {
 main .categorias2 .cat.active {
   display: block;
 }
-main .titulos {
-  background-color: #2b3a42;
-  display: flex;
-  justify-content: center;
-}
-main .titulos .titulo2 {
-  background-image: url("../img/foto-libreria-interior-1200px.png");
-  padding: 20px;
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-main .titulos h1 {
-  color: #2b3a42;
-  font-size: 40px;
-}
-main .titulos .texto {
-  background-color: rgba(255, 255, 255, 0.514);
-  padding: 10px;
-  border-radius: 30px;
-  grid-row: 1;
-  grid-column: 1/5;
-}
-main .sobreNosotros article img {
-  width: 400px;
-}
 
 .bodyR {
   display: flex;
@@ -477,6 +450,51 @@ main .sobreNosotros article img {
 }
 .bodyR .mainRegistro .divR .cerrar:hover {
   background: #ffb347;
+}
+
+.Nosotros .titulos {
+  background-color: #2b3a42;
+  display: flex;
+  justify-content: center;
+}
+.Nosotros .titulos .titulo2 {
+  background-image: url("../img/foto-libreria-interior-1200px.png");
+  padding: 20px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.Nosotros .titulos h1 {
+  color: #2b3a42;
+  font-size: 40px;
+}
+.Nosotros .titulos .texto {
+  background-color: rgba(255, 255, 255, 0.514);
+  padding: 10px;
+  border-radius: 30px;
+  grid-row: 1;
+  grid-column: 1/5;
+}
+.Nosotros .sobreNosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.Nosotros .sobreNosotros .sobre1 {
+  grid-row: 1;
+}
+.Nosotros .sobreNosotros .sobre1 img {
+  width: 400px;
+}
+.Nosotros .sobreNosotros .sobre2 {
+  grid-row: 2;
+}
+.Nosotros .sobreNosotros .sobre2 img {
+  width: 400px;
+}
+.Nosotros .sobreNosotros .sobre3 {
+  grid-row: 3;
 }
 
 img {

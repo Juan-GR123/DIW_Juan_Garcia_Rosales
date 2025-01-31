@@ -244,45 +244,6 @@ main {
     }
   }
 
-  .titulos {
-    background-color: #2b3a42;
-    display: flex;
-    justify-content: center;
-
-    .titulo2 {
-      background-image: url("../img/foto-libreria-interior-1200px.png");
-
-      padding: 20px;
-      width: 80%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-
-    }
-
-    h1 {
-      color: #2b3a42;
-      font-size: 40px;
-    }
-
-    .texto {
-      background-color: rgba(255, 255, 255, 0.514);
-      padding: 10px;
-      border-radius: 30px;
-      grid-row: 1;
-      grid-column: 1/5;
-
-    }
-  }
-
-  .sobreNosotros{
-    article{
-      img {
-        width: 400px;
-      }
-    }
-  }
-
 
 }
 
@@ -349,5 +310,66 @@ main {
         background: #ffb347;
       }
     }
+  }
+}
+
+
+.Nosotros{
+  .titulos {
+    background-color: #2b3a42;
+    display: flex;
+    justify-content: center;
+
+    .titulo2 {
+      background-image: url("../img/foto-libreria-interior-1200px.png");
+
+      padding: 20px;
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    h1 {
+      color: #2b3a42;
+      font-size: 40px;
+    }
+
+    .texto {
+      background-color: rgba(255, 255, 255, 0.514);
+      padding: 10px;
+      border-radius: 30px;
+      grid-row: 1;
+      grid-column: 1/5;
+
+    }
+  }
+
+  .sobreNosotros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+
+    .sobre1{
+      grid-row: 1;
+      img {
+        width: 400px;
+      }
+    }
+
+    .sobre2{
+      grid-row: 2;
+      img {
+        width: 400px;
+      }
+    }
+
+    .sobre3{
+      grid-row: 3;
+    }
+
+
   }
 }
