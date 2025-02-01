@@ -1,8 +1,11 @@
 /*main*/
+/* Estilos generales para el contenedor principal (main) */
 main {
-  
+
   text-align: center;
   flex-grow: 1;
+
+  /* Estilos para la sección .index dentro de main */
   .index {
     margin-top: 100px;
     display: flex;
@@ -11,6 +14,7 @@ main {
     align-items: center;
   }
 
+  /* Estilos para el título h1 dentro de main */
   h1 {
     font-family: 'Permanent Marker';
     font-size: 30px;
@@ -21,6 +25,7 @@ main {
     margin: auto;
   }
 
+  /* Estilos para los botones dentro de main */
   .botones {
     margin: 20px;
     padding: 15px;
@@ -52,7 +57,7 @@ main {
 
   }
 
-
+  /* Estilos para la sección de colaboradores */
   .colaboradores {
     display: flex;
     justify-content: center;
@@ -76,6 +81,7 @@ main {
     }
   }
 
+  /* Estilos para el título de la sección principal */
   .titulo {
     background-image: url("../img/foto-libreria-1920px.jpg");
     padding: 50px;
@@ -109,6 +115,7 @@ main {
     }
   }
 
+  /* Estilos para la sección de eventos */
   .eventos {
 
     display: flex;
@@ -160,6 +167,7 @@ main {
 
   }
 
+  /* Estilos para la sección de libros */
   .libros {
     display: flex;
     gap: 100px;
@@ -201,6 +209,7 @@ main {
 
   }
 
+  /* Estilos para la sección de categorías */
   .categorias2 {
     display: flex;
     gap: 200px;
@@ -254,11 +263,12 @@ main {
 
 }
 
-
+/* Estilos para la sección (bodyR) */
 .bodyR {
   display: flex;
   justify-content: center;
 
+  /* Contenedor principal del registro */
   .mainRegistro {
     position: fixed;
     align-content: center;
@@ -268,7 +278,8 @@ main {
     height: 700px;
     z-index: 9999;
 
-    /* Asegura que quede por encima de todo */
+    /* Estilos para la sección de formulario */
+    /* Se Asegura que quede por encima de todo */
     .divR {
 
       background-color: #a4c3cf;
@@ -283,16 +294,18 @@ main {
         margin-bottom: 50px;
       }
 
-      #FormularioRegistro{
+      /* Estilos para el formulario de registro */
+      #FormularioRegistro {
         display: flex;
         flex-direction: column;
-       
+
 
         label {
           font-size: 20px;
           font-weight: bolder;
         }
-  
+
+        /* Estilos para el botón de registro */
         .botonRegistro {
           display: inline-block;
           padding: 10px 20px;
@@ -303,11 +316,13 @@ main {
           border-radius: 5px;
           cursor: pointer;
         }
-  
+
+        /* Efecto hover para el botón de registro */
         .botonRegistro:hover {
           background: #ffb347;
         }
-  
+
+        /* Estilos para el botón de cerrar */
         .cerrar {
           display: inline-block;
           padding: 10px 20px;
@@ -318,22 +333,27 @@ main {
           border-radius: 5px;
           cursor: pointer;
         }
-  
+
+        /* Efecto hover para el botón de cerrar */
         .cerrar:hover {
           background: #ffb347;
         }
       }
-      
+
     }
   }
 }
 
-.Nosotros{
+/* Estilos para la sección "Nosotros" */
+.Nosotros {
+
+  /* Estilo para los títulos dentro de la sección "Nosotros" */
   .titulos {
     background-color: #2b3a42;
     display: flex;
     justify-content: center;
 
+    /* Estilo para la sección de la imagen de fondo */
     .titulo2 {
       background-image: url("../img/foto-libreria-interior-1200px.png");
 
@@ -345,11 +365,13 @@ main {
 
     }
 
+    /* Estilo para el título dentro de la sección */
     h1 {
       color: #2b3a42;
       font-size: 40px;
     }
 
+    /* Estilos para el bloque de texto dentro de la sección */
     .texto {
       background-color: rgba(255, 255, 255, 0.514);
       padding: 10px;
@@ -360,27 +382,33 @@ main {
     }
   }
 
-  .sobreNosotros{
+  /* Estilos para la sección "Sobre nosotros" */
+  .sobreNosotros {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 
 
-    .sobre1{
+    /* Estilo para el primer articulo en "Sobre nosotros" */
+    .sobre1 {
       grid-row: 1;
+
       img {
         width: 400px;
       }
     }
 
-    .sobre2{
+    /* Estilo para el segundo articulo en "Sobre nosotros" */
+    .sobre2 {
       grid-row: 2;
+
       img {
         width: 400px;
       }
     }
 
-    .sobre3{
+    /* Estilo para el tercer articulo en "Sobre nosotros" */
+    .sobre3 {
       grid-row: 3;
     }
 

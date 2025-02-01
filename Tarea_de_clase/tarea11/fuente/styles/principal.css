@@ -229,9 +229,18 @@ section .categorias > li ul li a:hover {
 }
 
 /*main*/
+/* Estilos generales para el contenedor principal (main) */
 main {
   text-align: center;
   flex-grow: 1;
+  /* Estilos para la sección .index dentro de main */
+  /* Estilos para el título h1 dentro de main */
+  /* Estilos para los botones dentro de main */
+  /* Estilos para la sección de colaboradores */
+  /* Estilos para el título de la sección principal */
+  /* Estilos para la sección de eventos */
+  /* Estilos para la sección de libros */
+  /* Estilos para la sección de categorías */
 }
 main .index {
   margin-top: 100px;
@@ -429,9 +438,11 @@ main .categorias2 .cat.active {
   display: block;
 }
 
+/* Estilos para la sección (bodyR) */
 .bodyR {
   display: flex;
   justify-content: center;
+  /* Contenedor principal del registro */
 }
 .bodyR .mainRegistro {
   position: fixed;
@@ -440,7 +451,8 @@ main .categorias2 .cat.active {
   width: 450px;
   height: 700px;
   z-index: 9999;
-  /* Asegura que quede por encima de todo */
+  /* Estilos para la sección de formulario */
+  /* Se Asegura que quede por encima de todo */
 }
 .bodyR .mainRegistro .divR {
   background-color: #a4c3cf;
@@ -450,6 +462,7 @@ main .categorias2 .cat.active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* Estilos para el formulario de registro */
 }
 .bodyR .mainRegistro .divR h2 {
   margin-bottom: 50px;
@@ -457,6 +470,10 @@ main .categorias2 .cat.active {
 .bodyR .mainRegistro .divR #FormularioRegistro {
   display: flex;
   flex-direction: column;
+  /* Estilos para el botón de registro */
+  /* Efecto hover para el botón de registro */
+  /* Estilos para el botón de cerrar */
+  /* Efecto hover para el botón de cerrar */
 }
 .bodyR .mainRegistro .divR #FormularioRegistro label {
   font-size: 20px;
@@ -489,10 +506,18 @@ main .categorias2 .cat.active {
   background: #ffb347;
 }
 
+/* Estilos para la sección "Nosotros" */
+.Nosotros {
+  /* Estilo para los títulos dentro de la sección "Nosotros" */
+  /* Estilos para la sección "Sobre nosotros" */
+}
 .Nosotros .titulos {
   background-color: #2b3a42;
   display: flex;
   justify-content: center;
+  /* Estilo para la sección de la imagen de fondo */
+  /* Estilo para el título dentro de la sección */
+  /* Estilos para el bloque de texto dentro de la sección */
 }
 .Nosotros .titulos .titulo2 {
   background-image: url("../img/foto-libreria-interior-1200px.png");
@@ -517,6 +542,9 @@ main .categorias2 .cat.active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  /* Estilo para el primer articulo en "Sobre nosotros" */
+  /* Estilo para el segundo articulo en "Sobre nosotros" */
+  /* Estilo para el tercer articulo en "Sobre nosotros" */
 }
 .Nosotros .sobreNosotros .sobre1 {
   grid-row: 1;
