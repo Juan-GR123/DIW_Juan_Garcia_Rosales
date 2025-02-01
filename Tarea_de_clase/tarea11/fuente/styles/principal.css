@@ -13,13 +13,16 @@ h3 {
 }
 
 /*mixins*/
-/*estructuras-control*/
+/* Definición de estructuras de control */
+/* Variable que define el tema de color de la página */
 header {
+  /* Condición que verifica si el tema es "azul-claro" */
   background-color: #a4c3cf;
   color: white;
 }
 
-/* Importamos variables sin usar '*' como alias */
+/* Importamos las variables de la carpeta global desde el archivo variables.scss */
+/* Estilos globales para todos los elementos y sus pseudo-elementos */
 *,
 *::before,
 *::after {
@@ -47,19 +50,20 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Elimina los márgenes predeterminados para estos elementos */
+  padding: 0; /* Elimina los rellenos predeterminados para mantener un diseño uniforme */
 }
 
 ul,
 ol {
-  list-style: none;
+  list-style: none; /* Elimina los estilos de viñetas y numeración en listas */
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /* Quita el subrayado de los enlaces */
 }
 
+/* Importamos archivos de la carpeta global */
 /*La tipografia general de la página*/
 h1,
 h2,
@@ -68,25 +72,26 @@ h4,
 h5,
 h6,
 nav {
-  font-weight: bold;
+  font-weight: bold; /* Aplica negrita a los encabezados y la navegación */
 }
 
 p {
-  font-size: 16px;
+  font-size: 16px; /* Asigna el tamaño base de fuente definido en las variables */
 }
 
 body {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.5; /* Establece la altura de línea para mejorar la legibilidad */
 }
 
 footer {
   color: #ffffff;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: bold; /* Aplica negrita al texto del pie de página */
 }
 
 /*header*/
+/* Estilos para el header */
 header {
   display: flex;
   flex-grow: 2;
@@ -94,11 +99,18 @@ header {
   align-items: center;
   background-color: #a4c3cf;
   padding: 10px 20px;
+  /* Estilos para las imágenes dentro del header (por ejemplo, el logo) */
+  /* Estilos para los botones dentro de la clase 'enlaces' */
+  /* Efectos de hover en los botones 'iniciar' y 'comprar', es decir solo funcionaran si se deja el cursor encima de los respectivos botones*/
+  /* Estilos para el buscador */
 }
 header img {
   width: 40px;
   height: auto;
   border-radius: 50%;
+}
+header .enlaces {
+  /* Estilos para el enlace 'registrar' */
 }
 header .enlaces button {
   text-decoration: none;
@@ -108,6 +120,8 @@ header .enlaces button {
   color: black;
   background-color: #a4c3cf;
   cursor: pointer;
+  /* Estilos específicos para el botón 'iniciar' */
+  /* Estilos específicos para el botón 'comprar' */
 }
 header .enlaces button.iniciar {
   color: white;
@@ -141,6 +155,7 @@ header #valor {
   width: 300px;
 }
 
+/* Estilos para la clase categorías dentro de una sección */
 section .categorias {
   list-style-type: none;
   /* Elimina los puntos de la lista */
@@ -154,7 +169,13 @@ section li {
 }
 
 section {
-  /* Submenú */
+  /* Nuevos estilos para la clase categorías (con submenús) */
+  /* Estilos para cada elemento de la lista de categorías */
+  /* Efecto de hover(mantener el cursos encima del elemento) en los elementos de la lista de categorías */
+  /* Estilos para los submenús */
+  /* Muestra el submenú cuando el elemento principal tiene el cursor encima */
+  /* Estilos para los elementos dentro del submenú */
+  /* Estilos para los enlaces dentro de los elementos de la lista y submenú */
 }
 section .categorias {
   display: flex;
@@ -519,6 +540,7 @@ img {
 }
 
 /*Footer*/
+/* Estilos para el footer */
 footer {
   position: fixed;
   bottom: 0;
@@ -528,10 +550,15 @@ footer {
   padding: 10px;
   background-color: #a4c3cf;
   color: white;
+  /* Estilos para la sección de redes sociales dentro del footer */
+  /* Estilo para una línea divisoria */
+  /* Estilos para la sección del pie dentro del footer */
+  /* Estilos para la sección de términos dentro del footer */
 }
 footer .redes_S {
   display: flex;
   gap: 30px;
+  /* Estilos para las imágenes de las redes sociales */
 }
 footer .redes_S img {
   height: 40px;
@@ -547,12 +574,19 @@ footer .pie {
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  /* Estilos para la sección de contacto dentro del pie */
+  /* Estilos para la sección de enlaces dentro del pie */
+}
+footer .pie .contacto {
+  /* Estilos para los párrafos dentro de la sección de contacto */
 }
 footer .pie .contacto p strong {
   font-size: larger;
 }
 footer .pie .link {
   margin-bottom: 20px;
+  /* Estilos para los párrafos dentro de la sección de enlaces */
+  /* Estilos para los enlaces dentro de esta sección */
 }
 footer .pie .link p strong {
   font-size: larger;
@@ -567,6 +601,10 @@ footer .pie .link a:hover {
 footer p {
   margin: 0;
 }
+footer .terminos {
+  /* Estilos para los párrafos dentro de la sección de términos */
+  /* Estilos para los enlaces dentro de la sección de términos */
+}
 footer .terminos p strong {
   font-size: larger;
 }
@@ -578,8 +616,13 @@ footer .terminos a:hover {
   text-decoration: underline;
 }
 
+/* Estilos principales para el contenedor 'main' */
 main {
+  /* Centra el texto dentro del contenedor 'main' */
   text-align: center;
+  /* Estilos para el contenedor con la clase 'titulo' dentro de 'main' */
+  /* Estilos para el contenedor con la clase 'eventos' dentro de 'main' */
+  /* Estilos para el contenedor con la clase 'libros' dentro de 'main' */
 }
 main .titulo {
   background-image: url(../img/foto-libreria-1920px.jpg);
@@ -608,21 +651,32 @@ main .libros {
 }
 
 header {
+  /* Se usa flex para organizar los elementos dentro de la cabecera */
   display: flex;
+  /* Hace que el header ocupe el espacio disponible en su contenedor */
   flex-grow: 2;
+  /* Distribuye el espacio entre los elementos de la cabecera */
   justify-content: space-between;
+  /* Alinea los elementos de la cabecera en el centro verticalmente */
   align-items: center;
 }
 
+footer {
+  /* Estilos para el contenedor dentro del footer con la clase 'pie' */
+}
 footer .pie {
+  /* Usa flex para organizar los elementos dentro del 'pie' */
   display: flex;
+  /* Distribuye los elementos de manera uniforme a lo largo del eje horizontal */
   justify-content: space-around;
+  /* Agrega espacio alrededor de los elementos dentro del 'pie' */
   padding: 20px;
 }
 
 /*media-queries*/
 /* tamaños de Media Queries */
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+  /* Estilos aplicados cuando el ancho de pantalla está entre 300px y 767px (dispositivos móviles pequeños) */
   header .enlaces a {
     font-size: 13px;
     margin-right: 0;
@@ -732,6 +786,7 @@ footer .pie {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
+  /* Estilos para pantallas entre 768px y 1000px, típicas de tabletas*/
   header #valor {
     padding: 5px;
     width: 300px;
@@ -783,6 +838,7 @@ footer .pie {
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1360px) {
+  /* Estilos para pantallas entre 1000px y 1360px, como en pantallas más grandes */
   main {
     text-align: center;
     position: relative;
@@ -804,6 +860,11 @@ footer .pie {
   .mainP .categorias2 {
     margin-bottom: 0px;
   }
+  /*footer {
+    //position: relative;
+    //top: 100px;
+
+  }*/
   .footerP {
     position: relative;
     top: 100px;
@@ -834,12 +895,14 @@ footer .pie {
   }
 }
 @media only screen and (min-width: 1500px) and (max-width: 1820px) {
+  /* Estilos para pantallas entre 1500px y 1820px */
   footer {
     position: relative;
     top: 100px;
   }
 }
 @media only screen and (min-width: 1800px) and (max-width: 1920px) {
+  /* Estilos para pantallas grandes, entre 1800px y 1920px */
   header picture img {
     width: 100px;
     height: 100px;
@@ -925,6 +988,7 @@ footer .pie {
   }
 }
 @media only screen and (min-width: 2000px) and (max-width: 3000px) {
+  /* Media Query para pantallas extra grandes (2000px a 3000px) */
   header picture img {
     width: 100px;
     height: 100px;

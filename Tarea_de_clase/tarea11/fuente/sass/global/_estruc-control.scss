@@ -1,12 +1,15 @@
-/*estructuras-control*/
+/* Definición de estructuras de control */
+
+/* Variable que define el tema de color de la página */
 $tema: "azul-claro";
 
 header {
+    /* Condición que verifica si el tema es "azul-claro" */
     @if $tema=="azul-claro" {
         background-color: #a4c3cf;
         color: white;
     }
-
+  /* Si el tema no es "azul-claro", aplica otro estilo */
     @else {
         background-color: #36566a;
         color: white;

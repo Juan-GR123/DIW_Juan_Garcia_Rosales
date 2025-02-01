@@ -1,6 +1,7 @@
 @use '../global/variables';
 @use '../global/funciones';
 @use '../global/operadores';
+/* Importamos archivos de la carpeta global */
 
 /*La tipografia general de la página*/
 h1,
@@ -10,21 +11,21 @@ h4,
 h5,
 h6,
 nav {
-  font-weight: bold;
+  font-weight: bold; /* Aplica negrita a los encabezados y la navegación */
 }
 
 
 p {
-  font-size: variables.$tamaño-base-fuente;
+  font-size: variables.$tamaño-base-fuente; /* Asigna el tamaño base de fuente definido en las variables */
 }
 
 body {
   font-size: variables.$tamaño-base-fuente;
-  line-height: 1.5;
+  line-height: 1.5; /* Establece la altura de línea para mejorar la legibilidad */
 }
 
 footer {
   color: variables.$color-menu;
   font-size: variables.$tamaño-fuente-reducida;
-  font-weight: bold;
+  font-weight: bold; /* Aplica negrita al texto del pie de página */
 }

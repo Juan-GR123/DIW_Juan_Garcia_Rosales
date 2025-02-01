@@ -24,21 +24,26 @@
 </head>
 
 <body>
+    <!-- Contenedor principal de la página -->
     <!--Para esta pagina poner clases a las etiquetas para diferenciarlas en estilos.scss-->
     <header class="headerP">
+        <!-- Logo con enlace a la página principal -->
         <picture>
             <source srcset="../img/icono-libro-256px.webp" type="image/webp">
             <source srcset="../img/icono-libro-256px.png" type="image/png">
             <a href="./pagina_Principal.html"><img src="../img/icono-libro-256px.jpg" alt="Logo"></a>
         </picture>
+        <!-- Campo de búsqueda -->
         <input name="busca" id="valor" placeholder="Buscador" class="busca">
-        <section class="enlaces">
 
+        <!-- Sección de enlaces de usuario -->
+        <section class="enlaces">
             <i class="fa-solid fa-user"></i>
             <button class="iniciar">Iniciar sesión</button>
             <button class="comprar">Comprar</button>
         </section>
     </header>
+    <!-- Menú de categorías -->
     <section>
         <ul class="categorias">
             <li>Ofertas</li>
@@ -62,6 +67,7 @@
         </ul>
     </section>
     <main class="mainP" id="mainP">
+        <!-- Sección de bienvenida -->
         <section class="titulo">
             <article class="texto">
                 <h1>Bienvenido a la página principal</h1>
@@ -69,6 +75,7 @@
             <button class="iniciar_sesion">Iniciar sesion</button>
         </section>
 
+        <!-- Sección de eventos -->
         <h2>Eventos</h2>
         <section class="eventos">
             <button class="izquierda">&lt;&lt;</button>
@@ -82,10 +89,12 @@
                 <p>Evento: “Curso de Narrativa de lunes a jueves de 17:00 a 18:00” </p>
             </article>
             <article class="evento2">
-
-                <source srcset="../img/estanteria-iluminada-480px.webp" type="image/webp" media="(min-width: 480px)">
-                <source srcset="../img/estanteria-iluminada-480px.png" type="image/png" media="(min-width: 480px)">
-                <img src="../img/estanteria-iluminada-480px.jpg">
+                <picture>
+                    <source srcset="../img/estanteria-iluminada-480px.webp" type="image/webp"
+                        media="(min-width: 480px)">
+                    <source srcset="../img/estanteria-iluminada-480px.png" type="image/png" media="(min-width: 480px)">
+                    <img src="../img/estanteria-iluminada-480px.jpg">
+                </picture>
                 <p>Evento: “¡¡¡J.K. Rowling viene a visitarnos el viernes 29 de Enero a las 12:00!!!”</p>
             </article>
             <article class="evento3">
@@ -100,6 +109,7 @@
             </article>
             <button class="derecha">>></button>
         </section>
+        <!-- Sección de libros novedosos -->
         <h2>Libros novedosos</h2>
         <section class="libros">
             <button class="izquierda2">&lt;&lt;</button>
@@ -130,39 +140,37 @@
             </article>
             <button class="derecha2">>></button>
         </section>
+
         <section class="categorias2">
             <button class="izquierda3">&lt;&lt;</button>
-            
-                <article class="cat">
-                    <picture>
-                        <source srcset="../img/categoria-terror--480px.webp" type="image/webp"
-                            media="(min-width: 480px)">
-                        <source srcset="../img/categoria-terror--480px.png" type="image/png" media="(min-width: 480px)">
-                        <img src="../img/categoria-terror--480px.jpg" alt="terror">
-                    </picture>
-                    <p>Terror</p>
-                </article>
-                <article class="cat">
-                    <picture>
-                        <source srcset="../img/categoria-fantasia-480px.webp" type="image/webp"
-                            media="(min-width: 480px)">
-                        <source srcset="../img/categoria-fantasia-480px.png" type="image/png"
-                            media="(min-width: 480px)">
-                        <img src="../img/categoria-fantasia-480px.jpg" alt="fantasia">
-                    </picture>
-                    <p>Fantasia</p>
-                </article>
-                <article class="cat">
-                    <picture>
-                        <source srcset="../img/categoria-ciencia-ficcion-480px.webp" type="image/webp"
-                            media="(min-width: 480px)">
-                        <source srcset="../img/categoria-ciencia-ficcion-480px.png" type="image/png"
-                            media="(min-width: 480px)">
-                        <img src="../img/categoria-ciencia-ficcion-480px.jpg" alt="ficcion">
-                    </picture>
-                    <p>Ciencia ficcion</p>
-                </article>
-                <!--  <article class="cat">
+
+            <article class="cat">
+                <picture>
+                    <source srcset="../img/categoria-terror--480px.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="../img/categoria-terror--480px.png" type="image/png" media="(min-width: 480px)">
+                    <img src="../img/categoria-terror--480px.jpg" alt="terror">
+                </picture>
+                <p>Terror</p>
+            </article>
+            <article class="cat">
+                <picture>
+                    <source srcset="../img/categoria-fantasia-480px.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="../img/categoria-fantasia-480px.png" type="image/png" media="(min-width: 480px)">
+                    <img src="../img/categoria-fantasia-480px.jpg" alt="fantasia">
+                </picture>
+                <p>Fantasia</p>
+            </article>
+            <article class="cat">
+                <picture>
+                    <source srcset="../img/categoria-ciencia-ficcion-480px.webp" type="image/webp"
+                        media="(min-width: 480px)">
+                    <source srcset="../img/categoria-ciencia-ficcion-480px.png" type="image/png"
+                        media="(min-width: 480px)">
+                    <img src="../img/categoria-ciencia-ficcion-480px.jpg" alt="ficcion">
+                </picture>
+                <p>Ciencia ficcion</p>
+            </article>
+            <!--  <article class="cat">
                 <img src="../img/categoria-accion-6000px.jpeg" alt="accion" width="100px" height="100px">
                 <p>Accion</p>
             </article>
@@ -172,16 +180,19 @@
             </article>  -->
             <button class="derecha3">>></button>
         </section>
-
-
     </main>
+    <!-- Pie de página -->
     <footer class="footerP">
+        <!-- Redes sociales -->
         <article class="redes_S">
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-pinterest"></i>
             <i class="fa-brands fa-youtube"></i>
         </article>
+        <!-- Línea divisoria del pie de página -->
         <section class="linea"></section>
+
+        <!-- Información de contacto -->
         <section class="pie">
             <article class="contacto">
                 <p><strong>Contacto</strong><br></p>

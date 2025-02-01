@@ -1,16 +1,21 @@
+// Importa las variables y funciones globales desde otros archivos Sass
 @use '../global/variables';
 @use '../global/funciones';
 
+// Estilo para los encabezados <h1>, <h2> y <h3> utilizando operadores
 
 h1 {
+  // Establece el tamaño de la fuente para <h1> multiplicando la variable $tamaño-base-fuente por 3
     font-size: variables.$tamaño-base-fuente*3;
   }
   
   h2 {
+    // Establece el tamaño de la fuente para <h2> multiplicando la variable $tamaño-base-fuente por 2
     font-size: variables.$tamaño-base-fuente*2;
   }
   
   h3 {
+      // Establece el tamaño de la fuente para <h3> multiplicando la variable $tamaño-base-fuente por 1.5
     font-size: variables.$tamaño-base-fuente*1.5;
   }
   

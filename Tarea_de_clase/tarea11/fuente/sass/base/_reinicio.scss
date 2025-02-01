@@ -11,15 +11,15 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Elimina los márgenes predeterminados para estos elementos */
+  padding: 0;/* Elimina los rellenos predeterminados para mantener un diseño uniforme */
 }
 
 ul,
 ol {
-  list-style: none;
+  list-style: none; /* Elimina los estilos de viñetas y numeración en listas */
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /* Quita el subrayado de los enlaces */
 }

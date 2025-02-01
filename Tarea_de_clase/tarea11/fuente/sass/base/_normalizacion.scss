@@ -1,5 +1,8 @@
 @use '../global/variables';
-/* Importamos variables sin usar '*' como alias */
+
+/* Importamos las variables de la carpeta global desde el archivo variables.scss */
+
+/* Estilos globales para todos los elementos y sus pseudo-elementos */
 
 *,
 *::before,

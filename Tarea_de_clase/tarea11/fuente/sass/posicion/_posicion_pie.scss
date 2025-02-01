@@ -1,7 +1,11 @@
 footer {
+   /* Estilos para el contenedor dentro del footer con la clase 'pie' */
   .pie {
+     /* Usa flex para organizar los elementos dentro del 'pie' */
     display: flex;
+    /* Distribuye los elementos de manera uniforme a lo largo del eje horizontal */
     justify-content: space-around;
+    /* Agrega espacio alrededor de los elementos dentro del 'pie' */
     padding: 20px;
   }
 }

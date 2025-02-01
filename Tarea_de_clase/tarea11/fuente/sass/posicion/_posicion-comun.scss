@@ -1,6 +1,9 @@
+/* Estilos principales para el contenedor 'main' */
 main {
+    /* Centra el texto dentro del contenedor 'main' */
     text-align: center;
 
+    /* Estilos para el contenedor con la clase 'titulo' dentro de 'main' */
     .titulo {
         background-image: url(../img/foto-libreria-1920px.jpg);
         padding: 50px;
@@ -9,6 +12,7 @@ main {
         grid-template-rows: repeat(2, 1fr);
     }
 
+    /* Estilos para el contenedor con la clase 'eventos' dentro de 'main' */
     .eventos {
         display: flex;
         gap: 50px;
@@ -20,6 +24,7 @@ main {
         overflow: hidden;
     }
 
+    /* Estilos para el contenedor con la clase 'libros' dentro de 'main' */
     .libros {
         display: flex;
         gap: 100px;

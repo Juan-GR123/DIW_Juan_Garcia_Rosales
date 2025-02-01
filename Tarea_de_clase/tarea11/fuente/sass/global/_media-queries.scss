@@ -1,6 +1,8 @@
 /*media-queries*/
 /* tamaños de Media Queries */
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+
+  /* Estilos aplicados cuando el ancho de pantalla está entre 300px y 767px (dispositivos móviles pequeños) */
   header {
     .enlaces a {
       font-size: 13px;
@@ -119,9 +121,10 @@
     }
 
     .titulo {
-      h1{
+      h1 {
         font-size: 40px;
       }
+
       .iniciar_sesion {
         margin-top: 240px;
       }
@@ -151,6 +154,8 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+  /* Estilos para pantallas entre 768px y 1000px, típicas de tabletas*/
   header {
     #valor {
       padding: 5px;
@@ -225,6 +230,7 @@
 
 @media only screen and (min-width: 1000px) and (max-width: 1360px) {
 
+  /* Estilos para pantallas entre 1000px y 1360px, como en pantallas más grandes */
   main {
     text-align: center;
     position: relative;
@@ -251,11 +257,11 @@
     }
   }
 
-  footer {
+  /*footer {
     //position: relative;
     //top: 100px;
 
-  }
+  }*/
 
   .footerP {
     position: relative;
@@ -300,6 +306,8 @@
 }
 
 @media only screen and (min-width: 1500px) and (max-width: 1820px) {
+
+  /* Estilos para pantallas entre 1500px y 1820px */
   footer {
     position: relative;
     top: 100px;
@@ -307,6 +315,8 @@
 }
 
 @media only screen and (min-width: 1800px) and (max-width: 1920px) {
+
+  /* Estilos para pantallas grandes, entre 1800px y 1920px */
   header {
     picture {
       img {
@@ -465,6 +475,8 @@
 
 
 @media only screen and (min-width: 2000px) and (max-width: 3000px) {
+
+  /* Media Query para pantallas extra grandes (2000px a 3000px) */
   header {
     picture {
       img {

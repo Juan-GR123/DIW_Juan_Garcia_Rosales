@@ -1,5 +1,5 @@
   /*header*/
-
+  /* Estilos para el header */
   header {
     display: flex;
     flex-grow: 2;
@@ -8,13 +8,14 @@
     background-color: #a4c3cf;
     padding: 10px 20px;
 
-
+    /* Estilos para las imágenes dentro del header (por ejemplo, el logo) */
     img {
       width: 40px;
       height: auto;
       border-radius: 50%;
     }
 
+    /* Estilos para los botones dentro de la clase 'enlaces' */
     .enlaces {
       button {
         text-decoration: none;
@@ -24,13 +25,14 @@
         color: black;
         background-color: #a4c3cf;
         cursor: pointer;
-      
 
+        /* Estilos específicos para el botón 'iniciar' */
         &.iniciar {
           color: white;
           background-color: #2b3a42;
         }
 
+        /* Estilos específicos para el botón 'comprar' */
         &.comprar {
           color: white;
           text-decoration: none;
@@ -42,6 +44,7 @@
         }
       }
 
+      /* Estilos para el enlace 'registrar' */
       .registrar {
         text-decoration: none;
         padding: 10px;
@@ -56,6 +59,7 @@
     //  margin-left: 1150px;
     //}
 
+    /* Efectos de hover en los botones 'iniciar' y 'comprar', es decir solo funcionaran si se deja el cursor encima de los respectivos botones*/
     .iniciar:hover {
       background-color: #2b3a42;
     }
@@ -65,12 +69,14 @@
       background-color: #ffb347;
     }
 
+    /* Estilos para el buscador */
     #valor {
       padding: 5px;
       width: 300px;
     }
   }
 
+  /* Estilos para la clase categorías dentro de una sección */
   section {
     .categorias {
       list-style-type: none;
@@ -88,6 +94,8 @@
   }
 
   section {
+
+    /* Nuevos estilos para la clase categorías (con submenús) */
     .categorias {
       display: flex;
       list-style: none;
@@ -98,6 +106,7 @@
       gap: 60px;
     }
 
+    /* Estilos para cada elemento de la lista de categorías */
     .categorias>li {
       position: relative;
       padding: 15px 20px;
@@ -105,11 +114,12 @@
       cursor: pointer; //te pone el cursos como la manita
     }
 
+    /* Efecto de hover(mantener el cursos encima del elemento) en los elementos de la lista de categorías */
     .categorias>li:hover {
       background-color: #2b3a42;
     }
 
-    /* Submenú */
+    /* Estilos para los submenús */
     .categorias>li ul {
       display: none;
       /* Escondido por defecto */
@@ -124,10 +134,12 @@
       z-index: 1000;
     }
 
+    /* Muestra el submenú cuando el elemento principal tiene el cursor encima */
     .categorias>li:hover ul {
       display: block;
     }
 
+    /* Estilos para los elementos dentro del submenú */
     .categorias>li ul li {
       padding: 10px 20px;
       color: #fff;
@@ -137,6 +149,7 @@
       background-color: #2b3a42
     }
 
+    /* Estilos para los enlaces dentro de los elementos de la lista y submenú */
     .categorias>li a,
     .categorias>li ul li a {
       color: inherit;

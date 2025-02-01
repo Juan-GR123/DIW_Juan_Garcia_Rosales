@@ -1,4 +1,5 @@
 /*Footer*/
+/* Estilos para el footer */
 footer {
   position: fixed;
   bottom: 0;
@@ -9,9 +10,12 @@ footer {
   background-color: #a4c3cf;
   color: white;
 
+  /* Estilos para la sección de redes sociales dentro del footer */
   .redes_S {
     display: flex;
     gap: 30px;
+
+    /* Estilos para las imágenes de las redes sociales */
     img {
       height: 40px;
       width: 40px;
@@ -20,17 +24,22 @@ footer {
     }
   }
 
+  /* Estilo para una línea divisoria */
   .linea {
     height: 1px;
     background-color: black;
   }
 
+  /* Estilos para la sección del pie dentro del footer */
   .pie {
     display: flex;
     justify-content: space-around;
     padding: 20px;
 
+    /* Estilos para la sección de contacto dentro del pie */
     .contacto {
+
+      /* Estilos para los párrafos dentro de la sección de contacto */
       p {
         strong {
           font-size: larger;
@@ -38,15 +47,18 @@ footer {
       }
     }
 
+    /* Estilos para la sección de enlaces dentro del pie */
     .link {
       margin-bottom: 20px;
 
+      /* Estilos para los párrafos dentro de la sección de enlaces */
       p {
         strong {
           font-size: larger;
         }
       }
 
+      /* Estilos para los enlaces dentro de esta sección */
       a {
         color: white;
         text-decoration: none;
@@ -62,13 +74,17 @@ footer {
     margin: 0;
   }
 
+  /* Estilos para la sección de términos dentro del footer */
   .terminos {
+
+    /* Estilos para los párrafos dentro de la sección de términos */
     p {
       strong {
         font-size: larger;
       }
     }
 
+    /* Estilos para los enlaces dentro de la sección de términos */
     a {
       color: white;
       text-decoration: none;

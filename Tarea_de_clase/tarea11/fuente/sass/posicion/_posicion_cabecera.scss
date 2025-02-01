@@ -1,6 +1,12 @@
+//posicion_cabecera
+
 header {
+      /* Se usa flex para organizar los elementos dentro de la cabecera */
     display: flex;
+    /* Hace que el header ocupe el espacio disponible en su contenedor */
     flex-grow: 2;
+    /* Distribuye el espacio entre los elementos de la cabecera */
     justify-content: space-between;
+    /* Alinea los elementos de la cabecera en el centro verticalmente */
     align-items: center;
 }
