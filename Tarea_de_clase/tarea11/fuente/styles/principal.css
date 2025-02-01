@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/*funciones*/
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
 /*mixins*/
 /*estructuras-control*/
 header {
@@ -6,7 +19,6 @@ header {
   color: white;
 }
 
-/*funciones*/
 /* Importamos variables sin usar '*' como alias */
 *,
 *::before,
@@ -19,6 +31,8 @@ header {
 body {
   margin: 0;
   font-family: "Ibarra real Nova", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Reinicio de estilos para evitar problemas de compatibilidad */
@@ -55,18 +69,6 @@ h5,
 h6,
 nav {
   font-weight: bold;
-}
-
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-h3 {
-  font-size: 24px;
 }
 
 p {
@@ -109,6 +111,7 @@ header .enlaces button {
 }
 header .enlaces button.iniciar {
   color: white;
+  background-color: #2b3a42;
 }
 header .enlaces button.comprar {
   color: white;
@@ -207,9 +210,14 @@ section .categorias > li ul li a:hover {
 /*main*/
 main {
   text-align: center;
+  flex-grow: 1;
 }
 main .index {
-  padding: 150px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 main h1 {
   font-family: "Permanent Marker";
@@ -238,11 +246,13 @@ main .botones .boton1 {
   border-radius: 10%;
 }
 main .botones .boton2 {
-  background-color: transparent;
+  background-color: #a4c3cf;
   border: none;
   padding: 5px;
   font-size: 20px;
   font-weight: lighter;
+  border: 1px solid;
+  border-radius: 10%;
 }
 main .colaboradores {
   display: flex;
@@ -366,14 +376,14 @@ main .categorias2 {
   margin-top: 100px;
   margin-bottom: 100px;
   overflow: hidden;
+  /*.desplazamiento {
+    display: flex;
+    gap: 50px;
+  }*/
 }
 main .categorias2 article img {
   width: 100px;
   height: 100px;
-}
-main .categorias2 .desplazamiento {
-  display: flex;
-  gap: 50px;
 }
 main .categorias2 .cat img {
   border-radius: 50%;
@@ -416,16 +426,22 @@ main .categorias2 .cat.active {
   border-radius: 10%;
   height: 500px;
   display: none;
-  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .bodyR .mainRegistro .divR h2 {
   margin-bottom: 50px;
 }
-.bodyR .mainRegistro .divR label {
+.bodyR .mainRegistro .divR #FormularioRegistro {
+  display: flex;
+  flex-direction: column;
+}
+.bodyR .mainRegistro .divR #FormularioRegistro label {
   font-size: 20px;
   font-weight: bolder;
 }
-.bodyR .mainRegistro .divR .botonRegistro {
+.bodyR .mainRegistro .divR #FormularioRegistro .botonRegistro {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 10px;
@@ -435,10 +451,10 @@ main .categorias2 .cat.active {
   border-radius: 5px;
   cursor: pointer;
 }
-.bodyR .mainRegistro .divR .botonRegistro:hover {
+.bodyR .mainRegistro .divR #FormularioRegistro .botonRegistro:hover {
   background: #ffb347;
 }
-.bodyR .mainRegistro .divR .cerrar {
+.bodyR .mainRegistro .divR #FormularioRegistro .cerrar {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 10px;
@@ -448,7 +464,7 @@ main .categorias2 .cat.active {
   border-radius: 5px;
   cursor: pointer;
 }
-.bodyR .mainRegistro .divR .cerrar:hover {
+.bodyR .mainRegistro .divR #FormularioRegistro .cerrar:hover {
   background: #ffb347;
 }
 
@@ -504,11 +520,20 @@ img {
 
 /*Footer*/
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
   background-color: #a4c3cf;
   color: white;
-  padding: 20px 0;
 }
-footer .redes_S > img {
+footer .redes_S {
+  display: flex;
+  gap: 30px;
+}
+footer .redes_S img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -605,7 +630,14 @@ footer .pie {
   }
   header #valor {
     padding: 5px;
-    width: 100px;
+    width: 200px;
+  }
+  .headerP {
+    flex-direction: column;
+  }
+  .headerP .busca {
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .headerP .enlaces {
     display: flex;
@@ -616,16 +648,18 @@ footer .pie {
     padding: 2px;
   }
   main h1 {
-    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    max-width: none;
+    margin: 10px;
   }
   main .botones {
     margin: 0;
     padding: 0;
     gap: 0px;
     flex-wrap: wrap;
+    flex-direction: column;
   }
   main .botones .boton1 {
     font-size: 20px;
@@ -633,13 +667,13 @@ footer .pie {
     margin-right: 10px;
   }
   main .botones .boton2 {
-    padding: 0;
     margin-left: 0;
   }
   main .colaboradores {
     justify-content: center;
     gap: 0;
     margin-top: 100px;
+    flex-direction: column;
   }
   main .colaboradores .secciones {
     margin-inline: 30px;
@@ -675,8 +709,11 @@ footer .pie {
     display: block;
     /* Mostrar solo el artículo activo */
   }
+  main .titulo h1 {
+    font-size: 40px;
+  }
   main .titulo .iniciar_sesion {
-    margin-top: 150px;
+    margin-top: 240px;
   }
   footer {
     position: relative;
@@ -716,7 +753,6 @@ footer .pie {
   }
   footer {
     position: relative;
-    top: 300px;
   }
   .footerP {
     top: 100px;
@@ -768,10 +804,8 @@ footer .pie {
   .mainP .categorias2 {
     margin-bottom: 0px;
   }
-  footer {
-    position: relative;
-  }
   .footerP {
+    position: relative;
     top: 100px;
   }
   .eventos article {
@@ -799,6 +833,12 @@ footer .pie {
     /* Mostrar solo el artículo activo */
   }
 }
+@media only screen and (min-width: 1500px) and (max-width: 1820px) {
+  footer {
+    position: relative;
+    top: 100px;
+  }
+}
 @media only screen and (min-width: 1800px) and (max-width: 1920px) {
   header picture img {
     width: 100px;
@@ -817,11 +857,11 @@ footer .pie {
   }
   header .enlaces button.iniciar {
     font-size: 30px;
-    color: black;
+    color: white;
   }
   header .enlaces button.comprar {
     font-size: 30px;
-    color: black;
+    color: white;
   }
   section .categorias li {
     font-size: 30px;
@@ -844,16 +884,18 @@ footer .pie {
     height: 200px;
   }
   main .titulo h1 {
-    font-size: 70px;
+    font-size: 50px;
+    max-width: none;
   }
   main .titulo .iniciar_sesion {
-    font-size: 40px;
+    font-size: 30px;
+    padding: 10px;
   }
   main .eventos article img {
     width: 500px;
   }
   main .eventos p {
-    font-size: 30px;
+    font-size: 20px;
   }
   main .categorias2 {
     gap: 50px;
@@ -861,12 +903,13 @@ footer .pie {
   main .categorias2 .cat p {
     font-size: 20px;
   }
-  .mainP {
-    margin-bottom: 100px;
-  }
   .mainP h2 {
     font-size: 50px;
     font-family: "Ibarra real Nova", sans-serif;
+  }
+  footer {
+    position: relative;
+    top: 100px;
   }
   footer .redes_S .fa-brands {
     font-size: 50px;
@@ -891,52 +934,48 @@ footer .pie {
     width: 500px;
   }
   header .enlaces .fa-user {
-    font-size: 100px;
+    font-size: 50px;
     margin-right: 50px;
   }
-  header .enlaces button.iniciar {
+  header .enlaces button {
     font-size: 40px;
     color: black;
   }
-  header .enlaces button.comprar {
-    font-size: 40px;
-    color: black;
-  }
+  /*.headerP {
+    flex-direction: row;
+  }*/
   section .categorias li {
     font-size: 50px;
   }
   main h1 {
-    font-size: 70px;
+    font-size: 50px;
     max-width: none;
   }
   main .titulo h1 {
-    font-size: 100px;
+    font-size: 70px;
     max-width: none;
   }
   main .titulo .iniciar_sesion {
     font-size: 40px;
   }
   main .botones .boton1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   main .botones .boton2 {
-    font-size: 50px;
+    font-size: 40px;
   }
   main .eventos article img {
     width: 700px;
   }
   main .eventos p {
-    font-size: 40px;
+    font-size: 30px;
   }
   main .libros article img {
-    width: 400px;
-  }
-  main .categorias2 {
-    gap: 50px;
+    width: 300px;
   }
   main .categorias2 .cat img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
   main .categorias2 .cat p {
     font-size: 50px;
@@ -945,8 +984,8 @@ footer .pie {
     font-size: 50px;
   }
   main .colaboradores .secciones picture img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
   .mainP {
     margin-bottom: 100px;
@@ -959,13 +998,13 @@ footer .pie {
     font-size: 50px;
   }
   footer .pie .contacto p {
-    font-size: 40px;
+    font-size: 30px;
   }
   footer .pie .link p {
     font-size: 30px;
   }
   footer .pie .terminos p {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 

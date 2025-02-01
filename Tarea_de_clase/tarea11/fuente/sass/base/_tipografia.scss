@@ -1,5 +1,6 @@
 @use '../global/variables';
 @use '../global/funciones';
+@use '../global/operadores';
 
 /*La tipografia general de la página*/
 h1,
@@ -12,17 +13,6 @@ nav {
   font-weight: bold;
 }
 
-h1 {
-  font-size: variables.$tamaño-base-fuente*3;
-}
-
-h2 {
-  font-size: variables.$tamaño-base-fuente*2;
-}
-
-h3 {
-  font-size: variables.$tamaño-base-fuente*1.5;
-}
 
 p {
   font-size: variables.$tamaño-base-fuente;

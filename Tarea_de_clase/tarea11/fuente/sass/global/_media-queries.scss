@@ -10,7 +10,7 @@
 
     #valor {
       padding: 5px;
-      width: 100px;
+      width: 200px;
     }
 
     //.fa-user{
@@ -19,6 +19,13 @@
   }
 
   .headerP {
+    flex-direction: column;
+
+    .busca {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
     .enlaces {
       display: flex;
       justify-content: space-around;
@@ -33,10 +40,11 @@
 
   main {
     h1 {
-      font-size: 20px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
+      max-width: none;
+      margin: 10px;
     }
 
     .botones {
@@ -44,6 +52,7 @@
       padding: 0;
       gap: 0px;
       flex-wrap: wrap;
+      flex-direction: column;
 
       .boton1 {
         font-size: 20px;
@@ -52,7 +61,6 @@
       }
 
       .boton2 {
-        padding: 0;
         margin-left: 0;
       }
     }
@@ -62,6 +70,7 @@
       justify-content: center;
       gap: 0;
       margin-top: 100px;
+      flex-direction: column;
 
       .secciones {
         margin-inline: 30px;
@@ -110,8 +119,11 @@
     }
 
     .titulo {
+      h1{
+        font-size: 40px;
+      }
       .iniciar_sesion {
-        margin-top: 150px;
+        margin-top: 240px;
       }
     }
   }
@@ -167,7 +179,7 @@
 
   footer {
     position: relative;
-    top: 300px;
+    //top: 100px;
   }
 
   .footerP {
@@ -240,11 +252,13 @@
   }
 
   footer {
-    position: relative;
-    // top: 170px;
+    //position: relative;
+    //top: 100px;
+
   }
 
   .footerP {
+    position: relative;
     top: 100px;
   }
 
@@ -285,7 +299,12 @@
   }
 }
 
-
+@media only screen and (min-width: 1500px) and (max-width: 1820px) {
+  footer {
+    position: relative;
+    top: 100px;
+  }
+}
 
 @media only screen and (min-width: 1800px) and (max-width: 1920px) {
   header {
@@ -312,17 +331,18 @@
 
         &.iniciar {
           font-size: 30px;
-          color: black;
+          color: white;
         }
 
         &.comprar {
           font-size: 30px;
-          color: black;
+          color: white;
         }
       }
 
     }
   }
+
 
   section {
     .categorias {
@@ -367,10 +387,13 @@
 
     .titulo {
       h1 {
-        font-size: 70px;
+        font-size: 50px;
+        max-width: none;
       }
-      .iniciar_sesion{
-        font-size: 40px;
+
+      .iniciar_sesion {
+        font-size: 30px;
+        padding: 10px;
       }
     }
 
@@ -382,7 +405,7 @@
       }
 
       p {
-        font-size: 30px;
+        font-size: 20px;
       }
     }
 
@@ -398,7 +421,6 @@
   }
 
   .mainP {
-    margin-bottom: 100px;
 
     h2 {
       font-size: 50px;
@@ -407,6 +429,9 @@
   }
 
   footer {
+    position: relative;
+    top: 100px;
+
     .redes_S {
       .fa-brands {
         font-size: 50px;
@@ -455,25 +480,21 @@
 
     .enlaces {
       .fa-user {
-        font-size: 100px;
+        font-size: 50px;
         margin-right: 50px;
       }
 
 
       button {
-
-        &.iniciar {
-          font-size: 40px;
-          color: black;
-        }
-
-        &.comprar {
-          font-size: 40px;
-          color: black;
-        }
+        font-size: 40px;
+        color: black;
       }
     }
   }
+
+  /*.headerP {
+    flex-direction: row;
+  }*/
 
   section {
     .categorias {
@@ -487,16 +508,17 @@
 
     // margin-bottom: 200px;
     h1 {
-      font-size: 70px;
+      font-size: 50px;
       max-width: none;
     }
 
     .titulo {
       h1 {
-        font-size: 100px;
+        font-size: 70px;
         max-width: none;
       }
-      .iniciar_sesion{
+
+      .iniciar_sesion {
         font-size: 40px;
       }
     }
@@ -504,11 +526,11 @@
 
     .botones {
       .boton1 {
-        font-size: 50px;
+        font-size: 40px;
       }
 
       .boton2 {
-        font-size: 50px;
+        font-size: 40px;
       }
     }
 
@@ -520,25 +542,24 @@
       }
 
       p {
-        font-size: 40px;
+        font-size: 30px;
       }
     }
 
     .libros {
       article {
         img {
-          width: 400px;
+          width: 300px;
         }
       }
     }
 
     .categorias2 {
-      gap: 50px;
 
       .cat {
         img {
-          width: 300px;
-          height: 300px;
+          width: 200px;
+          height: 200px;
         }
 
         p {
@@ -555,8 +576,8 @@
 
         picture {
           img {
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
           }
         }
       }
@@ -582,7 +603,7 @@
     .pie {
       .contacto {
         p {
-          font-size: 40px;
+          font-size: 30px;
         }
       }
 
@@ -594,7 +615,7 @@
 
       .terminos {
         p {
-          font-size: 40px;
+          font-size: 30px;
         }
       }
     }

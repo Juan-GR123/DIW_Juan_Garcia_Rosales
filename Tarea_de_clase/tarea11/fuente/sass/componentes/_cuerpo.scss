@@ -1,9 +1,14 @@
 /*main*/
 main {
+  
   text-align: center;
-
+  flex-grow: 1;
   .index {
-    padding: 150px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   h1 {
@@ -35,11 +40,13 @@ main {
     }
 
     .boton2 {
-      background-color: transparent;
+      background-color: #a4c3cf;
       border: none;
       padding: 5px;
       font-size: 20px;
       font-weight: lighter;
+      border: 1px solid;
+      border-radius: 10%;
       //margin-left: 50px;
     }
 
@@ -210,10 +217,10 @@ main {
       }
     }
 
-    .desplazamiento {
+    /*.desplazamiento {
       display: flex;
       gap: 50px;
-    }
+    }*/
 
     .cat img {
       border-radius: 50%;
@@ -268,51 +275,58 @@ main {
       border-radius: 10%;
       height: 500px;
       display: none;
-      align-content: center;
-
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       h2 {
         margin-bottom: 50px;
       }
 
-      label {
-        font-size: 20px;
-        font-weight: bolder;
-      }
+      #FormularioRegistro{
+        display: flex;
+        flex-direction: column;
+       
 
-      .botonRegistro {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-top: 10px;
-        background: #2b3a42;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+        label {
+          font-size: 20px;
+          font-weight: bolder;
+        }
+  
+        .botonRegistro {
+          display: inline-block;
+          padding: 10px 20px;
+          margin-top: 10px;
+          background: #2b3a42;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+  
+        .botonRegistro:hover {
+          background: #ffb347;
+        }
+  
+        .cerrar {
+          display: inline-block;
+          padding: 10px 20px;
+          margin-top: 10px;
+          background: #2b3a42;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+  
+        .cerrar:hover {
+          background: #ffb347;
+        }
       }
-
-      .botonRegistro:hover {
-        background: #ffb347;
-      }
-
-      .cerrar {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-top: 10px;
-        background: #2b3a42;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      .cerrar:hover {
-        background: #ffb347;
-      }
+      
     }
   }
 }
-
 
 .Nosotros{
   .titulos {

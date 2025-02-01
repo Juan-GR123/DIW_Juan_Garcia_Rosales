@@ -4,7 +4,7 @@ const cerrar = document.getElementById('cerrar');
 const registrar= document.getElementById('registrar');
 // Mostrar
 registrar.addEventListener('click', () => {
-  divR.style.display = 'grid';
+  divR.style.display = 'flex';
   body.style.backgroundColor= "rgba(0, 0, 0, 0.5)";
 });
 

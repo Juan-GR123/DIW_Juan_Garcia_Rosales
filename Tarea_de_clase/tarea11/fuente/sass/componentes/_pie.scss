@@ -1,12 +1,18 @@
 /*Footer*/
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
   background-color: #a4c3cf;
   color: white;
-  //margin-top: 190px;
-  padding: 20px 0;
 
   .redes_S {
-    >img {
+    display: flex;
+    gap: 30px;
+    img {
       height: 40px;
       width: 40px;
       border-radius: 50%;

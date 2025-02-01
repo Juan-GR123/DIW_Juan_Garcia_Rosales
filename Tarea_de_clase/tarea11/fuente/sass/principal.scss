@@ -1,5 +1,6 @@
 //se llama a los ficheros sass que hemos utilizado en toda la página
 @use '../sass/global/variables';
+@use '../sass/global/operadores';
 @use '../sass/global/mixins';
 @use '../sass/global/estruc-control';
 @use '../sass/global/funciones';
