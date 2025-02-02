@@ -308,6 +308,44 @@
 @media only screen and (min-width: 1500px) and (max-width: 1820px) {
 
   /* Estilos para pantallas entre 1500px y 1820px */
+  .Nosotros {
+    .sobreNosotros {
+      display: flex;
+      justify-content: space-between;
+      .sobre1 {
+       flex-direction: column;
+
+       p{
+        max-width: 1000px;
+       }
+      }
+
+      .sobre2{
+        flex-direction: column;
+
+        p{
+          max-width: 1000px;
+        }
+        img{
+          width:700px;
+        }
+      }
+
+      .sobre3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        p {
+          max-width: 1000px;
+          
+        }
+      }
+
+    }
+  }
+
   footer {
     position: relative;
     top: 100px;
@@ -435,6 +473,51 @@
     h2 {
       font-size: 50px;
       font-family: 'Ibarra real Nova', sans-serif;
+    }
+  }
+
+  .Nosotros {
+    .sobreNosotros {
+      display: flex;
+      justify-content: space-between;
+      .sobre1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+          max-width: 1000px;
+          font-size: 30px;
+        }
+      }
+
+      .sobre2{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+          max-width: 1000px;
+          font-size: 30px;
+        }
+      }
+
+      .sobre3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        p {
+          max-width: 1000px;
+          font-size: 30px;
+        }
+      }
+
     }
   }
 
@@ -604,6 +687,58 @@
       font-family: 'Ibarra real Nova', sans-serif;
     }
   }
+
+  .Nosotros {
+    .sobreNosotros {
+      display: flex;
+      justify-content: space-between;
+      .sobre1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+          max-width: 1000px;
+          font-size: 30px;
+        }
+      }
+
+      .sobre2{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+          max-width: 1000px;
+          font-size: 30px;
+        }
+      }
+
+      .sobre3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        p {
+          margin-bottom: 400px;
+          max-width: 1000px;
+          font-size: 30px;
+        }
+      }
+
+    }
+  }
+
+  /*#footerN{
+    position: relative;
+    top: 100px;
+  }*/
+
 
   footer {
     .redes_S {
