@@ -131,6 +131,52 @@
     }
   }
 
+  .Nosotros {
+    padding-block: 0;
+    .sobreNosotros {
+      display: flex;
+      justify-content: space-between;
+      .sobre1 {
+       flex-direction: column;
+
+       img{
+        width:300px;
+       }
+       p{
+        font-size: 10px;
+        max-width: 300px;
+
+       }
+      }
+
+      .sobre2{
+        flex-direction: column;
+
+        p{
+          max-width: 300px;
+          font-size: 10px;
+        }
+        img{
+          width:300px;
+        }
+      }
+
+      .sobre3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        p {
+          max-width: 300px; 
+          font-size: 10px; 
+          
+        }
+      }
+
+    }
+  }
+
   footer {
     position: relative;
     top: 100px;
@@ -179,6 +225,53 @@
 
     .categorias2 {
       margin-bottom: 0px;
+    }
+  }
+
+  .Nosotros {
+    padding-block: 0;
+    margin-right: 0;
+    .sobreNosotros {
+      display: flex;
+      justify-content: space-between;
+      .sobre1 {
+       flex-direction: column;
+
+       img{
+        width:500px;
+       }
+       p{
+        font-size: 20px;
+        max-width: 500px;
+
+       }
+      }
+
+      .sobre2{
+        flex-direction: column;
+
+        p{
+          max-width: 500px;
+          font-size: 20px;
+        }
+        img{
+          width:500px;
+        }
+      }
+
+      .sobre3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        p {
+          font-size: 24px; 
+          max-width: 1000px;
+          
+        }
+      }
+
     }
   }
 
@@ -257,6 +350,54 @@
     }
   }
 
+
+  .Nosotros {
+    padding-block: 0;
+    margin-right: 0;
+    .sobreNosotros {
+      display: flex;
+      justify-content: space-between;
+      .sobre1 {
+       flex-direction: column;
+
+       img{
+        width:500px;
+       }
+       p{
+        font-size: 24px;
+        max-width: 700px;
+       }
+      }
+
+      .sobre2{
+        flex-direction: column;
+
+        p{
+          max-width: 700px;
+          font-size: 24px;
+        }
+        img{
+          width:500px;
+        }
+      }
+
+      .sobre3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        p {
+          font-size: 24px; 
+          max-width: 1000px;
+          
+        }
+      }
+
+    }
+  }
+
+
   /*footer {
     //position: relative;
     //top: 100px;
@@ -313,18 +454,20 @@
       display: flex;
       justify-content: space-between;
       .sobre1 {
-       flex-direction: column;
+       
 
        p{
+        font-size: 24px;
         max-width: 1000px;
        }
       }
 
       .sobre2{
-        flex-direction: column;
+        
 
         p{
           max-width: 1000px;
+          font-size: 24px;
         }
         img{
           width:700px;
@@ -338,6 +481,7 @@
         margin-top: 100px;
 
         p {
+          font-size: 24px; 
           max-width: 1000px;
           
         }
