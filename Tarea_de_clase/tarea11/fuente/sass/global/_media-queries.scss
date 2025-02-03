@@ -41,6 +41,7 @@
   }
 
   main {
+    margin-bottom: 0px;
     h1 {
       display: flex;
       justify-content: center;
@@ -275,15 +276,6 @@
     }
   }
 
-  footer {
-    position: relative;
-    //top: 100px;
-  }
-
-  .footerP {
-    top: 100px;
-  }
-
   .eventos {
     article {
       display: none;
@@ -328,7 +320,7 @@
     text-align: center;
     position: relative;
     margin-right: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 
     h1 {
       font-size: 40px;
@@ -404,10 +396,10 @@
 
   }*/
 
-  .footerP {
+ /* .footerP {
     position: relative;
     top: 100px;
-  }
+  }*/
 
   .eventos {
     article {
@@ -450,6 +442,7 @@
 
   /* Estilos para pantallas entre 1500px y 1820px */
   .Nosotros {
+    margin-bottom:200px;
     .sobreNosotros {
       display: flex;
       justify-content: space-between;
@@ -488,11 +481,6 @@
       }
 
     }
-  }
-
-  footer {
-    position: relative;
-    top: 100px;
   }
 }
 
@@ -545,7 +533,7 @@
   }
 
   main {
-    //margin-bottom: 200px;
+    margin-bottom: 400px;
 
     h1 {
       font-size: xxx-large;
@@ -666,8 +654,8 @@
   }
 
   footer {
-    position: relative;
-    top: 100px;
+   /* position: relative;
+    top: 100px;*/
 
     .redes_S {
       .fa-brands {
@@ -745,7 +733,7 @@
 
   main {
 
-    // margin-bottom: 200px;
+    margin-bottom: 0px;
     h1 {
       font-size: 50px;
       max-width: none;
