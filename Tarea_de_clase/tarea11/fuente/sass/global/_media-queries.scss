@@ -42,6 +42,7 @@
 
   main {
     margin-bottom: 0px;
+
     h1 {
       display: flex;
       justify-content: center;
@@ -134,47 +135,68 @@
 
   .Nosotros {
     padding-block: 0;
+
     .sobreNosotros {
       display: flex;
       justify-content: space-between;
+
       .sobre1 {
-       flex-direction: column;
-
-       img{
-        width:300px;
-       }
-       p{
-        font-size: 10px;
-        max-width: 300px;
-
-       }
-      }
-
-      .sobre2{
         flex-direction: column;
 
-        p{
+        img {
+          width: 300px;
+        }
+
+        p {
+          font-size: 10px;
+          max-width: 300px;
+
+        }
+      }
+
+      .sobre2 {
+        flex-direction: column;
+
+        p {
           max-width: 300px;
           font-size: 10px;
         }
-        img{
-          width:300px;
+
+        img {
+          width: 300px;
         }
       }
 
-      .sobre3{
+      .sobre3 {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 100px;
 
         p {
-          max-width: 300px; 
-          font-size: 10px; 
-          
+          max-width: 300px;
+          font-size: 10px;
+
         }
       }
 
+    }
+  }
+
+  .Perfil {
+
+    .titulo-perfil2{
+      article{
+        picture{
+          grid-column: 3;
+        }
+        h4{
+          display: none;
+        }
+        p{
+          display: none;
+        } 
+      }
     }
   }
 
@@ -232,48 +254,56 @@
   .Nosotros {
     padding-block: 0;
     margin-right: 0;
+
     .sobreNosotros {
       display: flex;
       justify-content: space-between;
+
       .sobre1 {
-       flex-direction: column;
-
-       img{
-        width:500px;
-       }
-       p{
-        font-size: 20px;
-        max-width: 500px;
-
-       }
-      }
-
-      .sobre2{
         flex-direction: column;
 
-        p{
+        img {
+          width: 500px;
+        }
+
+        p {
+          font-size: 20px;
+          max-width: 500px;
+
+        }
+      }
+
+      .sobre2 {
+        flex-direction: column;
+
+        p {
           max-width: 500px;
           font-size: 20px;
         }
-        img{
-          width:500px;
+
+        img {
+          width: 500px;
         }
       }
 
-      .sobre3{
+      .sobre3 {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 100px;
 
         p {
-          font-size: 24px; 
+          font-size: 24px;
           max-width: 1000px;
-          
+
         }
       }
 
     }
+  }
+
+  .Perfil {
+    padding-block: 0;
   }
 
   .eventos {
@@ -346,43 +376,47 @@
   .Nosotros {
     padding-block: 0;
     margin-right: 0;
+
     .sobreNosotros {
       display: flex;
       justify-content: space-between;
+
       .sobre1 {
-       flex-direction: column;
-
-       img{
-        width:500px;
-       }
-       p{
-        font-size: 24px;
-        max-width: 700px;
-       }
-      }
-
-      .sobre2{
         flex-direction: column;
 
-        p{
+        img {
+          width: 500px;
+        }
+
+        p {
+          font-size: 24px;
+          max-width: 700px;
+        }
+      }
+
+      .sobre2 {
+        flex-direction: column;
+
+        p {
           max-width: 700px;
           font-size: 24px;
         }
-        img{
-          width:500px;
+
+        img {
+          width: 500px;
         }
       }
 
-      .sobre3{
+      .sobre3 {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 100px;
 
         p {
-          font-size: 24px; 
+          font-size: 24px;
           max-width: 1000px;
-          
+
         }
       }
 
@@ -396,7 +430,7 @@
 
   }*/
 
- /* .footerP {
+  /* .footerP {
     position: relative;
     top: 100px;
   }*/
@@ -442,41 +476,44 @@
 
   /* Estilos para pantallas entre 1500px y 1820px */
   .Nosotros {
-    margin-bottom:200px;
+    margin-bottom: 200px;
+
     .sobreNosotros {
       display: flex;
       justify-content: space-between;
-      .sobre1 {
-       
 
-       p{
-        font-size: 24px;
-        max-width: 1000px;
-       }
+      .sobre1 {
+
+
+        p {
+          font-size: 24px;
+          max-width: 1000px;
+        }
       }
 
-      .sobre2{
-        
+      .sobre2 {
 
-        p{
+
+        p {
           max-width: 1000px;
           font-size: 24px;
         }
-        img{
-          width:700px;
+
+        img {
+          width: 700px;
         }
       }
 
-      .sobre3{
+      .sobre3 {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 100px;
 
         p {
-          font-size: 24px; 
+          font-size: 24px;
           max-width: 1000px;
-          
+
         }
       }
 
@@ -612,6 +649,7 @@
     .sobreNosotros {
       display: flex;
       justify-content: space-between;
+
       .sobre1 {
         display: flex;
         justify-content: center;
@@ -625,7 +663,7 @@
         }
       }
 
-      .sobre2{
+      .sobre2 {
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -638,7 +676,7 @@
         }
       }
 
-      .sobre3{
+      .sobre3 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -653,8 +691,12 @@
     }
   }
 
+  .Perfil {
+    margin-bottom: 300px;
+  }
+
   footer {
-   /* position: relative;
+    /* position: relative;
     top: 100px;*/
 
     .redes_S {
@@ -734,6 +776,7 @@
   main {
 
     margin-bottom: 0px;
+
     h1 {
       font-size: 50px;
       max-width: none;
@@ -824,6 +867,7 @@
     .sobreNosotros {
       display: flex;
       justify-content: space-between;
+
       .sobre1 {
         display: flex;
         justify-content: center;
@@ -837,7 +881,7 @@
         }
       }
 
-      .sobre2{
+      .sobre2 {
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -850,7 +894,7 @@
         }
       }
 
-      .sobre3{
+      .sobre3 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -864,6 +908,10 @@
       }
 
     }
+  }
+
+  .Perfil {
+    margin-bottom: 300px;
   }
 
   /*#footerN{

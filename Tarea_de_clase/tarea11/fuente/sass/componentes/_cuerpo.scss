@@ -431,3 +431,65 @@ main {
 
   }
 }
+
+
+.Perfil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+    /* Estilo para una línea divisoria */
+    .linea {
+      height: 1px;
+      margin-top: 50px;
+      width: 100%;
+      background-color: black;
+    }
+
+  .titulo-perfil2{
+    width: 100%;
+   
+    h1{
+      margin-top: 30px;
+    }
+
+    article{
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      grid-template-rows: repeat(2,1fr);
+      border: 1px solid black;
+      background-color: #2b3a42;
+      color: white;
+
+      picture{
+        display: grid;
+        grid-column: 1;
+        grid-row: 1/3;
+
+        img{
+          width: 100px;
+        }
+      }
+     
+
+      h4{
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      p{
+        grid-column: 3;
+        grid-row: 2;
+      }
+    }
+  }
+ 
+
+}
