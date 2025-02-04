@@ -974,6 +974,27 @@ footer .pie {
   .Perfil .titulo-perfil2 article p {
     display: none;
   }
+  #headerCes {
+    display: none;
+  }
+  section .categorias {
+    display: none;
+  }
+  .Cesta {
+    margin-bottom: 0px;
+  }
+  .Cesta .compra {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b3a42;
+    width: 100%;
+    height: 1000px;
+  }
+  #footerCes {
+    display: none;
+  }
   footer {
     position: relative;
     top: 100px;
@@ -1055,6 +1076,10 @@ footer .pie {
   }
   .Perfil {
     padding-block: 0;
+  }
+  .Cesta {
+    padding-block: 0px;
+    margin-right: 0px;
   }
   .eventos article {
     display: none;
@@ -1141,6 +1166,13 @@ footer .pie {
   .Nosotros .sobreNosotros .sobre3 p {
     font-size: 24px;
     max-width: 1000px;
+  }
+  .Cesta {
+    margin-bottom: 150px;
+    margin-right: 0px;
+  }
+  .Cesta .compra {
+    height: 950px;
   }
   /*footer {
     //position: relative;
@@ -1318,6 +1350,14 @@ footer .pie {
   .Perfil {
     margin-bottom: 300px;
   }
+  .Cesta {
+    margin-bottom: 250px;
+  }
+  .Cesta .compra article img {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+  }
   footer {
     /* position: relative;
     top: 100px;*/
@@ -1448,6 +1488,14 @@ footer .pie {
   }
   .Perfil {
     margin-bottom: 300px;
+  }
+  .Cesta {
+    margin-bottom: 250px;
+  }
+  .Cesta .compra article img {
+    width: 200px;
+    margin: 0;
+    padding: 0;
   }
   /*#footerN{
     position: relative;
