@@ -626,6 +626,12 @@ main .categorias2 .cat.active {
   grid-column: 3;
   grid-row: 2;
 }
+.Perfil .Cesta .compra {
+  background-color: rebeccapurple;
+}
+.Perfil .Cesta .compra h3 {
+  font-size: 100px;
+}
 
 img {
   text-align: center;
