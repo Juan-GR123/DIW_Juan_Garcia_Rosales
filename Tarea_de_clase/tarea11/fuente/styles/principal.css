@@ -639,7 +639,6 @@ main .categorias2 .cat.active {
   flex-direction: column;
   align-items: center;
   background-color: #2b3a42;
-  border: 1px solid #ffb347;
   width: 40%;
 }
 .Cesta .compra h3 {
@@ -647,6 +646,14 @@ main .categorias2 .cat.active {
 }
 .Cesta .compra p {
   background-color: white;
+}
+.Cesta .compra button {
+  background-color: #ffb347;
+  padding: 10px;
+  width: 200px;
+}
+.Cesta .compra button:hover {
+  background-color: #ce9039;
 }
 .Cesta .compra article {
   border: 1px solid;
@@ -665,11 +672,22 @@ main .categorias2 .cat.active {
   justify-content: center;
   background-color: black;
 }
-.Cesta .compra article section p {
+.Cesta .compra article section input {
   width: 50px;
   font-size: 20px;
   font-weight: bolder;
   margin-inline: 10px;
+  display: flex;
+  justify-items: center;
+}
+.Cesta .compra article section button {
+  background-color: #a4c3cf;
+  width: 50px;
+  font-weight: bolder;
+  padding: 0;
+}
+.Cesta .compra article section button:hover {
+  background-color: #6b97a9;
 }
 
 img {
