@@ -11,21 +11,25 @@ h4,
 h5,
 h6,
 nav {
-  font-weight: bold; /* Aplica negrita a los encabezados y la navegación */
+  font-weight: bold;
+  /* Aplica negrita a los encabezados y la navegación */
 }
 
 
 p {
-  font-size: variables.$tamaño-base-fuente; /* Asigna el tamaño base de fuente definido en las variables */
+  font-size: variables.$tamaño-base-fuente;
+  /* Asigna el tamaño base de fuente definido en las variables */
 }
 
 body {
   font-size: variables.$tamaño-base-fuente;
-  line-height: 1.5; /* Establece la altura de línea para mejorar la legibilidad */
+  line-height: 1.5;
+  /* Establece la altura de línea para mejorar la legibilidad */
 }
 
 footer {
   color: variables.$color-menu;
   font-size: variables.$tamaño-fuente-reducida;
-  font-weight: bold; /* Aplica negrita al texto del pie de página */
+  font-weight: bold;
+  /* Aplica negrita al texto del pie de página */
 }

@@ -1,6 +1,6 @@
 /*media-queries*/
 /* tamaños de Media Queries */
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 100px) and (max-width: 767px) {
 
   /* Estilos aplicados cuando el ancho de pantalla está entre 300px y 767px (dispositivos móviles pequeños) */
   header {
@@ -185,46 +185,49 @@
 
   .Perfil {
 
-    .titulo-perfil2{
-      article{
-        picture{
+    .titulo-perfil2 {
+      article {
+        picture {
           grid-column: 3;
         }
-        h4{
+
+        h4 {
           display: none;
         }
-        p{
+
+        p {
           display: none;
-        } 
+        }
       }
     }
   }
 
-  #headerCes{
+  #headerCes {
     display: none;
   }
 
-  section{
-    .categorias{
+  .secCesta {
+    .categorias {
       display: none;
     }
   }
-  
 
-  .Cesta{
+
+  .Cesta {
     margin-bottom: 0px;
-    .compra{
-    display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background-color: #2b3a42;
-        width: 100%;
-        height: 1000px;
+
+    .compra {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: #2b3a42;
+      width: 100%;
+      height: 1000px;
     }
   }
 
-  #footerCes{
+  #footerCes {
     display: none;
   }
 
@@ -249,7 +252,7 @@
     }
   }
 
-   #footerCes{
+  #footerCes {
     position: relative;
     top: 0;
   }
@@ -338,7 +341,8 @@
   .Perfil {
     padding-block: 0;
   }
-  .Cesta{
+
+  .Cesta {
     padding-block: 0px;
     margin-right: 0px
   }
@@ -460,10 +464,11 @@
     }
   }
 
-  .Cesta{
+  .Cesta {
     margin-bottom: 150px;
     margin-right: 0px;
-    .compra{
+
+    .compra {
       height: 950px;
     }
   }
@@ -516,7 +521,7 @@
   }
 }
 
-@media only screen and (min-width: 1500px) and (max-width: 1820px) {
+@media only screen and (min-width: 1360px) and (max-width: 1820px) {
 
   /* Estilos para pantallas entre 1500px y 1820px */
   .Nosotros {
@@ -565,7 +570,7 @@
   }
 }
 
-@media only screen and (min-width: 1800px) and (max-width: 1920px) {
+@media only screen and (min-width: 1820px) and (max-width: 1920px) {
 
   /* Estilos para pantallas grandes, entre 1800px y 1920px */
   header {
@@ -739,11 +744,12 @@
     margin-bottom: 300px;
   }
 
-  .Cesta{
+  .Cesta {
     margin-bottom: 250px;
-    .compra{
-      article{
-        img{
+
+    .compra {
+      article {
+        img {
           width: 200px;
           margin: 0;
           padding: 0;
@@ -788,7 +794,7 @@
 
 
 
-@media only screen and (min-width: 2000px) and (max-width: 3000px) {
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
 
   /* Media Query para pantallas extra grandes (2000px a 3000px) */
   header {
@@ -971,11 +977,12 @@
     margin-bottom: 300px;
   }
 
-  .Cesta{
+  .Cesta {
     margin-bottom: 250px;
-    .compra{
-      article{
-        img{
+
+    .compra {
+      article {
+        img {
           width: 200px;
           margin: 0;
           padding: 0;
@@ -983,6 +990,7 @@
       }
     }
   }
+
   /*#footerN{
     position: relative;
     top: 100px;

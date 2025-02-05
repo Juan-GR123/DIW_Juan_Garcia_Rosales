@@ -72,22 +72,26 @@ h4,
 h5,
 h6,
 nav {
-  font-weight: bold; /* Aplica negrita a los encabezados y la navegación */
+  font-weight: bold;
+  /* Aplica negrita a los encabezados y la navegación */
 }
 
 p {
-  font-size: 16px; /* Asigna el tamaño base de fuente definido en las variables */
+  font-size: 16px;
+  /* Asigna el tamaño base de fuente definido en las variables */
 }
 
 body {
   font-size: 16px;
-  line-height: 1.5; /* Establece la altura de línea para mejorar la legibilidad */
+  line-height: 1.5;
+  /* Establece la altura de línea para mejorar la legibilidad */
 }
 
 footer {
   color: #ffffff;
   font-size: 12px;
-  font-weight: bold; /* Aplica negrita al texto del pie de página */
+  font-weight: bold;
+  /* Aplica negrita al texto del pie de página */
 }
 
 /*header*/
@@ -598,6 +602,7 @@ main .categorias2 .cat.active {
 }
 .Perfil .titulo-perfil2 {
   width: 100%;
+  background-color: #2b3a42;
 }
 .Perfil .titulo-perfil2 h1 {
   margin-top: 30px;
@@ -609,6 +614,7 @@ main .categorias2 .cat.active {
   border: 1px solid black;
   background-color: #2b3a42;
   color: white;
+  min-height: 20vh;
 }
 .Perfil .titulo-perfil2 article picture {
   display: grid;
@@ -640,6 +646,18 @@ main .categorias2 .cat.active {
   align-items: center;
   background-color: #2b3a42;
   width: 40%;
+  min-height: 100vh;
+  /* Al menos el tamaño de la pantalla */
+}
+.Cesta .compra .cerrarP {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  color: red;
+  font-size: 30px;
+  width: 5%;
+  margin-right: 20px;
+  background-color: #2b3a42;
 }
 .Cesta .compra h3 {
   color: white;
@@ -831,7 +849,7 @@ footer .pie {
 
 /*media-queries*/
 /* tamaños de Media Queries */
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 100px) and (max-width: 767px) {
   /* Estilos aplicados cuando el ancho de pantalla está entre 300px y 767px (dispositivos móviles pequeños) */
   header .enlaces a {
     font-size: 13px;
@@ -977,7 +995,7 @@ footer .pie {
   #headerCes {
     display: none;
   }
-  section .categorias {
+  .secCesta .categorias {
     display: none;
   }
   .Cesta {
@@ -1208,7 +1226,7 @@ footer .pie {
     /* Mostrar solo el artículo activo */
   }
 }
-@media only screen and (min-width: 1500px) and (max-width: 1820px) {
+@media only screen and (min-width: 1360px) and (max-width: 1820px) {
   /* Estilos para pantallas entre 1500px y 1820px */
   .Nosotros {
     margin-bottom: 200px;
@@ -1239,7 +1257,7 @@ footer .pie {
     max-width: 1000px;
   }
 }
-@media only screen and (min-width: 1800px) and (max-width: 1920px) {
+@media only screen and (min-width: 1820px) and (max-width: 1920px) {
   /* Estilos para pantallas grandes, entre 1800px y 1920px */
   header picture img {
     width: 100px;
@@ -1375,7 +1393,7 @@ footer .pie {
     font-size: 30px;
   }
 }
-@media only screen and (min-width: 2000px) and (max-width: 3000px) {
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
   /* Media Query para pantallas extra grandes (2000px a 3000px) */
   header picture img {
     width: 100px;
