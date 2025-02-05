@@ -446,7 +446,14 @@ main {
     display: flex;
     flex-direction: column;
   }
-
+  button{
+    margin-top: 20px ;
+    width: 50px ;
+    .fa-down-long{
+      font-size: 30px; 
+    }
+  }
+  
 
   /* Estilo para una línea divisoria */
   .linea {
@@ -504,6 +511,7 @@ main {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 150px;
+  z-index: 3;
 
   .compra {
     display: flex;

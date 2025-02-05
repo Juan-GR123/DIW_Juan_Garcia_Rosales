@@ -594,6 +594,13 @@ main .categorias2 .cat.active {
   display: flex;
   flex-direction: column;
 }
+.Perfil button {
+  margin-top: 20px;
+  width: 50px;
+}
+.Perfil button .fa-down-long {
+  font-size: 30px;
+}
 .Perfil .linea {
   height: 1px;
   margin-top: 50px;
@@ -638,6 +645,7 @@ main .categorias2 .cat.active {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 150px;
+  z-index: 3;
 }
 .Cesta .compra {
   display: flex;
