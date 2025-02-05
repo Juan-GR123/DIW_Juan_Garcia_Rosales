@@ -34,7 +34,7 @@ main {
     justify-content: center;
     margin-top: 100px;
     gap: 100px;
-    z-index: 1;
+    z-index: 0; //1??
 
     /* Botón en la capa principal */
     .boton1 {

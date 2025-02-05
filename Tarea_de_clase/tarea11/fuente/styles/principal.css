@@ -270,7 +270,7 @@ main .botones {
   justify-content: center;
   margin-top: 100px;
   gap: 100px;
-  z-index: 1;
+  z-index: 0;
   /* Botón en la capa principal */
 }
 main .botones .boton1 {
