@@ -230,7 +230,10 @@
   #footerCes {
     display: none;
   }
-
+  .indexF{
+    position: fixed; 
+    top: auto;
+  }
   footer {
     position: relative;
     top: 100px;
@@ -523,6 +526,14 @@
 
 @media only screen and (min-width: 1360px) and (max-width: 1820px) {
 
+
+  main{
+    .index{
+      h1{
+        font-size: 40px;
+      }
+    }
+  }
   /* Estilos para pantallas entre 1500px y 1820px */
   .Nosotros {
     margin-bottom: 200px;
