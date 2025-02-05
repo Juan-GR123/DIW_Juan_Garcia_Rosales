@@ -12,8 +12,11 @@ footer {
 
   /* Estilos para la sección de redes sociales dentro del footer */
   .redes_S {
-    display: flex;
-    gap: 30px;
+    //display: flex;
+    //gap: 30px;
+    i{
+      margin-inline: 20px;
+    }
 
     /* Estilos para las imágenes de las redes sociales */
     img {
@@ -27,7 +30,7 @@ footer {
   /* Estilo para una línea divisoria */
   .linea {
     height: 1px;
-    background-color: black;
+    background-color: white;
   }
 
   /* Estilos para la sección del pie dentro del footer */

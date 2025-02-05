@@ -166,7 +166,7 @@ section .categorias {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 section li {
   background-color: #a4c3cf;
@@ -188,11 +188,18 @@ section .categorias {
   justify-content: center;
   margin: 0;
   padding: 0;
-  gap: 60px;
+  gap: 0px;
+  overflow-x: auto;
+  white-space: nowrap;
+  list-style-type: none;
+}
+section .categorias li {
+  display: inline-block;
+  padding: 10px;
 }
 section .categorias > li {
   position: relative;
-  padding: 15px 20px;
+  padding: 0px 20px;
   color: #fff;
   cursor: pointer;
 }
@@ -645,7 +652,7 @@ main .categorias2 .cat.active {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 150px;
-  z-index: 3;
+  z-index: 0;
 }
 .Cesta .compra {
   display: flex;
@@ -738,9 +745,10 @@ footer {
   /* Estilos para la sección de términos dentro del footer */
 }
 footer .redes_S {
-  display: flex;
-  gap: 30px;
   /* Estilos para las imágenes de las redes sociales */
+}
+footer .redes_S i {
+  margin-inline: 20px;
 }
 footer .redes_S img {
   height: 40px;
@@ -750,7 +758,7 @@ footer .redes_S img {
 }
 footer .linea {
   height: 1px;
-  background-color: black;
+  background-color: white;
 }
 footer .pie {
   display: flex;
@@ -865,11 +873,14 @@ footer .pie {
     margin-left: 0;
   }
   header #valor {
-    padding: 5px;
+    padding: 0px;
     width: 200px;
   }
   .headerP {
     flex-direction: column;
+  }
+  .headerP img {
+    display: none;
   }
   .headerP .busca {
     margin-top: 10px;
@@ -953,6 +964,7 @@ footer .pie {
   }
   main .titulo .iniciar_sesion {
     margin-top: 240px;
+    padding: 10px;
   }
   .Nosotros {
     padding-block: 0;
@@ -1135,6 +1147,9 @@ footer .pie {
     display: block;
     /* Mostrar solo el artículo activo */
   }
+  footer p {
+    font-size: 13px;
+  }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1360px) {
   /* Estilos para pantallas entre 1000px y 1360px, como en pantallas más grandes */
@@ -1272,36 +1287,23 @@ footer .pie {
     max-width: 1000px;
   }
 }
-@media only screen and (min-width: 1820px) and (max-width: 1920px) {
+@media only screen and (min-width: 1830px) and (max-width: 1920px) {
   /* Estilos para pantallas grandes, entre 1800px y 1920px */
-  header picture img {
-    width: 100px;
-    height: 100px;
-  }
   header #valor {
-    padding: 20px;
     width: 500px;
   }
   header .enlaces .fa-user {
-    font-size: 50px;
+    font-size: 30px;
     margin-right: 50px;
   }
-  header .enlaces button {
-    font-size: 40px;
-  }
   header .enlaces button.iniciar {
-    font-size: 30px;
     color: white;
   }
   header .enlaces button.comprar {
-    font-size: 30px;
     color: white;
   }
   section .categorias li {
-    font-size: 30px;
-  }
-  main {
-    margin-bottom: 400px;
+    font-size: 20px;
   }
   main h1 {
     font-size: xxx-large;
@@ -1325,7 +1327,6 @@ footer .pie {
     max-width: none;
   }
   main .titulo .iniciar_sesion {
-    font-size: 30px;
     padding: 10px;
   }
   main .eventos article img {
@@ -1396,41 +1397,35 @@ footer .pie {
     top: 100px;*/
   }
   footer .redes_S .fa-brands {
-    font-size: 50px;
+    font-size: 30px;
   }
   footer .pie .contacto p {
-    font-size: 30px;
+    font-size: 20px;
   }
   footer .pie .link p {
-    font-size: 30px;
+    font-size: 20px;
   }
   footer .pie .terminos p {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
-@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1930px) and (max-width: 3000px) {
   /* Media Query para pantallas extra grandes (2000px a 3000px) */
-  header picture img {
-    width: 100px;
-    height: 100px;
-  }
   header #valor {
-    padding: 20px;
     width: 500px;
   }
   header .enlaces .fa-user {
-    font-size: 50px;
     margin-right: 50px;
   }
   header .enlaces button {
-    font-size: 40px;
     color: black;
   }
   /*.headerP {
     flex-direction: row;
   }*/
   section .categorias li {
-    font-size: 50px;
+    font-size: 20px;
+    margin-right: 50px;
   }
   main {
     margin-bottom: 0px;
@@ -1444,7 +1439,8 @@ footer .pie {
     max-width: none;
   }
   main .titulo .iniciar_sesion {
-    font-size: 40px;
+    font-size: 20px;
+    padding: 10px;
   }
   main .botones .boton1 {
     font-size: 40px;
@@ -1466,7 +1462,7 @@ footer .pie {
     height: 200px;
   }
   main .categorias2 .cat p {
-    font-size: 50px;
+    font-size: 30px;
   }
   main .colaboradores .secciones p {
     font-size: 50px;
@@ -1535,16 +1531,16 @@ footer .pie {
     top: 100px;
   }*/
   footer .redes_S .fa-brands {
-    font-size: 50px;
+    font-size: 40px;
   }
   footer .pie .contacto p {
-    font-size: 30px;
+    font-size: 20px;
   }
   footer .pie .link p {
-    font-size: 30px;
+    font-size: 20px;
   }
   footer .pie .terminos p {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 

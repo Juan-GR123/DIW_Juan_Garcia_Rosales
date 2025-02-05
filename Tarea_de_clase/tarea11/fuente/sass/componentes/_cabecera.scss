@@ -84,7 +84,7 @@
       padding: 0;
       margin: 0;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap; 
     }
 
     li {
@@ -103,13 +103,21 @@
       justify-content: center;
       margin: 0;
       padding: 0;
-      gap: 60px;
+      gap: 0px;
+      overflow-x: auto;
+      white-space: nowrap;
+      list-style-type: none;
     }
+  
+  .categorias li {
+      display: inline-block;
+      padding: 10px;
+  }
 
     /* Estilos para cada elemento de la lista de categorías */
     .categorias>li {
       position: relative;
-      padding: 15px 20px;
+      padding: 0px 20px;
       color: #fff;
       cursor: pointer; //te pone el cursos como la manita
     }

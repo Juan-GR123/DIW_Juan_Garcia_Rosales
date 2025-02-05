@@ -11,7 +11,7 @@
     }
 
     #valor {
-      padding: 5px;
+      padding: 0px;
       width: 200px;
     }
 
@@ -22,6 +22,10 @@
 
   .headerP {
     flex-direction: column;
+
+    img{
+      display: none;
+    }
 
     .busca {
       margin-top: 10px;
@@ -129,6 +133,7 @@
 
       .iniciar_sesion {
         margin-top: 240px;
+        padding: 10px;
       }
     }
   }
@@ -385,6 +390,15 @@
     }
 
   }
+
+  footer{
+    p{
+      font-size: 13px;
+     
+    }
+
+    
+  }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1360px) {
@@ -581,39 +595,39 @@
   }
 }
 
-@media only screen and (min-width: 1820px) and (max-width: 1920px) {
+@media only screen and (min-width: 1830px) and (max-width: 1920px) {
 
   /* Estilos para pantallas grandes, entre 1800px y 1920px */
   header {
     picture {
       img {
-        width: 100px;
-        height: 100px;
+       // width: 100px;
+       // height: 100px;
       }
     }
 
     #valor {
-      padding: 20px;
+      //padding: 20px;
       width: 500px;
     }
 
     .enlaces {
       .fa-user {
-        font-size: 50px;
+        font-size: 30px;
         margin-right: 50px;
       }
 
       button {
-        font-size: 40px;
+        //font-size: 40px;
 
         &.iniciar {
-          font-size: 30px;
-          color: white;
+         // font-size: 20px;
+          color: white; 
         }
 
         &.comprar {
-          font-size: 30px;
-          color: white;
+         // font-size: 20px;
+         color: white;
         }
       }
 
@@ -624,13 +638,13 @@
   section {
     .categorias {
       li {
-        font-size: 30px;
+        font-size: 20px; 
       }
     }
   }
 
   main {
-    margin-bottom: 400px;
+   // margin-bottom: 400px;
 
     h1 {
       font-size: xxx-large;
@@ -669,7 +683,7 @@
       }
 
       .iniciar_sesion {
-        font-size: 30px;
+        //font-size: 30px;
         padding: 10px;
       }
     }
@@ -775,26 +789,26 @@
 
     .redes_S {
       .fa-brands {
-        font-size: 50px;
+        font-size: 30px;
       }
     }
 
     .pie {
       .contacto {
         p {
-          font-size: 30px;
+          font-size: 20px;
         }
       }
 
       .link {
         p {
-          font-size: 30px;
+          font-size: 20px;
         }
       }
 
       .terminos {
         p {
-          font-size: 30px;
+          font-size: 20px;  
         }
       }
     }
@@ -805,31 +819,31 @@
 
 
 
-@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1930px) and (max-width: 3000px) {
 
   /* Media Query para pantallas extra grandes (2000px a 3000px) */
   header {
     picture {
       img {
-        width: 100px;
-        height: 100px;
+       // width: 100px;
+       // height: 100px;
       }
     }
 
     #valor {
-      padding: 20px;
+      //padding: 20px;
       width: 500px;
     }
 
     .enlaces {
       .fa-user {
-        font-size: 50px;
+        //font-size: 50px;
         margin-right: 50px;
       }
 
 
       button {
-        font-size: 40px;
+       // font-size: 40px;
         color: black;
       }
     }
@@ -842,10 +856,11 @@
   section {
     .categorias {
       li {
-        font-size: 50px;
+        font-size: 20px;
+        margin-right: 50px; 
       }
     }
-  }
+  } 
 
   main {
 
@@ -863,7 +878,8 @@
       }
 
       .iniciar_sesion {
-        font-size: 40px;
+        font-size: 20px;
+        padding: 10px;
       }
     }
 
@@ -907,7 +923,7 @@
         }
 
         p {
-          font-size: 50px;
+          font-size: 30px;
         }
       }
     }
@@ -1011,26 +1027,26 @@
   footer {
     .redes_S {
       .fa-brands {
-        font-size: 50px;
+        font-size: 40px;
       }
     }
 
     .pie {
       .contacto {
         p {
-          font-size: 30px;
+          font-size: 20px; 
         }
       }
 
       .link {
         p {
-          font-size: 30px;
+          font-size: 20px;
         }
       }
 
       .terminos {
         p {
-          font-size: 30px;
+          font-size: 20px;
         }
       }
     }
