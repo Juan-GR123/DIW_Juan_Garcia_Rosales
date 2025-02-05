@@ -2,6 +2,14 @@
 /* tamaños de Media Queries */
 @media only screen and (min-width: 100px) and (max-width: 767px) {
 
+  #header-index{
+    flex-direction: column;
+
+    img{
+      margin-left: 0px;
+    }
+  }
+  
   /* Estilos aplicados cuando el ancho de pantalla está entre 300px y 767px (dispositivos móviles pequeños) */
   header {
     .enlaces a {
@@ -13,6 +21,14 @@
     #valor {
       padding: 0px;
       width: 200px;
+    }
+
+    .enlaces{
+      button{
+        &.comprar{
+          margin-right: 0px;
+        }
+      }
     }
 
     //.fa-user{
@@ -44,7 +60,10 @@
 
   }
   #fondo{
-    margin-bottom: 400px; 
+    margin-bottom: 0px;
+    h1{
+      font-size: 20px;
+    } 
   }
   main {
     margin-bottom: 0px;
@@ -104,6 +123,7 @@
     }
 
     .categorias2 {
+      margin-bottom: 50px;
       gap: 50px;
 
       article {
@@ -227,7 +247,7 @@
     display: none;
   }
   .indexF{
-    position: fixed; 
+   // position: fixed; 
     top: auto;
   }
   footer {
@@ -265,14 +285,25 @@
       padding: 5px;
       width: 300px;
     }
+    img{
+      margin-left: 100px;
+    }
+    .enlaces{
+      button{
+        &.comprar{
+          margin-right: 100px;
+        }
+      }
+    }
   }
 
   main {
     text-align: center;
-    padding-block: 100px;
+    //padding-block: 100px;
     position: relative;
     //top: 150px;
-    margin-right: 30px;
+   // margin-right: 30px;
+    margin-bottom: 0px;
   }
 
   .mainP {
@@ -282,7 +313,7 @@
     margin-right: 0;
 
     .categorias2 {
-      margin-bottom: 0px;
+      margin-bottom: 150px
     }
   }
 
@@ -398,8 +429,8 @@
   main {
     text-align: center;
     position: relative;
-    margin-right: 30px;
-    margin-bottom: 200px;
+    //margin-right: 30px;
+    margin-bottom: 100px;
 
     h1 {
       font-size: 40px;
@@ -417,7 +448,7 @@
     margin-right: 0;
 
     .categorias2 {
-      margin-bottom: 0px;
+      margin-bottom: 160px;
     }
   }
 
@@ -644,11 +675,11 @@
 
     .botones {
       .boton1 {
-        font-size: 50px;
+        //font-size: 50px;
       }
 
       .boton2 {
-        font-size: 50px;
+        //font-size: 50px;
       }
     }
 
@@ -892,7 +923,6 @@
     }
 
     .categorias2 {
-
       .cat {
         img {
           width: 200px;

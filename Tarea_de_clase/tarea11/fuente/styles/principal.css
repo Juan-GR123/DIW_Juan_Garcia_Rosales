@@ -111,6 +111,7 @@ header img {
   width: 40px;
   height: auto;
   border-radius: 50%;
+  margin-left: 200px;
 }
 header .enlaces {
   /* Estilos para el enlace 'registrar' */
@@ -138,6 +139,7 @@ header .enlaces button.comprar {
   border-radius: 5px;
   margin-left: 10px;
   cursor: pointer;
+  margin-right: 200px;
 }
 header .enlaces .registrar {
   text-decoration: none;
@@ -273,6 +275,7 @@ main .index-texto {
   background-color: rgba(255, 255, 255, 0.514);
   padding: 10px;
   border-radius: 30px;
+  margin-inline: 100px;
 }
 main h1 {
   font-family: "Permanent Marker";
@@ -410,7 +413,7 @@ main .categorias2 {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   overflow: hidden;
   /*.desplazamiento {
     display: flex;
@@ -858,6 +861,12 @@ footer .pie {
 /*media-queries*/
 /* tamaños de Media Queries */
 @media only screen and (min-width: 100px) and (max-width: 767px) {
+  #header-index {
+    flex-direction: column;
+  }
+  #header-index img {
+    margin-left: 0px;
+  }
   /* Estilos aplicados cuando el ancho de pantalla está entre 300px y 767px (dispositivos móviles pequeños) */
   header .enlaces a {
     font-size: 13px;
@@ -867,6 +876,9 @@ footer .pie {
   header #valor {
     padding: 0px;
     width: 200px;
+  }
+  header .enlaces button.comprar {
+    margin-right: 0px;
   }
   .headerP {
     flex-direction: column;
@@ -887,7 +899,10 @@ footer .pie {
     padding: 2px;
   }
   #fondo {
-    margin-bottom: 400px;
+    margin-bottom: 0px;
+  }
+  #fondo h1 {
+    font-size: 20px;
   }
   main {
     margin-bottom: 0px;
@@ -936,6 +951,7 @@ footer .pie {
     /* Mostrar solo el libro que este activo*/
   }
   main .categorias2 {
+    margin-bottom: 50px;
     gap: 50px;
   }
   main .categorias2 article {
@@ -1020,7 +1036,6 @@ footer .pie {
     display: none;
   }
   .indexF {
-    position: fixed;
     top: auto;
   }
   footer {
@@ -1049,11 +1064,16 @@ footer .pie {
     padding: 5px;
     width: 300px;
   }
+  header img {
+    margin-left: 100px;
+  }
+  header .enlaces button.comprar {
+    margin-right: 100px;
+  }
   main {
     text-align: center;
-    padding-block: 100px;
     position: relative;
-    margin-right: 30px;
+    margin-bottom: 0px;
   }
   .mainP {
     text-align: center;
@@ -1062,7 +1082,7 @@ footer .pie {
     margin-right: 0;
   }
   .mainP .categorias2 {
-    margin-bottom: 0px;
+    margin-bottom: 150px;
   }
   .Nosotros {
     padding-block: 0;
@@ -1142,8 +1162,7 @@ footer .pie {
   main {
     text-align: center;
     position: relative;
-    margin-right: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     /* .botones {
       padding: 130px;
     }*/
@@ -1158,7 +1177,7 @@ footer .pie {
     margin-right: 0;
   }
   .mainP .categorias2 {
-    margin-bottom: 0px;
+    margin-bottom: 160px;
   }
   .Nosotros {
     padding-block: 0;
@@ -1294,12 +1313,6 @@ footer .pie {
   main h1 {
     font-size: xxx-large;
     max-width: none;
-  }
-  main .botones .boton1 {
-    font-size: 50px;
-  }
-  main .botones .boton2 {
-    font-size: 50px;
   }
   main .titulo h1 {
     font-size: 50px;
