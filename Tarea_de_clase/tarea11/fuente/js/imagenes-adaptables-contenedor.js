@@ -12,20 +12,8 @@ const imagenesPorArticulo = [
     { ancho: 768, png: "./img/colaborador--768px.png", webp: "./img/colaborador--768px.webp", jpg: "./img/colaborador--768px.jpg" },
     { ancho: 0, png: "./img/colaborador--480px.png", webp: "./img/colaborador--480px.webp", jpg: "./img/colaborador--480px.jpg" },
   ],
-  [ // Imágenes para el segundo <article>
-    { ancho: 1200, png: "./img/colaborador2--1200px.png", webp: "./img/colaborador2--1200px.webp", jpg: "./img/colaborador2--1200px.jpg" },
-    { ancho: 768, png: "./img/colaborador2--768px.png", webp: "./img/colaborador2--768px.webp", jpg: "./img/colaborador2--768px.jpg" },
-    { ancho: 0, png: "./img/colaborador2--480px.png", webp: "./img/colaborador2--480px.webp", jpg: "./img/colaborador2--480px.jpg" },
-  ],
 ];
 
-/*const imagenesporArticulo2 = [
-  [
-    { ancho: 1200, png: "../img/foto-libreria2-1200px.png", webp: "../img/foto-libreria2-1200px.webp", jpg: "../img/foto-libreria2-1200px.jpg" },
-    { ancho: 768, png: "../img/foto-libreria2-768px.png", webp: "../img/foto-libreria2-768px.webp", jpg: "../img/foto-libreria2-768px.jpg" },
-    { ancho: 0, png: "../img/foto-libreria2-480px.png", webp: "../img/foto-libreria2-480px.webp", jpg: "../img/foto-libreria2-480px.jpg" },
-  ],
-];*/
 
 const cambiarImagen = (article, imagenes) => {
   const anchoContenedor = article.offsetWidth;

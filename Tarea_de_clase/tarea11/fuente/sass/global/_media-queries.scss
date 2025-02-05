@@ -43,7 +43,9 @@
     }
 
   }
-
+  #fondo{
+    margin-bottom: 400px; 
+  }
   main {
     margin-bottom: 0px;
 
@@ -73,17 +75,6 @@
       }
     }
 
-    .colaboradores {
-      // display: block;
-      justify-content: center;
-      gap: 0;
-      margin-top: 100px;
-      flex-direction: column;
-
-      .secciones {
-        margin-inline: 30px;
-      }
-    }
 
     .eventos {
       gap: 0;
@@ -661,20 +652,6 @@
       }
     }
 
-    .colaboradores {
-      .secciones {
-        p {
-          font-size: 50px;
-        }
-
-        picture {
-          img {
-            width: 200px;
-            height: 200px;
-          }
-        }
-      }
-    }
 
     .titulo {
       h1 {
@@ -924,21 +901,6 @@
 
         p {
           font-size: 30px;
-        }
-      }
-    }
-
-    .colaboradores {
-      .secciones {
-        p {
-          font-size: 50px;
-        }
-
-        picture {
-          img {
-            width: 200px;
-            height: 200px;
-          }
         }
       }
     }

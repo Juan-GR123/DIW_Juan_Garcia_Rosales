@@ -98,7 +98,6 @@ footer {
 /* Estilos para el header */
 header {
   display: flex;
-  flex-grow: 2;
   justify-content: space-between;
   align-items: center;
   background-color: #a4c3cf;
@@ -241,6 +240,11 @@ section .categorias > li ul li a:hover {
 
 /*main*/
 /* Estilos generales para el contenedor principal (main) */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 main {
   text-align: center;
   flex-grow: 1;
@@ -248,18 +252,27 @@ main {
   /* Estilos para la sección .index dentro de main */
   /* Estilos para el título h1 dentro de main */
   /* Estilos para los botones dentro de main */
-  /* Estilos para la sección de colaboradores */
   /* Estilos para el título de la sección principal */
   /* Estilos para la sección de eventos */
   /* Estilos para la sección de libros */
   /* Estilos para la sección de categorías */
 }
 main .index {
-  margin-top: 100px;
+  background-image: url("../img/fondo-aterrizaje-1200px.jpg");
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija al hacer scroll */
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  flex-grow: 2;
+}
+main .index-texto {
+  background-color: rgba(255, 255, 255, 0.514);
+  padding: 10px;
+  border-radius: 30px;
 }
 main h1 {
   font-family: "Permanent Marker";
@@ -295,25 +308,6 @@ main .botones .boton2 {
   font-weight: lighter;
   border: 1px solid;
   border-radius: 10%;
-}
-main .colaboradores {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 100px;
-}
-main .colaboradores .secciones {
-  text-align: center;
-  margin-inline: 50px;
-}
-main .colaboradores .secciones img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-main .colaboradores .secciones p {
-  margin-top: 10px;
-  font-size: 16px;
 }
 main .titulo {
   background-image: url("../img/foto-libreria-1920px.jpg");
@@ -843,8 +837,6 @@ main .libros {
 header {
   /* Se usa flex para organizar los elementos dentro de la cabecera */
   display: flex;
-  /* Hace que el header ocupe el espacio disponible en su contenedor */
-  flex-grow: 2;
   /* Distribuye el espacio entre los elementos de la cabecera */
   justify-content: space-between;
   /* Alinea los elementos de la cabecera en el centro verticalmente */
@@ -894,6 +886,9 @@ footer .pie {
   .headerP .enlaces button {
     padding: 2px;
   }
+  #fondo {
+    margin-bottom: 400px;
+  }
   main {
     margin-bottom: 0px;
   }
@@ -918,15 +913,6 @@ footer .pie {
   }
   main .botones .boton2 {
     margin-left: 0;
-  }
-  main .colaboradores {
-    justify-content: center;
-    gap: 0;
-    margin-top: 100px;
-    flex-direction: column;
-  }
-  main .colaboradores .secciones {
-    margin-inline: 30px;
   }
   main .eventos {
     gap: 0;
@@ -1315,13 +1301,6 @@ footer .pie {
   main .botones .boton2 {
     font-size: 50px;
   }
-  main .colaboradores .secciones p {
-    font-size: 50px;
-  }
-  main .colaboradores .secciones picture img {
-    width: 200px;
-    height: 200px;
-  }
   main .titulo h1 {
     font-size: 50px;
     max-width: none;
@@ -1463,13 +1442,6 @@ footer .pie {
   }
   main .categorias2 .cat p {
     font-size: 30px;
-  }
-  main .colaboradores .secciones p {
-    font-size: 50px;
-  }
-  main .colaboradores .secciones picture img {
-    width: 200px;
-    height: 200px;
   }
   .mainP {
     margin-bottom: 100px;
