@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 /*Te permite utilizar los componentes de tailwindcss*/
+
+@layer components{
+    .celda-grid{
+        @apply p-4 bg-red-200 border border-red-900 md:bg-cyan-200 lg:bg-yellow-200;
+    }
+    .tarjeta{
+        @apply pb-3 mb-6 bg-blue-100 border-2 border-blue-800 rounded-lg max-w-xs;
+    }
+}

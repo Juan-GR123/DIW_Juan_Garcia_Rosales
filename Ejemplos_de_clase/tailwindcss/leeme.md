@@ -12,4 +12,17 @@ no incorpora clases que no se usen*
 Adaptable (responsive)
 mobile-first
 
+sm: 640px
+md: 768px
+lg: 1024px
+xl: 1280px
+2xl: 1536px
 
+
+
+1.- disposicion (layout)
+2.- colores/fondos
+3.- espaciados
+4.- tipografias
+5.- bordes y sombras
+6.- 
