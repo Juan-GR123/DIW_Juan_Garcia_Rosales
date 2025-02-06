@@ -249,7 +249,6 @@ html, body {
 main {
   text-align: center;
   flex-grow: 1;
-  margin-bottom: 200px;
   /* Estilos para la sección .index dentro de main */
   /* Estilos para el título h1 dentro de main */
   /* Estilos para los botones dentro de main */
@@ -727,9 +726,6 @@ img {
 /*Footer*/
 /* Estilos para el footer */
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   text-align: center;
   padding: 10px;
@@ -1161,13 +1157,12 @@ footer .pie {
   main {
     text-align: center;
     position: relative;
-    margin-bottom: 100px;
     /* .botones {
       padding: 130px;
     }*/
   }
   main h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .mainP {
     text-align: center;
@@ -1258,6 +1253,12 @@ footer .pie {
   }
 }
 @media only screen and (min-width: 1360px) and (max-width: 1820px) {
+  #fondo {
+    margin-bottom: 0px;
+  }
+  #fondo h1 {
+    font-size: 30px;
+  }
   main .index h1 {
     font-size: 40px;
   }
@@ -1292,6 +1293,9 @@ footer .pie {
   }
   footer .redes_S .fa-brands {
     font-size: 20px;
+  }
+  .indexF {
+    padding: 0px;
   }
 }
 @media only screen and (min-width: 1830px) and (max-width: 1920px) {

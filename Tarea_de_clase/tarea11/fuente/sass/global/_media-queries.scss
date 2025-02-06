@@ -430,10 +430,10 @@
     text-align: center;
     position: relative;
     //margin-right: 30px;
-    margin-bottom: 100px;
+    //margin-bottom: 100px;
 
     h1 {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     /* .botones {
@@ -561,8 +561,12 @@
 }
 
 @media only screen and (min-width: 1360px) and (max-width: 1820px) {
-
-
+  #fondo{
+    h1{
+      font-size: 30px;
+    }
+    margin-bottom: 0px;
+  }
   main{
     .index{
       h1{
@@ -622,6 +626,10 @@
         font-size: 20px;
       }
     }
+  }
+
+  .indexF{
+    padding: 0px ;
   }
 }
 
