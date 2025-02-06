@@ -148,6 +148,7 @@ header .enlaces .registrar {
   margin-left: 10px;
   background-color: #ffb347;
   cursor: pointer;
+  margin-right: 200px;
 }
 header .iniciar:hover {
   background-color: #2b3a42;
@@ -193,11 +194,15 @@ section .categorias {
   overflow-x: auto;
   white-space: nowrap;
   list-style-type: none;
+  position: relative;
 }
 section .categorias li {
   display: list-item;
   padding: 10px;
   position: relative;
+}
+section .categorias > #unico:hover {
+  background-color: #a4c3cf;
 }
 section .categorias > li {
   position: relative;
@@ -875,6 +880,9 @@ footer .pie {
   header .enlaces button.comprar {
     margin-right: 0px;
   }
+  header .enlaces button.registrar {
+    margin-right: 0px;
+  }
   .headerP {
     flex-direction: column;
   }
@@ -923,6 +931,7 @@ footer .pie {
   }
   main .botones .boton2 {
     margin-left: 0;
+    margin-block: 20px;
   }
   main .eventos {
     gap: 0;
@@ -1047,6 +1056,9 @@ footer .pie {
   }
   footer .contacto {
     padding-bottom: 30px;
+  }
+  footer article p {
+    font-size: 12px;
   }
   #footerCes {
     position: relative;

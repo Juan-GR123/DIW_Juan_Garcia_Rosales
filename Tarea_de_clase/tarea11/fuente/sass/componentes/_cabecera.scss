@@ -54,6 +54,7 @@
         margin-left: 10px;
         background-color: #ffb347;
         cursor: pointer;
+        margin-right: 200px;
       }
     }
 
@@ -109,12 +110,17 @@
       overflow-x: auto;
       white-space: nowrap;
       list-style-type: none;
+      position: relative;
     }
   
   .categorias li {
       display:list-item;
       padding: 10px;
       position: relative; // Añadir posición relativa
+  }
+
+  .categorias>#unico:hover{
+    background-color: #a4c3cf;
   }
 
     /* Estilos para cada elemento de la lista de categorías */
@@ -157,7 +163,7 @@
     }
 
     .categorias>li ul li:hover {
-      background-color: #2b3a42
+      background-color: #2b3a42;
     }
 
     /* Estilos para los enlaces dentro de los elementos de la lista y submenú */

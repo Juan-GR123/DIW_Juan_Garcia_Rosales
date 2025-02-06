@@ -21,6 +21,7 @@
     <script src="../js/eventos.js" defer></script>
     <script src="../js/libros.js" defer></script>
     <script src="../js/categorias.js" defer></script>
+    <script src="../js/imagenes-adaptables-contenedor.js" defer></script>
     <!--<script src="../js/cesta.js" defer></script>-->
 </head>
 
@@ -54,7 +55,7 @@
             <li>Comedia</li>
             <li>Ciencia Ficci&oacute;n</li>
             <li>Misterio</li>
-            <li>Otros...
+            <li id="unico">Otros...
                 <ul>
                     <li>Drama</li>
                     <li>Historia</li>
@@ -64,7 +65,6 @@
                     <li>AutoAyuda</li>
                 </ul>
             </li>
-
         </ul>
     </section>
     <main class="mainP" id="mainP">
@@ -79,42 +79,47 @@
         <!-- Sección de eventos -->
         <h2>Eventos</h2>
         <section class="eventos">
-            <button class="izquierda">&lt;&lt;</button>
-            <article class="evento1">
-                <picture>
+            <button class="izquierda"><i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i></button>
+            <article class="evento1"> 
+                <!--<picture>
                     <source srcset="../img/foto-libreria2-500px.webp" type="image/webp" media="(min-width: 480px)">
                     <source srcset="../img/foto-libreria2-500px.png" type="image/png" media="(min-width: 480px)">
                     <img src="../img/foto-libreria2-500px.jpg">
+                </picture>-->
+                <picture>
+                    <picture>
+                        <source type="image/webp">
+                        <source type="image/png">
+                        <img src="../img/foto-libreria2-700px.jpg" alt="Foto Librería" data-actual="./img/foto-libreria2-700px.jpg">
+                    </picture>
                 </picture>
-
                 <p>Evento: “Curso de Narrativa de lunes a jueves de 17:00 a 18:00” </p>
             </article>
             <article class="evento2">
                 <picture>
-                    <source srcset="../img/estanteria-iluminada-500px.webp" type="image/webp"
-                        media="(min-width: 480px)">
-                    <source srcset="../img/estanteria-iluminada-500px.png" type="image/png" media="(min-width: 480px)">
-                    <img src="../img/estanteria-iluminada-500px.jpg">
+                    <picture>
+                        <source type="image/webp">
+                        <source type="image/png">
+                        <img src="../img/estanteria-antigua-700px.jpg" alt="Estantería Antigua" data-actual="./img/estanteria-antigua-700px.jpg">
+                    </picture>
                 </picture>
                 <p>Evento: “¡¡¡J.K. Rowling viene a visitarnos el viernes 29 de Enero a las 12:00!!!”</p>
             </article>
             <article class="evento3">
                 <picture>
-                    <source srcset="../img/estanteria-antigua-500px.webp" type="image/webp" media="(min-width: 480px)">
-                    <source srcset="../img/estanteria-antigua-500px.png" type="image/png" media="(min-width: 480px)">
-                    <img src="../img/estanteria-antigua-500px.jpg
-                    ">
+                    <source type="image/webp">
+                    <source type="image/png">
+                    <img src="../img/estanteria-iluminada-700px.jpg" alt="Estantería Iluminada" data-actual="./img/estanteria-iluminada-700px.jpg">
                 </picture>
-
                 <p>Evento: ”Club de lectura para aficionados. Los sábados y domingos de 10:00 a
                     11:00”</p>
             </article>
-            <button class="derecha">>></button>
+            <button class="derecha"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></button>
         </section>
         <!-- Sección de libros novedosos -->
         <h2>Libros novedosos</h2>
         <section class="libros">
-            <button class="izquierda2">&lt;&lt;</button>
+            <button class="izquierda2"><i class="fa-solid fa-chevron-left"><i class="fa-solid fa-chevron-left"></i></i></button>
             <article class="libro">
                 <picture>
                     <source srcset="../img/Amor_de_verano_portada-200px.webp" type="image/webp"
@@ -140,11 +145,11 @@
                     <img src="../img/Portada_del_libro_La_Sinfonía_del_Mar-200px.jpg" alt="libro3">
                 </picture>
             </article>
-            <button class="derecha2">>></button>
+            <button class="derecha2"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></button>
         </section>
 
         <section class="categorias2">
-            <button class="izquierda3">&lt;&lt;</button>
+            <button class="izquierda3"><i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i></button>
 
             <article class="cat">
                 <picture>
@@ -180,7 +185,7 @@
                 <img src="../img/categoria-misterio-1024px.jpg" alt="accion" width="100px" height="100px">
                 <p>Misterio</p>
             </article>  -->
-            <button class="derecha3">>></button>
+            <button class="derecha3"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></button>
         </section>
     </main>
     <!-- Pie de página -->
