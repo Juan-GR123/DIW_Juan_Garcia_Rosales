@@ -112,8 +112,9 @@
     }
   
   .categorias li {
-      display: inline-block;
+      display:list-item;
       padding: 10px;
+      position: relative; // Añadir posición relativa
   }
 
     /* Estilos para cada elemento de la lista de categorías */
@@ -133,12 +134,12 @@
     .categorias>li ul {
       display: none;
       /* Escondido por defecto */
-      position: absolute;
-      top: 50px;
+      position: relative;
+      //top: 50px;
       left: 0;
       background-color: #a4c3cf;
       list-style: none;
-      padding: 10px 0;
+      //padding: 10px 0;
       margin: 0;
       border-radius: 5px;
       z-index: 1000;
