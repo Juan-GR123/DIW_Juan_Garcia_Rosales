@@ -25,7 +25,7 @@
         color: black;
         background-color: #a4c3cf;
         cursor: pointer;
-        
+
 
         /* Estilos específicos para el botón 'iniciar' */
         &.iniciar {
@@ -50,8 +50,8 @@
           background-color: #2b3a42;
           color: white;
         }
-    
-    
+
+
         &.comprar:hover {
           background-color: #cf8e32;
         }
@@ -74,7 +74,7 @@
     //}
 
     /* Efectos de hover en los botones 'iniciar' y 'comprar', es decir solo funcionaran si se deja el cursor encima de los respectivos botones*/
- 
+
 
     /* Estilos para el buscador */
     #valor {
@@ -91,7 +91,7 @@
       padding: 0;
       margin: 0;
       display: flex;
-      flex-wrap: nowrap; 
+      flex-wrap: nowrap;
     }
 
     li {
@@ -116,16 +116,16 @@
       list-style-type: none;
       position: relative;
     }
-  
-  .categorias li {
-      display:list-item;
+
+    .categorias li {
+      display: list-item;
       padding: 10px;
       position: relative; // Añadir posición relativa
-  }
+    }
 
-  .categorias>#unico:hover{
-    background-color: #a4c3cf;
-  }
+    .categorias>#unico:hover {
+      background-color: #a4c3cf;
+    }
 
     /* Estilos para cada elemento de la lista de categorías */
     .categorias>li {
