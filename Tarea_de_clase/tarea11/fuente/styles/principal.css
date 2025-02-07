@@ -128,11 +128,11 @@ header .enlaces button {
   /* Estilos específicos para el botón 'comprar' */
 }
 header .enlaces button.iniciar {
-  color: white;
-  background-color: #2b3a42;
+  border: none;
+  color: black;
 }
 header .enlaces button.comprar {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px;
   background-color: #ffb347;
@@ -140,6 +140,13 @@ header .enlaces button.comprar {
   margin-left: 10px;
   cursor: pointer;
   margin-right: 200px;
+}
+header .enlaces button.iniciar:hover {
+  background-color: #2b3a42;
+  color: white;
+}
+header .enlaces button.comprar:hover {
+  background-color: #cf8e32;
 }
 header .enlaces .registrar {
   text-decoration: none;
@@ -149,12 +156,6 @@ header .enlaces .registrar {
   background-color: #ffb347;
   cursor: pointer;
   margin-right: 200px;
-}
-header .iniciar:hover {
-  background-color: #2b3a42;
-}
-header .comprar:hover {
-  background-color: #ffb347;
 }
 header #valor {
   padding: 5px;
@@ -178,10 +179,6 @@ section {
   /* Nuevos estilos para la clase categorías (con submenús) */
   /* Estilos para cada elemento de la lista de categorías */
   /* Efecto de hover(mantener el cursos encima del elemento) en los elementos de la lista de categorías */
-  /* Estilos para los submenús */
-  /* Muestra el submenú cuando el elemento principal tiene el cursor encima */
-  /* Estilos para los elementos dentro del submenú */
-  /* Estilos para los enlaces dentro de los elementos de la lista y submenú */
 }
 section .categorias {
   display: flex;
@@ -207,41 +204,12 @@ section .categorias > #unico:hover {
 section .categorias > li {
   position: relative;
   padding: 0px 20px;
-  color: #fff;
+  color: #2b3a42;
   cursor: pointer;
 }
 section .categorias > li:hover {
   background-color: #2b3a42;
-}
-section .categorias > li ul {
-  display: none;
-  /* Escondido por defecto */
-  position: relative;
-  left: 0;
-  background-color: #a4c3cf;
-  list-style: none;
-  margin: 0;
-  border-radius: 5px;
-  z-index: 1000;
-}
-section .categorias > li:hover ul {
-  display: block;
-}
-section .categorias > li ul li {
-  padding: 10px 20px;
-  color: #fff;
-}
-section .categorias > li ul li:hover {
-  background-color: #2b3a42;
-}
-section .categorias > li a,
-section .categorias > li ul li a {
-  color: inherit;
-  text-decoration: none;
-}
-section .categorias > li a:hover,
-section .categorias > li ul li a:hover {
-  text-decoration: underline;
+  color: white;
 }
 
 /*main*/
@@ -263,10 +231,10 @@ main {
   /* Estilos para la sección de categorías */
 }
 main .index {
-  background-image: url("../img/fondo-aterrizaje-1200px.jpg");
+  background-image: url("../img/fondo-aterrizaje-1200px-opaco.jpg");
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija al hacer scroll */
+  background-attachment: fixed; /*Hace que la imagen de fondo se mantenga fija al hacer scroll */
   height: 100%;
   display: flex;
   justify-content: center;
@@ -735,7 +703,7 @@ footer {
   text-align: center;
   padding: 10px;
   background-color: #a4c3cf;
-  color: white;
+  color: #2b3a42;
   /* Estilos para la sección de redes sociales dentro del footer */
   /* Estilo para una línea divisoria */
   /* Estilos para la sección del pie dentro del footer */
@@ -755,7 +723,7 @@ footer .redes_S img {
 }
 footer .linea {
   height: 1px;
-  background-color: white;
+  background-color: #2b3a42;
 }
 footer .pie {
   display: flex;
@@ -779,7 +747,7 @@ footer .pie .link p strong {
   font-size: larger;
 }
 footer .pie .link a {
-  color: white;
+  color: #2b3a42;
   text-decoration: none;
 }
 footer .pie .link a:hover {
@@ -796,7 +764,7 @@ footer .terminos p strong {
   font-size: larger;
 }
 footer .terminos a {
-  color: white;
+  color: #2b3a42;
   text-decoration: none;
 }
 footer .terminos a:hover {
@@ -861,6 +829,10 @@ footer .pie {
 /*media-queries*/
 /* tamaños de Media Queries */
 @media only screen and (min-width: 100px) and (max-width: 767px) {
+  .headerP .enlaces {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   #header-index {
     flex-direction: column;
   }
@@ -876,6 +848,10 @@ footer .pie {
   header #valor {
     padding: 0px;
     width: 200px;
+    margin-right: 50px;
+  }
+  header .enlaces button.iniciar {
+    border: none;
   }
   header .enlaces button.comprar {
     margin-right: 0px;
@@ -884,7 +860,7 @@ footer .pie {
     margin-right: 0px;
   }
   .headerP {
-    flex-direction: column;
+    flex-direction: row;
   }
   .headerP img {
     display: none;
@@ -897,9 +873,6 @@ footer .pie {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-  .headerP .enlaces button {
-    padding: 2px;
   }
   #fondo {
     margin-bottom: 0px;
@@ -1320,10 +1293,10 @@ footer .pie {
     margin-right: 50px;
   }
   header .enlaces button.iniciar {
-    color: white;
+    color: #2b3a42;
   }
   header .enlaces button.comprar {
-    color: white;
+    color: #2b3a42;
   }
   section .categorias li {
     font-size: 20px;
@@ -1419,7 +1392,7 @@ footer .pie {
     font-size: 20px;
   }
 }
-@media only screen and (min-width: 1930px) and (max-width: 3000px) {
+@media only screen and (min-width: 1930px) and (max-width: 5000px) {
   /* Media Query para pantallas extra grandes (2000px a 3000px) */
   header #valor {
     width: 500px;

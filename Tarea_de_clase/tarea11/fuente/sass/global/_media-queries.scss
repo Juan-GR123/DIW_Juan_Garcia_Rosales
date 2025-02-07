@@ -2,6 +2,12 @@
 /* tamaños de Media Queries */
 @media only screen and (min-width: 100px) and (max-width: 767px) {
 
+  .headerP{
+    .enlaces{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
   #header-index{
     flex-direction: column;
 
@@ -21,10 +27,14 @@
     #valor {
       padding: 0px;
       width: 200px;
+      margin-right: 50px;
     }
 
     .enlaces{
       button{
+        &.iniciar{
+          border: none;
+        }
         &.comprar{
           margin-right: 0px;
         }
@@ -40,7 +50,7 @@
   }
 
   .headerP {
-    flex-direction: column;
+    flex-direction: row;
 
     img{
       display: none;
@@ -57,7 +67,7 @@
       align-items: center;
 
       button {
-        padding: 2px;
+        //padding: 2px;
       }
     }
 
@@ -670,12 +680,12 @@
 
         &.iniciar {
          // font-size: 20px;
-          color: white; 
+          color: #2b3a42;
         }
 
         &.comprar {
          // font-size: 20px;
-         color: white;
+         color: #2b3a42;
         }
       }
 
@@ -853,7 +863,7 @@
 
 
 
-@media only screen and (min-width: 1930px) and (max-width: 3000px) {
+@media only screen and (min-width: 1930px) and (max-width: 5000px) {
 
   /* Media Query para pantallas extra grandes (2000px a 3000px) */
   header {

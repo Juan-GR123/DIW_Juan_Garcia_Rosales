@@ -13,10 +13,10 @@ main {
 
   /* Estilos para la sección .index dentro de main */
   .index {
-    background-image: url('../img/fondo-aterrizaje-1200px.jpg');
+    background-image: url('../img/fondo-aterrizaje-1200px-opaco.jpg');
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija al hacer scroll */
+    background-attachment: fixed; /*Hace que la imagen de fondo se mantenga fija al hacer scroll */
     height: 100%;
     display: flex;
     justify-content: center;
