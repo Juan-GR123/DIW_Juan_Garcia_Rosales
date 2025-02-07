@@ -2,20 +2,21 @@
 /* tamaños de Media Queries */
 @media only screen and (min-width: 100px) and (max-width: 767px) {
 
-  .headerP{
-    .enlaces{
+  .headerP {
+    .enlaces {
       justify-content: center;
       flex-wrap: wrap;
     }
   }
-  #header-index{
+
+  #header-index {
     flex-direction: column;
 
-    img{
+    img {
       margin-left: 0px;
     }
   }
-  
+
   /* Estilos aplicados cuando el ancho de pantalla está entre 300px y 767px (dispositivos móviles pequeños) */
   header {
     .enlaces a {
@@ -30,15 +31,17 @@
       margin-right: 50px;
     }
 
-    .enlaces{
-      button{
-        &.iniciar{
+    .enlaces {
+      button {
+        &.iniciar {
           border: none;
         }
-        &.comprar{
+
+        &.comprar {
           margin-right: 0px;
         }
-        &.registrar{
+
+        &.registrar {
           margin-right: 0px;
         }
       }
@@ -52,7 +55,7 @@
   .headerP {
     flex-direction: row;
 
-    img{
+    img {
       display: none;
     }
 
@@ -65,19 +68,18 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-
-      button {
-        //padding: 2px;
-      }
     }
 
   }
-  #fondo{
+
+  #fondo {
     margin-bottom: 0px;
-    h1{
+
+    h1 {
       font-size: 20px;
-    } 
+    }
   }
+
   main {
     margin-bottom: 0px;
 
@@ -260,10 +262,12 @@
   #footerCes {
     display: none;
   }
-  .indexF{
-   // position: fixed; 
+
+  .indexF {
+    // position: fixed; 
     top: auto;
   }
+
   footer {
     position: relative;
     top: 100px;
@@ -284,9 +288,9 @@
       padding-bottom: 30px;
     }
 
-    article{
-      p{
-          font-size: 12px;
+    article {
+      p {
+        font-size: 12px;
       }
     }
   }
@@ -305,12 +309,14 @@
       padding: 5px;
       width: 300px;
     }
-    img{
+
+    img {
       margin-left: 100px;
     }
-    .enlaces{
-      button{
-        &.comprar{
+
+    .enlaces {
+      button {
+        &.comprar {
           margin-right: 100px;
         }
       }
@@ -322,7 +328,7 @@
     //padding-block: 100px;
     position: relative;
     //top: 150px;
-   // margin-right: 30px;
+    // margin-right: 30px;
     margin-bottom: 0px;
   }
 
@@ -433,13 +439,13 @@
 
   }
 
-  footer{
-    p{
+  footer {
+    p {
       font-size: 13px;
-     
+
     }
 
-    
+
   }
 }
 
@@ -581,19 +587,22 @@
 }
 
 @media only screen and (min-width: 1360px) and (max-width: 1820px) {
-  #fondo{
-    h1{
+  #fondo {
+    h1 {
       font-size: 30px;
     }
+
     margin-bottom: 0px;
   }
-  main{
-    .index{
-      h1{
+
+  main {
+    .index {
+      h1 {
         font-size: 40px;
       }
     }
   }
+
   /* Estilos para pantallas entre 1500px y 1820px */
   .Nosotros {
     margin-bottom: 200px;
@@ -640,16 +649,16 @@
     }
   }
 
-  footer{
-    .redes_S{
-      .fa-brands{
+  footer {
+    .redes_S {
+      .fa-brands {
         font-size: 20px;
       }
     }
   }
 
-  .indexF{
-    padding: 0px ;
+  .indexF {
+    padding: 0px;
   }
 }
 
@@ -657,12 +666,6 @@
 
   /* Estilos para pantallas grandes, entre 1800px y 1920px */
   header {
-    picture {
-      img {
-       // width: 100px;
-       // height: 100px;
-      }
-    }
 
     #valor {
       //padding: 20px;
@@ -679,13 +682,13 @@
         //font-size: 40px;
 
         &.iniciar {
-         // font-size: 20px;
+          // font-size: 20px;
           color: #2b3a42;
         }
 
         &.comprar {
-         // font-size: 20px;
-         color: #2b3a42;
+          // font-size: 20px;
+          color: #2b3a42;
         }
       }
 
@@ -696,27 +699,17 @@
   section {
     .categorias {
       li {
-        font-size: 20px; 
+        font-size: 20px;
       }
     }
   }
 
   main {
-   // margin-bottom: 400px;
+    // margin-bottom: 400px;
 
     h1 {
       font-size: xxx-large;
       max-width: none;
-    }
-
-    .botones {
-      .boton1 {
-        //font-size: 50px;
-      }
-
-      .boton2 {
-        //font-size: 50px;
-      }
     }
 
 
@@ -852,7 +845,7 @@
 
       .terminos {
         p {
-          font-size: 20px;  
+          font-size: 20px;
         }
       }
     }
@@ -867,12 +860,6 @@
 
   /* Media Query para pantallas extra grandes (2000px a 3000px) */
   header {
-    picture {
-      img {
-       // width: 100px;
-       // height: 100px;
-      }
-    }
 
     #valor {
       //padding: 20px;
@@ -887,7 +874,7 @@
 
 
       button {
-       // font-size: 40px;
+        // font-size: 40px;
         color: black;
       }
     }
@@ -901,10 +888,10 @@
     .categorias {
       li {
         font-size: 20px;
-        margin-right: 50px; 
+        margin-right: 50px;
       }
     }
-  } 
+  }
 
   main {
 
@@ -1062,7 +1049,7 @@
     .pie {
       .contacto {
         p {
-          font-size: 20px; 
+          font-size: 20px;
         }
       }
 
