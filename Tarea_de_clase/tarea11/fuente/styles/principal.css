@@ -214,7 +214,8 @@ section .categorias > li:hover {
 
 /*main*/
 /* Estilos generales para el contenedor principal (main) */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -232,9 +233,11 @@ main {
 }
 main .index {
   background-image: url("../img/fondo-aterrizaje-1200px-opaco.jpg");
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-size: cover;
+  /* Asegura que la imagen cubra todo el contenedor */
   background-repeat: no-repeat;
-  background-attachment: fixed; /*Hace que la imagen de fondo se mantenga fija al hacer scroll */
+  background-attachment: fixed;
+  /*Hace que la imagen de fondo se mantenga fija al hacer scroll */
   height: 100%;
   display: flex;
   justify-content: center;
@@ -834,7 +837,7 @@ footer .pie {
     flex-wrap: wrap;
   }
   #header-index {
-    flex-direction: column;
+    flex-direction: row;
   }
   #header-index img {
     margin-left: 0px;
