@@ -203,7 +203,7 @@ section .categorias > #unico:hover {
 }
 section .categorias > li {
   position: relative;
-  padding: 0px 20px;
+  padding: 0px 15px;
   color: #2b3a42;
   cursor: pointer;
 }
