@@ -154,6 +154,7 @@
     }
 
     .titulo {
+      
       h1 {
         font-size: 40px;
       }
@@ -330,6 +331,9 @@
     //top: 150px;
     // margin-right: 30px;
     margin-bottom: 0px;
+    .titulo{
+      background-image: url("../img/foto-libreria-768px.jpg"); 
+    }
   }
 
   .mainP {
@@ -604,6 +608,11 @@
   }
 
   /* Estilos para pantallas entre 1500px y 1820px */
+  main{
+    .titulo{
+      background-image: url("../img/foto-libreria-1920px.jpg");
+    }
+  }
   .Nosotros {
     margin-bottom: 200px;
 
@@ -714,6 +723,8 @@
 
 
     .titulo {
+      background-image: url("../img/foto-libreria-1920px.jpg");
+       
       h1 {
         font-size: 50px;
         max-width: none;
@@ -903,6 +914,7 @@
     }
 
     .titulo {
+      background-image: url("../img/foto-libreria-2560px.jpg");
       h1 {
         font-size: 70px;
         max-width: none;

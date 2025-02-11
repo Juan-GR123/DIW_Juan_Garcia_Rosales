@@ -5,7 +5,7 @@ main {
 
     /* Estilos para el contenedor con la clase 'titulo' dentro de 'main' */
     .titulo {
-        background-image: url(../img/foto-libreria-1920px.jpg);
+        background-image: url("../img/foto-libreria-1200px.jpg");
         padding: 50px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
