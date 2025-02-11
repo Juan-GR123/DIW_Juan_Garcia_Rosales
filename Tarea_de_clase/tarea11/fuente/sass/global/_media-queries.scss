@@ -83,6 +83,10 @@
   main {
     margin-bottom: 0px;
 
+    .titulo{
+      background-image: url("../img/foto-libreria-1200px.jpg"); 
+    }
+
     h1 {
       display: flex;
       justify-content: center;
@@ -163,6 +167,10 @@
         margin-top: 240px;
         padding: 10px;
       }
+    }
+
+    .index{
+      background-image: url("../img/fondo-aterrizaje-480px.jpg");
     }
   }
 

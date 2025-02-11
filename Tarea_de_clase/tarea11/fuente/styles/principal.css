@@ -886,6 +886,9 @@ footer .pie {
   main {
     margin-bottom: 0px;
   }
+  main .titulo {
+    background-image: url("../img/foto-libreria-1200px.jpg");
+  }
   main h1 {
     display: flex;
     justify-content: center;
@@ -944,6 +947,9 @@ footer .pie {
   main .titulo .iniciar_sesion {
     margin-top: 240px;
     padding: 10px;
+  }
+  main .index {
+    background-image: url("../img/fondo-aterrizaje-480px.jpg");
   }
   .Nosotros {
     padding-block: 0;
