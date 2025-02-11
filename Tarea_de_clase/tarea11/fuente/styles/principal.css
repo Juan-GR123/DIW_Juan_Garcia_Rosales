@@ -887,7 +887,7 @@ footer .pie {
     margin-bottom: 0px;
   }
   main .titulo {
-    background-image: url("../img/foto-libreria-1200px.jpg");
+    background-image: url("../img/foto-libreria-680px-heigth.jpg");
   }
   main h1 {
     display: flex;
@@ -1044,6 +1044,14 @@ footer .pie {
     top: 0;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+  main .titulo {
+    background-image: url("../img/foto-libreria-768px.jpg");
+  }
+  main .index {
+    background-image: url("../img/fondo-aterrizaje-768px.jpg");
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
   /* Estilos para pantallas entre 768px y 1000px, típicas de tabletas*/
   header #valor {
@@ -1060,9 +1068,6 @@ footer .pie {
     text-align: center;
     position: relative;
     margin-bottom: 0px;
-  }
-  main .titulo {
-    background-image: url("../img/foto-libreria-768px.jpg");
   }
   .mainP {
     text-align: center;
@@ -1258,7 +1263,10 @@ footer .pie {
   }
   /* Estilos para pantallas entre 1500px y 1820px */
   main .titulo {
-    background-image: url("../img/foto-libreria-1920px.jpg");
+    background-image: url("../img/foto-libreria-1600px.jpg");
+  }
+  main .index {
+    background-image: url("../img/fondo-aterrizaje-1600px.jpg");
   }
   .Nosotros {
     margin-bottom: 200px;
@@ -1316,6 +1324,9 @@ footer .pie {
   main h1 {
     font-size: xxx-large;
     max-width: none;
+  }
+  main .index {
+    background-image: url("../img/fondo-aterrizaje-1920px-opaco.jpg");
   }
   main .titulo {
     background-image: url("../img/foto-libreria-1920px.jpg");
@@ -1442,6 +1453,9 @@ footer .pie {
   main .titulo .iniciar_sesion {
     font-size: 20px;
     padding: 10px;
+  }
+  main .index {
+    background-image: url("../img/fondo-aterrizaje-1920px-opaco.jpg");
   }
   main .botones .boton1 {
     font-size: 40px;
