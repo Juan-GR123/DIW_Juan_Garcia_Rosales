@@ -26,6 +26,7 @@ main {
     flex-direction: column;
     align-items: center;
     flex-grow: 2;
+    gap: 50px;
   }
 
   /* Estilos para el título h1 dentro de main */
@@ -62,7 +63,7 @@ main {
       background-color: #ffb347;
       padding: 10px;
       font-size: 25px;
-      margin-right: 50px;
+      //margin-right: 50px;
       border-radius: 10%;
     }
 
