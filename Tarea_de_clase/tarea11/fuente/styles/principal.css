@@ -887,7 +887,7 @@ footer .pie {
     margin-bottom: 0px;
   }
   main .titulo {
-    background-image: url("../img/foto-libreria-680px-heigth.jpg");
+    background-image: url("../img/foto-libreria-680px-heigth-def.jpg");
   }
   main h1 {
     display: flex;
@@ -949,7 +949,7 @@ footer .pie {
     padding: 10px;
   }
   main .index {
-    background-image: url("../img/fondo-aterrizaje-480px.jpg");
+    background-image: url("../img/fondo-aterrizaje-480px-def.jpg");
   }
   .Nosotros {
     padding-block: 0;
