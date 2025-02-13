@@ -82,11 +82,6 @@ main {
 
   /* Estilos para el título de la sección principal */
   .titulo {
-    background-image: url("../img/foto-libreria-1200px.jpg");
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
 
     h1 {
       color: #2b3a42;
@@ -354,7 +349,7 @@ main {
 
     /* Estilo para la sección de la imagen de fondo */
     .titulo2 {
-      background-image: url("../img/foto-libreria-interior-1200px.png");
+      background-image: url("../img/foto-libreria-interior-1200px.jpg");
       padding: 50px;
       width: 80%;
     }
@@ -510,7 +505,7 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 150px;
+  //margin-bottom: 150px;
   z-index: 0;
 
   .compra {

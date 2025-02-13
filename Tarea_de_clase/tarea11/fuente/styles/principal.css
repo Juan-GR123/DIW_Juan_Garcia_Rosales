@@ -286,13 +286,6 @@ main .botones .boton2 {
   border: 1px solid;
   border-radius: 10%;
 }
-main .titulo {
-  background-image: url("../img/foto-libreria-1200px.jpg");
-  padding: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
 main .titulo h1 {
   color: #2b3a42;
   font-size: 40px;
@@ -503,7 +496,7 @@ main .categorias2 .cat.active {
   /* Estilos para el bloque de texto dentro de la sección */
 }
 .Nosotros .titulos .titulo2 {
-  background-image: url("../img/foto-libreria-interior-1200px.png");
+  background-image: url("../img/foto-libreria-interior-1200px.jpg");
   padding: 50px;
   width: 80%;
 }
@@ -622,7 +615,6 @@ main .categorias2 .cat.active {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 150px;
   z-index: 0;
 }
 .Cesta .compra {
@@ -949,7 +941,7 @@ footer .pie {
     padding: 10px;
   }
   main .index {
-    background-image: url("../img/fondo-aterrizaje-480px-def.jpg");
+    background-image: url("../img/fondo-aterrizaje-480-def-def.jpg");
   }
   .Nosotros {
     padding-block: 0;
@@ -1208,7 +1200,6 @@ footer .pie {
     max-width: 1000px;
   }
   .Cesta {
-    margin-bottom: 150px;
     margin-right: 0px;
   }
   .Cesta .compra {
@@ -1390,9 +1381,6 @@ footer .pie {
   .Perfil {
     margin-bottom: 300px;
   }
-  .Cesta {
-    margin-bottom: 250px;
-  }
   .Cesta .compra article img {
     width: 200px;
     margin: 0;
@@ -1522,9 +1510,6 @@ footer .pie {
   }
   .Perfil {
     margin-bottom: 300px;
-  }
-  .Cesta {
-    margin-bottom: 250px;
   }
   .Cesta .compra article img {
     width: 200px;
