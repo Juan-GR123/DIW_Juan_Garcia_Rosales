@@ -588,3 +588,143 @@ main {
     }
   }
 }
+
+.Libros {
+  .titulo_libros {
+    background-image: url("../img/estanteria-antigua-768px.jpg");
+    padding: 10px;
+
+    /* Estilos para la sección de categorías */
+    .categorias2 {
+      display: flex;
+      gap: 200px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      overflow: hidden;
+
+      article {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      /*.desplazamiento {
+      display: flex;
+      gap: 50px;
+    }*/
+
+      .cat img {
+        border-radius: 50%;
+      }
+
+      .derecha3 {
+        border: 1px solid;
+        height: 50px;
+      }
+
+      .derecha3:hover {
+        background-color: #2b3a42;
+        color: white;
+      }
+
+      .izquierda3 {
+        border: 1px solid;
+        height: 50px;
+      }
+
+      .izquierda3:hover {
+        background-color: #2b3a42;
+        color: white;
+      }
+
+      .cat.active {
+        display: block;
+      }
+    }
+  }
+
+  .agrupar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    //align-items: center;
+
+    .contenido {
+      .filtros {
+        button {
+
+          margin-top: 40px;
+          background-color: #a4c3cf;
+          padding: 10px;
+          width: 200px;
+        }
+
+        button:hover {
+          background-color: #6b97a9;
+          cursor: pointer;
+        }
+      }
+
+      .libros {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        background-color: #a4c3cf;
+        margin-block: 40px;
+        margin-inline: 20px;
+        padding: 20px;
+        
+
+        article{
+          margin: 0;
+        }
+        .uno{
+          grid-row: 1;
+          grid-column: 1;
+        }
+
+        .dos{
+          grid-row: 1;
+          grid-column: 2;
+        }
+        .tres{
+          grid-row: 2;
+          grid-column: 1;
+        }
+
+        .cuatro{
+          grid-row: 2;
+          grid-column: 2;
+        }
+      }
+       
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #2b3a42;
+      color: white;
+      margin-block: 40px;
+      margin-inline: 20px;
+      justify-content: center;
+      margin-top: 120px;
+      
+
+      #valor {
+        margin-top: 10px;
+        padding: 5px;
+        width: 200px;
+        margin-inline: 20px;
+      }
+
+    }
+
+
+  }
+
+}

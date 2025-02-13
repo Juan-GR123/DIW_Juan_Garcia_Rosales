@@ -686,6 +686,111 @@ main .categorias2 .cat.active {
   background-color: #6b97a9;
 }
 
+.Libros .titulo_libros {
+  background-image: url("../img/estanteria-antigua-768px.jpg");
+  padding: 10px;
+  /* Estilos para la sección de categorías */
+}
+.Libros .titulo_libros .categorias2 {
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  /*.desplazamiento {
+    display: flex;
+    gap: 50px;
+  }*/
+}
+.Libros .titulo_libros .categorias2 article img {
+  width: 100px;
+  height: 100px;
+}
+.Libros .titulo_libros .categorias2 .cat img {
+  border-radius: 50%;
+}
+.Libros .titulo_libros .categorias2 .derecha3 {
+  border: 1px solid;
+  height: 50px;
+}
+.Libros .titulo_libros .categorias2 .derecha3:hover {
+  background-color: #2b3a42;
+  color: white;
+}
+.Libros .titulo_libros .categorias2 .izquierda3 {
+  border: 1px solid;
+  height: 50px;
+}
+.Libros .titulo_libros .categorias2 .izquierda3:hover {
+  background-color: #2b3a42;
+  color: white;
+}
+.Libros .titulo_libros .categorias2 .cat.active {
+  display: block;
+}
+.Libros .agrupar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.Libros .agrupar .contenido .filtros button {
+  margin-top: 40px;
+  background-color: #a4c3cf;
+  padding: 10px;
+  width: 200px;
+}
+.Libros .agrupar .contenido .filtros button:hover {
+  background-color: #6b97a9;
+  cursor: pointer;
+}
+.Libros .agrupar .contenido .libros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #a4c3cf;
+  margin-block: 40px;
+  margin-inline: 20px;
+  padding: 20px;
+}
+.Libros .agrupar .contenido .libros article {
+  margin: 0;
+}
+.Libros .agrupar .contenido .libros .uno {
+  grid-row: 1;
+  grid-column: 1;
+}
+.Libros .agrupar .contenido .libros .dos {
+  grid-row: 1;
+  grid-column: 2;
+}
+.Libros .agrupar .contenido .libros .tres {
+  grid-row: 2;
+  grid-column: 1;
+}
+.Libros .agrupar .contenido .libros .cuatro {
+  grid-row: 2;
+  grid-column: 2;
+}
+.Libros .agrupar .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #2b3a42;
+  color: white;
+  margin-block: 40px;
+  margin-inline: 20px;
+  justify-content: center;
+  margin-top: 120px;
+}
+.Libros .agrupar .sidebar #valor {
+  margin-top: 10px;
+  padding: 5px;
+  width: 200px;
+  margin-inline: 20px;
+}
+
 img {
   text-align: center;
   margin: 20px;

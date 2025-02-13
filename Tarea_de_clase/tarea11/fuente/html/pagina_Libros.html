@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,9 +18,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="../js/imagenes-adaptables-contenedor.js" defer></script>
+    <script src="../js/categorias.js" defer></script>
 </head>
+
 <body>
-     <!-- Contenedor principal de la página -->
+    <!-- Contenedor principal de la página -->
     <!--Para esta pagina poner clases a las etiquetas para diferenciarlas en estilos.scss-->
     <header class="headerP">
         <!-- Logo con enlace a la página principal -->
@@ -31,13 +35,13 @@
         <!-- Campo de búsqueda -->
         <input name="busca" id="valor" placeholder="Buscador" class="busca">
 
-         <!-- Sección de enlaces de usuario -->
-         <section class="enlaces">
+        <!-- Sección de enlaces de usuario -->
+        <section class="enlaces">
             <a href="./pagina_Perfil.html"><i class="fa-solid fa-user"></i></a>
-              <button class="iniciar">Iniciar sesión</button>
-            <a href="./pagina_Cesta.html"><i class="fa-solid fa-sign-hanging"></i></a>  
-              <button class="comprar">Comprar</button>
-          </section>
+            <button class="iniciar">Iniciar sesión</button>
+            <a href="./pagina_Cesta.html"><i class="fa-solid fa-sign-hanging"></i></a>
+            <button class="comprar">Comprar</button>
+        </section>
     </header>
     <!-- Menú de categorías -->
     <section>
@@ -58,10 +62,101 @@
         </ul>
     </section>
     <main class="Libros">
+        <section class="titulo_libros">
+            <article class="categorias2">
+                <button class="izquierda3"><i class="fa-solid fa-chevron-left"></i><i
+                        class="fa-solid fa-chevron-left"></i></button>
+
+                <article class="cat">
+                    <picture>
+                        <source srcset="../img/categoria-terror-100px.webp" type="image/webp"
+                            media="(min-width: 480px)">
+                        <source srcset="../img/categoria-terror-100px.png" type="image/png" media="(min-width: 480px)">
+                        <img src="../img/categoria-terror-100px.jpg" alt="terror">
+                    </picture>
+                    <p>Terror</p>
+                </article>
+                <article class="cat">
+                    <picture>
+                        <source srcset="../img/categoria-fantasia-100px.webp" type="image/webp"
+                            media="(min-width: 480px)">
+                        <source srcset="../img/categoria-fantasia-100px.png" type="image/png"
+                            media="(min-width: 480px)">
+                        <img src="../img/categoria-fantasia-100px.jpg" alt="fantasia">
+                    </picture>
+                    <p>Fantasia</p>
+                </article>
+                <article class="cat">
+                    <picture>
+                        <source srcset="../img/categoria-ciencia-ficcion-100px.webp" type="image/webp"
+                            media="(min-width: 480px)">
+                        <source srcset="../img/categoria-ciencia-ficcion-100px.png" type="image/png"
+                            media="(min-width: 480px)">
+                        <img src="../img/categoria-ciencia-ficcion-100px.jpg" alt="ficcion">
+                    </picture>
+                    <p>Ciencia ficcion</p>
+                </article>
+                <button class="derecha3"><i class="fa-solid fa-chevron-right"></i><i
+                        class="fa-solid fa-chevron-right"></i></button>
+            </article>
+        </section>
+
         
+        <section class="agrupar">
+            <article class="sidebar">
+                <input name="busca" id="valor" placeholder="Buscador" class="busca">
+                <label>Idiomas</label>
+                <label><input type="checkbox"> Español</label><br>
+                <label><input type="checkbox"> Inglés</label><br>
+                <label>Precio </label>
+                <label><input type="checkbox"> 100€</label><br>
+                <label><input type="checkbox"> 150€</label><br>
+                <label>Formato</label>
+                <label><input type="checkbox"> Tapa dura</label><br>
+                <label><input type="checkbox"> Tapa blanda</label>
+            </article>
+    
+            <article class="contenido">
+                <section class="filtros">
+                    <button type="submit" class="btn_filtros">Filtros</button>
+                </section>
+        
+                <section class="libros">
+                    <article class="uno">
+                        <picture>
+                            <source type="image/webp">
+                            <source type="image/png">
+                            <img src="../img/libro-antiguo-300px.jpg">
+                        </picture>
+                    </article>
+                    <article class="dos">
+                        <picture>
+                            <source type="image/webp">
+                            <source type="image/png">
+                            <img src="../img/libro-exilio-300px.jpg">
+                        </picture>
+                    </article>
+                    <article class="tres">
+                        <picture>
+                            <source type="image/webp">
+                            <source type="image/png">
+                            <img src="../img/libro-safari-300px.jpg">
+                        </picture>
+                    </article>
+                    <article class="cuatro">
+                        <picture>
+                            <source type="image/webp">
+                            <source type="image/png">
+                            <img src="../img/libro-Tejados_de_Cartón-300px.jpg">
+                        </picture>
+                    </article>
+                </section>
+            </article>    
+        </section>
+       
     </main>
-     <!-- Pie de página -->
-     <footer class="footerP">
+    <!-- Pie de página -->
+    <footer class="footerP">
         <!-- Redes sociales -->
         <article class="redes_S">
             <i class="fa-brands fa-instagram"></i>
@@ -91,4 +186,5 @@
         </section>
     </footer>
 </body>
+
 </html>
