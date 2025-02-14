@@ -1,37 +1,24 @@
-const body = document.querySelector('body'); 
-const cesta = document.querySelector('.Cesta');  
-const compra = document.querySelector('.compra');  
-const cerrar = document.querySelector('.cerrarP');  
-const registrar = document.querySelector('.carrito');  
-const abrir = document.querySelector('.comprar');
+document.addEventListener("DOMContentLoaded", function () {
+  const cesta = document.querySelector(".Cesta");
+  const botonComprar = document.querySelector(".comprar");
+  const botonCerrar = document.querySelector(".cerrarP");
+  const mainP = document.querySelector(".mainP");
 
-// Mostrar la cesta al hacer clic en el botón "Comprar"
-// Mostrar la cesta al hacer clic en el botón "Comprar"
-registrar.addEventListener('click', () => {
-    cesta.style.display = 'flex';
-    body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  // Asegurar que la cesta esté oculta al inicio
+  cesta.style.display = "none";
+
+  // Mostrar la cesta al hacer clic en "Comprar"
+  botonComprar.addEventListener("click", function () {
+    cesta.style.display = "flex";
+    cesta.style.position = "relative"; // O el valor que prefieras
+    mainP.style.display = "none"; 
   });
 
-  
-abrir.addEventListener('click' , ()=> {
-    cesta.style.display = 'flex';
-    body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    body.style.display = 'none';
-});
+  // Ocultar la cesta al hacer clic en "Cerrar"
+  botonCerrar.addEventListener("click", function () {
+    cesta.style.display = "none";
+    mainP.style.display = "block";
+  });
 
 
-// Cerrar la cesta al hacer clic en el botón de cerrar
-cerrar.addEventListener('click', () => {
-  cesta.style.display = 'none';
-  body.style.backgroundColor = "white";
-});
-
-
-
-// Cerrar la cesta al hacer clic fuera de la ventana de compra
-cesta.addEventListener('click', (e) => {
-  if (e.target === cesta) {
-    cesta.style.display = 'none';
-    body.style.backgroundColor = "white";
-  }
 });

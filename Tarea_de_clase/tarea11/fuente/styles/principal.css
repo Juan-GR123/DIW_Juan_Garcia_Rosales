@@ -612,10 +612,12 @@ main .categorias2 .cat.active {
 }
 
 .Cesta {
-  display: flex;
+  /*display: flex;*/
   justify-content: flex-end;
   align-items: center;
   z-index: 0;
+  display: none;
+  position: absolute;
 }
 .Cesta .compra {
   display: flex;
@@ -656,9 +658,12 @@ main .categorias2 .cat.active {
   background-color: #a4c3cf;
   width: 50%;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Cesta .compra article img {
-  width: 100px;
+  width: 200px;
   margin: 0;
   padding: 0;
 }
@@ -667,6 +672,7 @@ main .categorias2 .cat.active {
   flex-direction: row;
   justify-content: center;
   background-color: black;
+  width: 100%;
 }
 .Cesta .compra article section input {
   width: 50px;
@@ -780,6 +786,12 @@ main .categorias2 .cat.active {
 .Libros .agrupar .contenido .libros .cuatro {
   grid-row: 2;
   grid-column: 2;
+}
+.Libros .agrupar .contenido .libros .cinco {
+  display: none;
+}
+.Libros .agrupar .contenido .libros .seis {
+  display: none;
 }
 .Libros .agrupar .sidebar {
   display: flex;
@@ -1064,8 +1076,31 @@ footer .pie {
     justify-content: center;
     gap: 20px;
   }
+  .Libros .agrupar .contenido .filtros button {
+    width: 150px;
+  }
   .Libros .agrupar .contenido .filtros .btn_categorias {
     display: flex;
+  }
+  .Libros .agrupar .contenido .libros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .Libros .agrupar .contenido .libros article {
+    margin: 0;
+    border: 1px solid;
+    padding: 50px;
+  }
+  .Libros .agrupar .contenido .libros .cinco {
+    border: none;
+    position: absolute;
+  }
+  .Libros .agrupar .contenido .libros .seis {
+    border: none;
+    position: absolute;
   }
   .Nosotros {
     padding-block: 0;
@@ -1129,7 +1164,6 @@ footer .pie {
     align-items: center;
     background-color: #2b3a42;
     width: 100%;
-    height: 1000px;
   }
   #footerCes {
     display: none;
@@ -1442,7 +1476,7 @@ footer .pie {
     padding: 0px;
   }
 }
-@media only screen and (min-width: 1830px) and (max-width: 1929px) {
+@media only screen and (min-width: 1830px) and (max-width: 1930px) {
   /* Estilos para pantallas grandes, entre 1800px y 1920px */
   header #valor {
     width: 500px;
@@ -1492,6 +1526,44 @@ footer .pie {
   .mainP h2 {
     font-size: 50px;
     font-family: "Ibarra real Nova", sans-serif;
+  }
+  .Libros .agrupar .contenido .libros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #a4c3cf;
+    margin-block: 40px;
+    margin-inline: 20px;
+    padding: 20px;
+  }
+  .Libros .agrupar .contenido .libros article {
+    margin: 0;
+  }
+  .Libros .agrupar .contenido .libros .uno {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .Libros .agrupar .contenido .libros .dos {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .Libros .agrupar .contenido .libros .tres {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .Libros .agrupar .contenido .libros .cuatro {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .Libros .agrupar .contenido .libros .cinco {
+    display: grid;
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .Libros .agrupar .contenido .libros .seis {
+    display: grid;
+    grid-row: 2;
+    grid-column: 3;
   }
   .Nosotros .sobreNosotros {
     display: flex;
@@ -1621,6 +1693,44 @@ footer .pie {
   .mainP h2 {
     font-size: 50px;
     font-family: "Ibarra real Nova", sans-serif;
+  }
+  .Libros .agrupar .contenido .libros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #a4c3cf;
+    margin-block: 40px;
+    margin-inline: 20px;
+    padding: 20px;
+  }
+  .Libros .agrupar .contenido .libros article {
+    margin: 0;
+  }
+  .Libros .agrupar .contenido .libros .uno {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .Libros .agrupar .contenido .libros .dos {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .Libros .agrupar .contenido .libros .tres {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .Libros .agrupar .contenido .libros .cuatro {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .Libros .agrupar .contenido .libros .cinco {
+    display: grid;
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .Libros .agrupar .contenido .libros .seis {
+    display: grid;
+    grid-row: 2;
+    grid-column: 3;
   }
   .Nosotros .sobreNosotros {
     display: flex;

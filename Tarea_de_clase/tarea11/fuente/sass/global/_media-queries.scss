@@ -186,9 +186,38 @@
           justify-content: center;
           gap: 20px;
 
+          button{
+            width: 150px;
+          }
+
           .btn_categorias {
             display: flex;
           }
+        }
+
+        .libros{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 0;
+
+          article{
+            margin: 0;
+            border: 1px solid;
+            padding: 50px;
+          }
+
+          .cinco{
+            border: none;
+            position: absolute;
+          }
+
+          .seis{
+            border:none;
+            position: absolute;
+          }
+
         }
       }
     }
@@ -285,7 +314,7 @@
       align-items: center;
       background-color: #2b3a42;
       width: 100%;
-      height: 1000px;
+      //height: 1000px;
     }
   }
 
@@ -765,7 +794,7 @@
   }
 }
 
-@media only screen and (min-width: 1830px) and (max-width: 1929px) {
+@media only screen and (min-width: 1830px) and (max-width: 1930px) {
 
   /* Estilos para pantallas grandes, entre 1800px y 1920px */
   header {
@@ -861,6 +890,58 @@
     h2 {
       font-size: 50px;
       font-family: 'Ibarra real Nova', sans-serif;
+    }
+  }
+
+
+  .Libros{
+    .agrupar{
+      .contenido{
+        .libros {
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(2,1fr);
+          background-color: #a4c3cf;
+          margin-block: 40px;
+          margin-inline: 20px;
+          padding: 20px;
+          
+  
+          article{
+            margin: 0;
+          }
+          .uno{
+            grid-row: 1;
+            grid-column: 1;
+          }
+  
+          .dos{
+            grid-row: 1;
+            grid-column: 2;
+          }
+          .tres{
+            grid-row: 2;
+            grid-column: 1;
+          }
+  
+          .cuatro{
+            grid-row: 2;
+            grid-column: 2;
+          }
+
+          .cinco{
+            display: grid;
+            grid-row: 1;
+            grid-column: 3;
+          }
+
+          .seis{
+            display: grid;
+            grid-row: 2;
+            grid-column: 3;
+          }
+        }
+      }
     }
   }
 
@@ -1079,6 +1160,57 @@
     h2 {
       font-size: 50px;
       font-family: 'Ibarra real Nova', sans-serif;
+    }
+  }
+
+  .Libros{
+    .agrupar{
+      .contenido{
+        .libros {
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(2,1fr);
+          background-color: #a4c3cf;
+          margin-block: 40px;
+          margin-inline: 20px;
+          padding: 20px;
+          
+  
+          article{
+            margin: 0;
+          }
+          .uno{
+            grid-row: 1;
+            grid-column: 1;
+          }
+  
+          .dos{
+            grid-row: 1;
+            grid-column: 2;
+          }
+          .tres{
+            grid-row: 2;
+            grid-column: 1;
+          }
+  
+          .cuatro{
+            grid-row: 2;
+            grid-column: 2;
+          }
+
+          .cinco{
+            display: grid;
+            grid-row: 1;
+            grid-column: 3;
+          }
+
+          .seis{
+            display: grid;
+            grid-row: 2;
+            grid-column: 3;
+          }
+        }
+      }
     }
   }
 

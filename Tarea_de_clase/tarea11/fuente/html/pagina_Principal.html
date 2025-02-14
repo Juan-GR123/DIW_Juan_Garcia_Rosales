@@ -23,7 +23,7 @@
     <script src="../js/categorias.js" defer></script>
     <script src="../js/imagenes-adaptables-contenedor.js" defer></script>
     <script src="../js/imagenes-libros.js" defer></script>
-    <!--<script src="../js/cesta.js" defer></script>-->
+    <script src="../js/cesta.js" defer></script>
 </head>
 
 <body>
@@ -65,6 +65,51 @@
             <li>AutoAyuda</li>
         </ul>
     </section>
+    <section class="Cesta">
+        <section class="compra">
+            <button class="cerrarP"><i class="fa-solid fa-x"></i></button>
+            <h3>Tu Lista</h3>
+
+            <article>
+                <picture>
+                    <source srcset="../img/libro-safari-200px.webp" type="image/webp">
+                    <source srcset="../img/libro-safari-200px.png" type="image/png">
+                    <img src="../img/libro-safari-200px.jpg" alt="Logo">
+                </picture>
+                <section>
+                    <button>-</button>
+                    <input type="text" name="valor" id="valor" value="0">
+                    <button>+</button>
+                </section>
+            </article>
+            <article>
+                <picture>
+                    <source srcset="../img/libro-selva-200px.webp" type="image/webp">
+                    <source srcset="../img/libro-selva-200px.png" type="image/png">
+                    <img src="../img/libro-selva-200px.jpg" alt="Logo">
+                </picture>
+                <section>
+                    <button>-</button>
+                    <input type="text" name="valor" id="valor" value="0">
+                    <button>+</button>
+                </section>
+            </article>
+            <article>
+                <picture>
+                    <source srcset="../img/libro-antiguo-200px.webp" type="image/webp">
+                    <source srcset="../img/libro-antiguo-200px.png" type="image/png">
+                    <img src="../img/libro-antiguo-200px.jpg" alt="Logo">
+                </picture>
+                <section>
+                    <button>-</button>
+                    <input type="text" name="valor" id="valor" value="0">
+                    <button>+</button>
+                </section>
+            </article>
+            <button type="submit" class="carrito">Comprar</button>
+        </section>
+    </section>
+
     <main class="mainP" id="mainP">
         <!-- Sección de bienvenida -->
         <section class="titulo">
