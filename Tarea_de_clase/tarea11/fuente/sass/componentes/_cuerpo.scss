@@ -654,6 +654,9 @@ main {
 
     .contenido {
       .filtros {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
         button {
 
           margin-top: 40px;
@@ -666,7 +669,15 @@ main {
           background-color: #6b97a9;
           cursor: pointer;
         }
+
+        .btn_categorias{
+          display: none; 
+        }
       }
+
+      
+      
+      
 
       .libros {
         display: grid;

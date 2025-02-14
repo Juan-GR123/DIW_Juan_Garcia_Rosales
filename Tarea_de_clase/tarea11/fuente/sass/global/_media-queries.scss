@@ -170,9 +170,30 @@
     }
 
     .index {
-      background-image: url("../img/fondo-aterrizaje-480-def-def.jpg"); 
-    } 
+      background-image: url("../img/fondo-aterrizaje-480-def-def.jpg");
+    }
   }
+
+  .Libros {
+    .agrupar {
+      .sidebar {
+        display: none;
+      }
+
+      .contenido {
+        .filtros {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+
+          .btn_categorias {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
 
   .Nosotros {
     padding-block: 0;
@@ -362,6 +383,27 @@
     }
   }
 
+  .Libros {
+    .agrupar {
+      .sidebar {
+        display: none;
+      }
+
+      .contenido {
+        .filtros {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+
+          .btn_categorias {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+
   .Nosotros {
     padding-block: 0;
     margin-right: 0;
@@ -501,6 +543,26 @@
     }
   }
 
+  .Libros {
+    .agrupar {
+      .sidebar {
+        display: none;
+      }
+
+      .contenido {
+        .filtros {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+
+          .btn_categorias {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
 
   .Nosotros {
     padding-block: 0;
@@ -609,7 +671,15 @@
   }
 }
 
-@media only screen and (min-width: 1360px) and (max-width: 1820px) {
+@media only screen and (min-width: 1250px) and (max-width: 1360px)  {
+  main {
+    .titulo {
+      background-image: url("../img/foto-libreria-1600px.jpg"); 
+    }
+  }
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1829px) {
   #fondo {
     h1 {
       font-size: 30px;
@@ -629,7 +699,7 @@
   /* Estilos para pantallas entre 1500px y 1820px */
   main {
     .titulo {
-      background-image: url("../img/foto-libreria-1600px.jpg");
+      background-image: url("../img/foto-libreria-1800px.jpg");
     }
 
     .index {
@@ -695,7 +765,7 @@
   }
 }
 
-@media only screen and (min-width: 1830px) and (max-width: 1920px) {
+@media only screen and (min-width: 1830px) and (max-width: 1929px) {
 
   /* Estilos para pantallas grandes, entre 1800px y 1920px */
   header {
@@ -845,7 +915,7 @@
   }
 
   .Cesta {
-   // margin-bottom: 250px;
+    // margin-bottom: 250px;
 
     .compra {
       article {
@@ -953,6 +1023,7 @@
         padding: 10px;
       }
     }
+
     .index {
       background-image: url("../img/fondo-aterrizaje-1920px-opaco.jpg");
     }

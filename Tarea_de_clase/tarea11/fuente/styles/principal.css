@@ -735,6 +735,11 @@ main .categorias2 .cat.active {
   justify-content: space-around;
   flex-direction: row;
 }
+.Libros .agrupar .contenido .filtros {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 .Libros .agrupar .contenido .filtros button {
   margin-top: 40px;
   background-color: #a4c3cf;
@@ -744,6 +749,9 @@ main .categorias2 .cat.active {
 .Libros .agrupar .contenido .filtros button:hover {
   background-color: #6b97a9;
   cursor: pointer;
+}
+.Libros .agrupar .contenido .filtros .btn_categorias {
+  display: none;
 }
 .Libros .agrupar .contenido .libros {
   display: grid;
@@ -1048,6 +1056,17 @@ footer .pie {
   main .index {
     background-image: url("../img/fondo-aterrizaje-480-def-def.jpg");
   }
+  .Libros .agrupar .sidebar {
+    display: none;
+  }
+  .Libros .agrupar .contenido .filtros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .Libros .agrupar .contenido .filtros .btn_categorias {
+    display: flex;
+  }
   .Nosotros {
     padding-block: 0;
   }
@@ -1172,6 +1191,17 @@ footer .pie {
   .mainP .categorias2 {
     margin-bottom: 150px;
   }
+  .Libros .agrupar .sidebar {
+    display: none;
+  }
+  .Libros .agrupar .contenido .filtros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .Libros .agrupar .contenido .filtros .btn_categorias {
+    display: flex;
+  }
   .Nosotros {
     padding-block: 0;
     margin-right: 0;
@@ -1266,6 +1296,17 @@ footer .pie {
   .mainP .categorias2 {
     margin-bottom: 160px;
   }
+  .Libros .agrupar .sidebar {
+    display: none;
+  }
+  .Libros .agrupar .contenido .filtros {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .Libros .agrupar .contenido .filtros .btn_categorias {
+    display: flex;
+  }
   .Nosotros {
     padding-block: 0;
     margin-right: 0;
@@ -1344,7 +1385,12 @@ footer .pie {
     /* Mostrar solo el artículo activo */
   }
 }
-@media only screen and (min-width: 1360px) and (max-width: 1820px) {
+@media only screen and (min-width: 1250px) and (max-width: 1360px) {
+  main .titulo {
+    background-image: url("../img/foto-libreria-1600px.jpg");
+  }
+}
+@media only screen and (min-width: 1360px) and (max-width: 1829px) {
   #fondo {
     margin-bottom: 0px;
   }
@@ -1356,7 +1402,7 @@ footer .pie {
   }
   /* Estilos para pantallas entre 1500px y 1820px */
   main .titulo {
-    background-image: url("../img/foto-libreria-1600px.jpg");
+    background-image: url("../img/foto-libreria-1800px.jpg");
   }
   main .index {
     background-image: url("../img/fondo-aterrizaje-1600px.jpg");
@@ -1396,7 +1442,7 @@ footer .pie {
     padding: 0px;
   }
 }
-@media only screen and (min-width: 1830px) and (max-width: 1920px) {
+@media only screen and (min-width: 1830px) and (max-width: 1929px) {
   /* Estilos para pantallas grandes, entre 1800px y 1920px */
   header #valor {
     width: 500px;
