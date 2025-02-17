@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cesta = document.querySelector(".Cesta");
   const botonComprar = document.querySelector(".comprar");
   const botonCerrar = document.querySelector(".cerrarP");
-  const mainP = document.querySelector(".mainP");
+  const mainP = document.querySelector("main");
 
   // Asegurar que la cesta esté oculta al inicio
   cesta.style.display = "none";

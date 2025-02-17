@@ -18,6 +18,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="../js/cesta.js" defer></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
         <section class="enlaces">
             <a href="./pagina_Perfil.html"><i class="fa-solid fa-user"></i></a>
             <button class="iniciar">Iniciar sesión</button>
-            <a href="./pagina_Cesta.html"><i class="fa-solid fa-cart-shopping"></i></a>  
+            <i class="fa-solid fa-cart-shopping"></i> 
             <button class="comprar">Comprar</button>
         </section>
     </header>
@@ -52,6 +53,50 @@
             <li>Biografia</li>
             <li>AutoAyuda</li>
         </ul>
+    </section>
+    <section class="Cesta">
+        <section class="compra">
+            <button class="cerrarP"><i class="fa-solid fa-x"></i></button>
+            <h3>Tu Lista</h3>
+
+            <article>
+                <picture>
+                    <source srcset="../img/libro-safari-200px.webp" type="image/webp">
+                    <source srcset="../img/libro-safari-200px.png" type="image/png">
+                    <img src="../img/libro-safari-200px.jpg" alt="Logo">
+                </picture>
+                <section>
+                    <button>-</button>
+                    <input type="text" name="valor" id="valor" value="0">
+                    <button>+</button>
+                </section>
+            </article>
+            <article>
+                <picture>
+                    <source srcset="../img/libro-selva-200px.webp" type="image/webp">
+                    <source srcset="../img/libro-selva-200px.png" type="image/png">
+                    <img src="../img/libro-selva-200px.jpg" alt="Logo">
+                </picture>
+                <section>
+                    <button>-</button>
+                    <input type="text" name="valor" id="valor" value="0">
+                    <button>+</button>
+                </section>
+            </article>
+            <article>
+                <picture>
+                    <source srcset="../img/libro-antiguo-200px.webp" type="image/webp">
+                    <source srcset="../img/libro-antiguo-200px.png" type="image/png">
+                    <img src="../img/libro-antiguo-200px.jpg" alt="Logo">
+                </picture>
+                <section>
+                    <button>-</button>
+                    <input type="text" name="valor" id="valor" value="0">
+                    <button>+</button>
+                </section>
+            </article>
+            <button type="submit" class="carrito">Comprar</button>
+        </section>
     </section>
     <main class="Nosotros">
         <article class="titulos">
