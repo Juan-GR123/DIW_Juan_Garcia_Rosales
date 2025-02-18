@@ -752,6 +752,7 @@ main .categorias2 .cat.active {
   background-color: #a4c3cf;
   padding: 10px;
   width: 200px;
+  justify-content: center;
 }
 .Libros .agrupar .contenido .filtros button:hover {
   background-color: #6b97a9;
@@ -949,7 +950,7 @@ footer .pie {
 
 /*media-queries*/
 /* tamaños de Media Queries */
-@media only screen and (min-width: 100px) and (max-width: 767px) {
+@media only screen and (min-width: 100px) and (max-width: 768px) {
   .headerP .enlaces {
     justify-content: center;
     flex-wrap: wrap;
@@ -1105,6 +1106,10 @@ footer .pie {
   }
   .Nosotros {
     padding-block: 0;
+  }
+  .Nosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-670px.jpg");
+    padding: 70px;
   }
   .Nosotros .sobreNosotros {
     display: flex;
@@ -1423,6 +1428,10 @@ footer .pie {
   main .titulo {
     background-image: url("../img/foto-libreria-1600px.jpg");
   }
+  .Nosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-1080px.jpg");
+    padding: 70px;
+  }
 }
 @media only screen and (min-width: 1360px) and (max-width: 1829px) {
   #fondo {
@@ -1443,6 +1452,10 @@ footer .pie {
   }
   .Nosotros {
     margin-bottom: 200px;
+  }
+  .Nosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-1500px.jpg");
+    padding: 70px;
   }
   .Nosotros .sobreNosotros {
     display: flex;
@@ -1468,6 +1481,16 @@ footer .pie {
   .Nosotros .sobreNosotros .sobre3 p {
     font-size: 24px;
     max-width: 1000px;
+  }
+  .Perfil form {
+    font-size: 20px;
+    display: flex;
+  }
+  .Perfil .titulo-perfil2 article h4 {
+    font-size: 30px;
+  }
+  .Perfil .titulo-perfil2 article p {
+    font-size: 20px;
   }
   footer .redes_S .fa-brands {
     font-size: 20px;
@@ -1565,6 +1588,10 @@ footer .pie {
     grid-row: 2;
     grid-column: 3;
   }
+  .Nosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-1500px.jpg");
+    padding: 70px;
+  }
   .Nosotros .sobreNosotros {
     display: flex;
     justify-content: space-between;
@@ -1601,8 +1628,18 @@ footer .pie {
     max-width: 1000px;
     font-size: 30px;
   }
-  .Perfil {
-    margin-bottom: 300px;
+  .Perfil form {
+    font-size: 30px;
+    display: flex;
+  }
+  .Perfil form input {
+    padding: 10px;
+  }
+  .Perfil .titulo-perfil2 article h4 {
+    font-size: 40px;
+  }
+  .Perfil .titulo-perfil2 article p {
+    font-size: 30px;
   }
   .Cesta .compra article img {
     width: 200px;
@@ -1732,6 +1769,10 @@ footer .pie {
     grid-row: 2;
     grid-column: 3;
   }
+  .Nosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-2050.jpg");
+    padding: 70px;
+  }
   .Nosotros .sobreNosotros {
     display: flex;
     justify-content: space-between;
@@ -1769,8 +1810,21 @@ footer .pie {
     max-width: 1000px;
     font-size: 30px;
   }
-  .Perfil {
-    margin-bottom: 300px;
+  .Perfil form {
+    font-size: 30px;
+    display: flex;
+  }
+  .Perfil form input {
+    padding: 10px;
+  }
+  .Perfil .titulo-perfil2 article h4 {
+    font-size: 40px;
+  }
+  .Perfil .titulo-perfil2 article p {
+    font-size: 30px;
+  }
+  .Perfil .titulo-perfil2 article picture img {
+    width: 200px;
   }
   .Cesta .compra article img {
     width: 200px;
