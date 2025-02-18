@@ -568,6 +568,7 @@ main .categorias2 .cat.active {
 .Perfil button {
   margin-top: 20px;
   width: 50px;
+  margin-bottom: 50px;
 }
 .Perfil button .fa-down-long {
   font-size: 30px;
@@ -1173,7 +1174,6 @@ footer .pie {
   }
   footer {
     position: relative;
-    top: 100px;
   }
   footer .redes_S > img {
     align-items: center;
