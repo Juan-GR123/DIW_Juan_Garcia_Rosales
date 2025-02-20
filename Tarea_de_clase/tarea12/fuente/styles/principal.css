@@ -497,7 +497,7 @@ main .categorias2 .cat.active {
 }
 .Nosotros .titulos .titulo2 {
   background-image: url("../img/foto-libreria-interior-1200px.jpg");
-  padding: 50px;
+  padding: 70px;
   width: 80%;
 }
 .Nosotros .titulos h1 {
@@ -529,7 +529,7 @@ main .categorias2 .cat.active {
   justify-content: center;
 }
 .Nosotros .sobreNosotros .sobre1 img {
-  width: 700px;
+  width: 600px;
 }
 .Nosotros .sobreNosotros .sobre1 p {
   font-size: 20px;
@@ -541,7 +541,7 @@ main .categorias2 .cat.active {
   align-items: center;
 }
 .Nosotros .sobreNosotros .sobre2 img {
-  width: 700px;
+  width: 600px;
 }
 .Nosotros .sobreNosotros .sobre2 p {
   font-size: 20px;
@@ -700,7 +700,6 @@ main .categorias2 .cat.active {
 }
 .Libros .titulo_libros .categorias2 {
   display: flex;
-  gap: 200px;
   justify-content: center;
   align-items: center;
   margin-top: 0px;
@@ -1139,7 +1138,7 @@ footer .pie {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-block: 50px;
   }
   .Nosotros .sobreNosotros .sobre3 p {
     max-width: 300px;
@@ -1199,6 +1198,15 @@ footer .pie {
     top: 0;
   }
 }
+@media only screen and (min-width: 100px) and (max-width: 500px) {
+  .Nosotros {
+    padding-block: 0;
+  }
+  .Nosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-400px.jpg");
+    padding: 70px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 850px) {
   main .index {
     background-image: url("../img/fondo-aterrizaje-768px.jpg");
@@ -1245,6 +1253,9 @@ footer .pie {
     padding-block: 0;
     margin-right: 0;
   }
+  .Nosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-1080px.jpg");
+  }
   .Nosotros .sobreNosotros {
     display: flex;
     justify-content: space-between;
@@ -1273,10 +1284,10 @@ footer .pie {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-block: 70px;
   }
   .Nosotros .sobreNosotros .sobre3 p {
-    font-size: 24px;
+    font-size: 18px;
     max-width: 1000px;
   }
   .Perfil {
@@ -1378,7 +1389,7 @@ footer .pie {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-block: 70px;
   }
   .Nosotros .sobreNosotros .sobre3 p {
     font-size: 24px;
@@ -1424,6 +1435,12 @@ footer .pie {
     /* Mostrar solo el artículo activo */
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .Nosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-888px.jpg");
+    padding: 70px;
+  }
+}
 @media only screen and (min-width: 1250px) and (max-width: 1360px) {
   main .titulo {
     background-image: url("../img/foto-libreria-1600px.jpg");
@@ -1451,7 +1468,7 @@ footer .pie {
     background-image: url("../img/fondo-aterrizaje-1600px.jpg");
   }
   .Nosotros {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
   .Nosotros .titulos .titulo2 {
     background-image: url("../img/foto-libreria-interior-1500px.jpg");
@@ -1460,17 +1477,22 @@ footer .pie {
   .Nosotros .sobreNosotros {
     display: flex;
     justify-content: space-between;
+    margin-inline: 200px;
+  }
+  .Nosotros .sobreNosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-1500px.jpg");
+    padding: 70px;
   }
   .Nosotros .sobreNosotros .sobre1 p {
-    font-size: 24px;
+    font-size: 20px;
     max-width: 1000px;
   }
   .Nosotros .sobreNosotros .sobre2 p {
     max-width: 1000px;
-    font-size: 24px;
+    font-size: 20px;
   }
   .Nosotros .sobreNosotros .sobre2 img {
-    width: 700px;
+    width: 600px;
   }
   .Nosotros .sobreNosotros .sobre3 {
     display: flex;
@@ -1479,7 +1501,7 @@ footer .pie {
     margin-top: 100px;
   }
   .Nosotros .sobreNosotros .sobre3 p {
-    font-size: 24px;
+    font-size: 20px;
     max-width: 1000px;
   }
   .Perfil form {
@@ -1497,6 +1519,30 @@ footer .pie {
   }
   .indexF {
     padding: 0px;
+  }
+}
+@media only screen and (min-width: 1360px) and (max-width: 1743px) {
+  .Nosotros {
+    margin-bottom: 150px;
+  }
+  .Nosotros .sobreNosotros {
+    margin-inline: 200px;
+  }
+  .Nosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-1382px.jpg");
+    padding: 70px;
+  }
+}
+@media only screen and (min-width: 1360px) and (max-width: 1536px) {
+  .Nosotros {
+    margin-bottom: 150px;
+  }
+  .Nosotros .sobreNosotros {
+    margin-inline: 200px;
+  }
+  .Nosotros .titulos .titulo2 {
+    background-image: url("../img/foto-libreria-interior-1200px.jpg");
+    padding: 70px;
   }
 }
 @media only screen and (min-width: 1830px) and (max-width: 1930px) {
@@ -1595,6 +1641,7 @@ footer .pie {
   .Nosotros .sobreNosotros {
     display: flex;
     justify-content: space-between;
+    margin-inline: 200px;
   }
   .Nosotros .sobreNosotros .sobre1 {
     display: flex;
@@ -1776,6 +1823,7 @@ footer .pie {
   .Nosotros .sobreNosotros {
     display: flex;
     justify-content: space-between;
+    margin-inline: 200px;
   }
   .Nosotros .sobreNosotros .sobre1 {
     display: flex;

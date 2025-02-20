@@ -3,12 +3,12 @@ const articulos3 = document.querySelectorAll(".sobreNosotros article");
 
 const imagenesPorArticulo2 = [
     [
-      { ancho: 700, png: "../img/estanteria-700px.png", webp: "../img/estanteria-700px.webp", jpg: "../img/estanteria-700px.jpg" },
+      { ancho: 600, png: "../img/estanteria-600px.png", webp: "../img/estanteria-600px.webp", jpg: "../img/estanteria-600px.jpg" },
       { ancho: 500, png: "../img/estanteria-500px.png", webp: "../img/estanteria-500px.webp", jpg: "../img/estanteria-500px.jpg" },
       { ancho: 300,  png: "../img/estanteria-300px.png", webp: "../img/estanteria-300px.webp", jpg: "../img/estanteria-300px.jpg" },
     ],
     [
-      { ancho: 700, png: "../img/libros-700px.png", webp: "../img/libros-700px.webp", jpg: "../img/libros-700px.jpg" },
+      { ancho: 600, png: "../img/libros-600px.png", webp: "../img/libros-600px.webp", jpg: "../img/libros-600px.jpg" },
       { ancho: 500, png: "../img/libros-500px.png", webp: "../img/libros-500px.webp", jpg: "../img/libros-500px.jpg" },
       { ancho: 300,  png: "../img/libros-300px.png", webp: "../img/libros-300px.webp", jpg: "../img/libros-300px.jpg" },
     ],

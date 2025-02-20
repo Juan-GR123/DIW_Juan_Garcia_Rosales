@@ -1,5 +1,6 @@
 /*media-queries*/
 /* tamaños de Media Queries */
+
 @media only screen and (min-width: 100px) and (max-width: 768px) {
 
   .headerP {
@@ -269,7 +270,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        margin-block: 50px;
 
         p {
           max-width: 300px;
@@ -367,6 +368,19 @@
   }
 }
 
+@media only screen and (min-width: 100px) and (max-width: 500px) {
+  .Nosotros {
+    padding-block: 0;
+
+    .titulos{
+      .titulo2{
+        background-image: url('../img/foto-libreria-interior-400px.jpg');   
+        padding: 70px;
+      }
+    }
+  }
+
+}
 
 @media only screen and (min-width: 768px) and (max-width: 850px) {
   main {
@@ -443,6 +457,11 @@
   .Nosotros {
     padding-block: 0;
     margin-right: 0;
+      .titulos{
+        .titulo2{
+          background-image: url('../img/foto-libreria-interior-1080px.jpg');
+        }
+      }
 
     .sobreNosotros {
       display: flex;
@@ -479,11 +498,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
-
+        margin-block: 70px;
+ 
         p {
-          font-size: 24px;
-          max-width: 1000px;
+          font-size: 18px;
+          max-width: 1000px; 
 
         }
       }
@@ -637,7 +656,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        margin-block: 70px;
 
         p {
           font-size: 24px;
@@ -706,6 +725,19 @@
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1100px)  {
+
+  .Nosotros{
+    .titulos{
+      .titulo2{
+        background-image: url('../img/foto-libreria-interior-888px.jpg'); 
+        padding: 70px;
+      }
+    }
+  }
+}
+
+
 @media only screen and (min-width: 1250px) and (max-width: 1360px)  {
   main {
     .titulo {
@@ -752,7 +784,7 @@
   }
 
   .Nosotros {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 
     .titulos{
       .titulo2{
@@ -764,12 +796,18 @@
     .sobreNosotros {
       display: flex;
       justify-content: space-between;
-
+      margin-inline: 200px;
+      .titulos{
+        .titulo2{
+          background-image: url('../img/foto-libreria-interior-1500px.jpg'); 
+          padding: 70px;
+        }
+      }
       .sobre1 {
 
 
         p {
-          font-size: 24px;
+          font-size: 20px;
           max-width: 1000px;
         }
       }
@@ -779,11 +817,11 @@
 
         p {
           max-width: 1000px;
-          font-size: 24px;
+          font-size: 20px;
         }
 
         img {
-          width: 700px;
+          width: 600px;
         }
       }
 
@@ -794,7 +832,7 @@
         margin-top: 100px;
 
         p {
-          font-size: 24px;
+          font-size: 20px;
           max-width: 1000px;
 
         }
@@ -832,6 +870,38 @@
 
   .indexF {
     padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1743px) {
+  .Nosotros {
+    margin-bottom: 150px;
+  .sobreNosotros{
+    margin-inline: 200px;
+  }
+
+    .titulos{
+      .titulo2{
+        background-image: url('../img/foto-libreria-interior-1382px.jpg');  
+        padding: 70px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1536px) {
+  .Nosotros {
+    margin-bottom: 150px;
+    .sobreNosotros{
+      margin-inline: 200px;
+    }
+
+    .titulos{
+      .titulo2{
+        background-image: url('../img/foto-libreria-interior-1200px.jpg');  
+        padding: 70px;
+      }
+    }
   }
 }
 
@@ -987,7 +1057,7 @@
   }
 
   .Nosotros {
-
+ 
     .titulos{
       .titulo2{
         background-image: url('../img/foto-libreria-interior-1500px.jpg'); 
@@ -998,6 +1068,7 @@
     .sobreNosotros {
       display: flex;
       justify-content: space-between;
+      margin-inline: 200px;
 
       .sobre1 {
         display: flex;
@@ -1282,6 +1353,7 @@
   }
 
   .Nosotros {
+    
     .titulos{
       .titulo2{
         background-image: url('../img/foto-libreria-interior-2050.jpg');
@@ -1291,6 +1363,7 @@
     .sobreNosotros {
       display: flex;
       justify-content: space-between;
+      margin-inline: 200px;
 
       .sobre1 {
         display: flex;

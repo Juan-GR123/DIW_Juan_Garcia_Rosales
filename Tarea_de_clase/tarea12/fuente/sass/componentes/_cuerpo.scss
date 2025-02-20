@@ -350,7 +350,7 @@ main {
     /* Estilo para la sección de la imagen de fondo */
     .titulo2 {
       background-image: url("../img/foto-libreria-interior-1200px.jpg");
-      padding: 50px;
+      padding: 70px;
       width: 80%;
     }
 
@@ -388,7 +388,7 @@ main {
       justify-content: center;
 
       img {
-        width: 700px;
+        width: 600px;
       }
 
       p {
@@ -405,7 +405,7 @@ main {
       align-items: center;
 
       img {
-        width: 700px;
+        width: 600px;
       }
 
       p {
@@ -604,7 +604,7 @@ main {
     /* Estilos para la sección de categorías */
     .categorias2 {
       display: flex;
-      gap: 200px;
+      //gap: 200px;
       justify-content: center;
       align-items: center;
       margin-top: 0px;
