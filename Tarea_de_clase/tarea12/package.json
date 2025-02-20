@@ -2,20 +2,28 @@
   "name": "tarea12",
   "version": "1.0.0",
   "description": "compilador de sass",
-  "main": "index.js",
+  "browserslist": ">0.25%, last 6 versions, not dead",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "compilar-sass": "sass --watch fuente/sass:fuente/styles"
+    "compilar-sass": "sass --watch fuente/sass:fuente/styles",
+    "produccion": "parcel build fuente/index.html --public-url './' --dist-dir produccion --no-cache",
+    "desarrollo": "parcel fuente/index.html --dist-dir desarrollo --no-cache",
+    "limpia": "rimraf desarrollo produccion .parce-cache",
+    "prod": "run-s limpia produccion",
+    "des": "run-s limpia desarrollo"
   },
   "keywords": [
     "sass"
   ],
-  "author": "",
+  "author": "Juan",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
     "npm-run-all": "^4.1.5",
+    "parcel": "^2.13.3",
+    "parcel-plugin-imagemin": "^4.0.2",
     "rimraf": "^6.0.1",
     "sass": "^1.83.4"
   },
