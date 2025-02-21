@@ -12,7 +12,8 @@
     "desarrollo": "parcel fuente/index.html --dist-dir desarrollo --no-cache",
     "limpia": "rimraf desarrollo produccion .parce-cache",
     "prod": "run-s limpia produccion",
-    "des": "run-s limpia desarrollo"
+    "des": "run-s limpia desarrollo",
+    "todos": "run-s limpia produccion desarrollo"
   },
   "keywords": [
     "sass"
