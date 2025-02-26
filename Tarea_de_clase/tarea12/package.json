@@ -9,7 +9,7 @@
   "scripts": {
     "compilar-sass": "sass --watch fuente/sass:fuente/styles",
     "desarrollo": "parcel fuente/index.html --dist-dir desarrollo --no-cache",
-    "produccion": "parcel build fuente/index.html --public-url './' --dist-dir produccion --no-cache",
+    "produccion": "parcel build fuente/index.html --dist-dir ./produccion --no-cache --public-url ./",
     "limpia": "rimraf desarrollo produccion .parcel-cache",
     "prod": "run-s limpia produccion",
     "des": "run-s limpia desarrollo",
