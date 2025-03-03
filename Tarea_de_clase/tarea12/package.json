@@ -2,6 +2,7 @@
   "name": "tarea12",
   "version": "1.0.0",
   "description": "compilador de sass",
+  "type":"module",
   "browserslist": ">0.25%, last 6 versions, not dead",
   "directories": {
     "doc": "docs"
