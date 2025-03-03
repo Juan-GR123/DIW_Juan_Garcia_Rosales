@@ -12,7 +12,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'fuente/index.html'),
-        about: resolve(__dirname, 'fuente/html/b.html'),
+        principal: resolve(__dirname, 'fuente/html/pagina_Principal.html'),
+        perfil: resolve(__dirname, 'fuente/html/pagina_Perfil.html'),
+        nosotros: resolve(__dirname, 'fuente/html/sobre_Nosotros.html'),
+        libros: resolve(__dirname, 'fuente/html/pagina_Libros.html'),
+        cesta: resolve(__dirname, 'fuente/html/pagina_Cesta.html'),
       },
     },
     minify: 'terser', // Asegura que JS y CSS también se minimicen
