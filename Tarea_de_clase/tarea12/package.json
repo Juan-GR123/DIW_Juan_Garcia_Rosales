@@ -8,7 +8,6 @@
     "doc": "docs"
   },
   "scripts": {
-    "compilar-sass": "sass --watch fuente/sass:fuente/styles",
     "limpia": "rimraf desarrollo produccion dist .parcel-cache",
     "dev": "vite",
     "build": "vite build",
