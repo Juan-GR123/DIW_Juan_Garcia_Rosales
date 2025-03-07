@@ -20,7 +20,7 @@ npm run build
 
 - Por último, tendremos que esperar a que se inicie el despliegue:
 
-![Web Netlify](fuente/img/web.JPG)<br> 
+
 
 ### 2. Herramientas
 
