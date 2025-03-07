@@ -25,18 +25,30 @@ npm run build
 ### 2. Herramientas
 
  - Accesibility Checker:
+    - Herramienta en línea que otorga una puntuación de accesibilidad y muestra los problemas de la web.
 
  - Skynet Technologies:
+    - Herramienta en línea que analiza la web, proporciona un porcentaje de accesibilidad y una lista de errores.
 
 
 ### 3. Resultados Iniciales
-
+Para comprobar la accesibilidad de mi web, deberemos seguir el proceso comentado anteriormente para que las 2 herramientas analicen la web y muestren los resultados.
 
 #### 3.1. Resultados
 
+- Resultados Accesibility Checker:
+ ![Accesibility](fuente/img/accessibility.JPG)<br><br>
+
+- Resultados Skynet Technologies: 
+ ![Skynet](fuente/img/skynet.JPG)<br><br>
 
 #### 3.2. Errores Encontrados
 
+- Errores Accesibility Checker:
+ ![Accesibility Errores](fuente/img/erroes_accesibilidad.JPG)<br><br>
+
+- Errores Skynet Technologies: 
+ ![Skynet Errores](fuente/img/errores_skynet.JPG)<br><br>
 
 ### 4. Análisis de Fallos y Solución
 
