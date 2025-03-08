@@ -1,3 +1,21 @@
+# DIW_Proyecto_Libreria_marea_Alta
+Este repositorio contiene el proyecto **Libreria_marea_Alta**, desarrollado para la asignatura **Diseño de Interfaces Web** como parte del curso de **2º DAW**.
+
+- El objetivo del proyecto es diseñar y estructurar una página web completa para una librería ficticia llamada **Libreria Marea Alta**.
+
+-  Creado por: **Juan García Rosales**  
+
+## Índice
+## Índice
+1. [Pruebas de Accesibilidad](#pruebas-de-accesibilidad)
+   1.1. [Netlify](#netlify)  
+   1.2. [Herramientas](#herramientas)  
+   1.3. [Resultados Iniciales](#resultados-iniciales)
+      1.3.1. [Resultados](#resultados)  
+      1.3.2. [Errores Encontrados](#errores-encontrados)  
+2. [Análisis de Fallos y Solución](#análisis-de-fallos-y-solución)  
+3. [Comprobación de las Soluciones](#comprobación-de-las-soluciones)
+
 ## Pruebas de Accesibilidad
 En este apartado, el objetivo es garantizar que la página web cumpla con los criterios de accesibilidad del nivel AA de las *Pautas de Accesibilidad para el Contenido Web* (**WCAG**). Para ello, vamos a utilizar distintas herramientas de validación, tanto en línea como locales, para identificar los problemas y solucionarlos.
 
@@ -93,7 +111,7 @@ Una vez arreglados todos los fallos que me han ido diciendo el resultado que deb
 
 Como podemos ver a continuación la puntuación de la accesibilidad de mi página a aumentado bastante:
 
-- En Accesibility Checker, la puntuación era 69. Ahora, con todos los cambios, la puntuación ha pasado a ser 95.
-- En Skynet Technologies, la puntuación era de 68.10%. Ahora, con todos los cambios, la puntuación a pasado ha ser de 93.33%.
+- En Accesibility Checker, la puntuación era 48. Ahora, con todos los cambios, la puntuación ha pasado a ser 95.
+- En Skynet Technologies, la puntuación era de 57.79%. Ahora, con todos los cambios, la puntuación a pasado ha ser de 92.29%.
 
 
