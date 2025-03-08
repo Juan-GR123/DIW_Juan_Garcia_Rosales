@@ -7,14 +7,14 @@ Este repositorio contiene el proyecto **Libreria_marea_Alta**, desarrollado para
 
 ## Índice
 ## Índice
-1. [Pruebas de Accesibilidad](#pruebas-de-accesibilidad)
-   1.1. [Netlify](#netlify)  
-   1.2. [Herramientas](#herramientas)  
-   1.3. [Resultados Iniciales](#resultados-iniciales)
-      1.3.1. [Resultados](#resultados)  
-      1.3.2. [Errores Encontrados](#errores-encontrados)  
-2. [Análisis de Fallos y Solución](#análisis-de-fallos-y-solución)  
-3. [Comprobación de las Soluciones](#comprobación-de-las-soluciones)
+- [Pruebas de Accesibilidad](#pruebas-de-accesibilidad)
+   - [1. Netlify](#1-netlify)  
+   - [2. Herramientas](#2-herramientas)  
+   - [3. Resultados Iniciales](#3-resultados-iniciales)
+      - [3.1. Resultados](#31-resultados)  
+      - [3.2. Errores Encontrados](#32-errores-encontrados)  
+   - [4. Análisis de Fallos y Solución](#4-análisis-de-fallos-y-solución)  
+   - [5. Comprobación de las Soluciones](#5-comprobación-de-las-soluciones)
 
 ## Pruebas de Accesibilidad
 En este apartado, el objetivo es garantizar que la página web cumpla con los criterios de accesibilidad del nivel AA de las *Pautas de Accesibilidad para el Contenido Web* (**WCAG**). Para ello, vamos a utilizar distintas herramientas de validación, tanto en línea como locales, para identificar los problemas y solucionarlos.
