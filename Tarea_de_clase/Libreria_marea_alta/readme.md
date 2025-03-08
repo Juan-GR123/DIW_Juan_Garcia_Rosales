@@ -13,7 +13,7 @@ Este repositorio contiene el proyecto **Libreria_marea_Alta**, desarrollado para
    - [3. Resultados Iniciales](#3-resultados-iniciales)
       - [3.1. Resultados](#31-resultados)  
       - [3.2. Errores Encontrados](#32-errores-encontrados)  
-   - [4. Análisis de Fallos y Solución](#4-análisis-de-fallos-y-solución)  
+   - [4. Análisis de Fallos y Solución](#4-análisis-y-listado-de-fallos)  
    - [5. Comprobación de las Soluciones](#5-comprobación-de-las-soluciones)
 
 ## Pruebas de Accesibilidad
@@ -76,7 +76,7 @@ Para comprobar la accesibilidad de mi web, deberemos seguir el proceso comentado
     - Nombres accesibles
 
 
-### 4. Análisis de Fallos y Solución
+### 4. Análisis y listado de Fallos
 Ahora ire indicando los fallos que me han ido mostrando las páginas y mostraré una foto con el resultado de arreglar esos fallos. 
 
 - Los botones deben estar etiquetados correctamente: Los botones deben incluir texto que explique su funcionalidad y, si se utilizan íconos como botones, se debe utilizar solo un texto para lector de pantalla o un atributo "aria-label" para esa descripción.
