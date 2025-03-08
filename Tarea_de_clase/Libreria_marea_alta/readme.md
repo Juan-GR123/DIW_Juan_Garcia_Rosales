@@ -13,7 +13,7 @@ Este repositorio contiene el proyecto **Libreria_marea_Alta**, desarrollado para
    - [3. Resultados Iniciales](#3-resultados-iniciales)
       - [3.1. Resultados](#31-resultados)  
       - [3.2. Errores Encontrados](#32-errores-encontrados)  
-   - [4. Análisis de Fallos y Solución](#4-análisis-y-listado-de-fallos)  
+   - [4. Análisis u listado de Fallos](#4-análisis-y-listado-de-fallos)  
    - [5. Comprobación de las Soluciones](#5-comprobación-de-las-soluciones)
 
 ## Pruebas de Accesibilidad
