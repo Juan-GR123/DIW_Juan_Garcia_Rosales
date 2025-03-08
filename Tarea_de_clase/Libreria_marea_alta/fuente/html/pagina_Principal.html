@@ -18,7 +18,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <script src="../js/cesta.js"  type="module" defer></script>
+    <script src="../js/cesta.js" type="module" defer></script>
     <script src="../js/categorias.js" type="module" defer></script>
     <script src="../js/eventos.js" type="module" defer></script>
     <script src="../js/libros.js" type="module" defer></script>
@@ -35,11 +35,13 @@
             <a href="./pagina_Principal.html"><img src="../img/icono-libro-100px.jpg" alt="Logo"></a>
         </picture>
         <!-- Campo de búsqueda -->
-        <input name="busca" id="valor" placeholder="Buscador" class="busca">
+        <input name="busca" id="valor" placeholder="Buscador" class="busca" aria-label="Campo de búsqueda">
 
         <!-- Sección de enlaces de usuario -->
         <section class="enlaces">
-            <a href="./pagina_Perfil.html"><i class="fa-solid fa-user"></i></a>
+            <a href="./pagina_Perfil.html" aria-label="Ir al perfil de usuario">
+                <i class="fa-solid fa-user" aria-hidden="true"></i>
+            </a>
             <button class="iniciar">Iniciar sesión</button>
             <i class="fa-solid fa-cart-shopping comprar2"></i>
             <button class="comprar">Comprar</button>
@@ -65,8 +67,10 @@
     </section>
     <section class="Cesta">
         <section class="compra">
-            <button class="cerrarP"><i class="fa-solid fa-x"></i></button>
-            <h3>Tu Lista</h3>
+            <button class="cerrarP" aria-label="Cerrar ventana">
+                <i class="fa-solid fa-x" aria-hidden="true"></i>
+            </button>
+            <h1 class="lista">Tu Lista</h1>
 
             <article>
                 <picture>
@@ -76,7 +80,7 @@
                 </picture>
                 <section>
                     <button>-</button>
-                    <input type="text" name="valor" id="valor" value="0">
+                    <input type="text" name="valor" id="valor" value="0" aria-label="Valor inicial">
                     <button>+</button>
                 </section>
             </article>
@@ -88,7 +92,7 @@
                 </picture>
                 <section>
                     <button>-</button>
-                    <input type="text" name="valor" id="valor" value="0">
+                    <input type="text" name="valor" id="valor" value="0" aria-label="Valor inicial">
                     <button>+</button>
                 </section>
             </article>
@@ -100,7 +104,7 @@
                 </picture>
                 <section>
                     <button>-</button>
-                    <input type="text" name="valor" id="valor" value="0">
+                    <input type="text" name="valor" id="valor" value="0" aria-label="Valor inicial">
                     <button>+</button>
                 </section>
             </article>
@@ -112,7 +116,7 @@
         <!-- Sección de bienvenida -->
         <section class="titulo">
             <article class="texto">
-                <h1>Descuento del 5% en libros Romanticos</h1>
+                <h1 style="color: #333; background-color: #fff;">Descuento del 5% en libros Romanticos</h1>
             </article>
             <button class="iniciar_sesion">Iniciar sesion</button>
         </section>
@@ -120,11 +124,13 @@
         <!-- Sección de eventos -->
         <h2>Eventos</h2>
         <section class="eventos">
-            <button class="izquierda"><i class="fa-solid fa-chevron-left"></i><i
-                    class="fa-solid fa-chevron-left"></i></button>
+            <button class="izquierda" aria-label="Mover a la izquierda">
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
             <article class="evento1">
                 <picture>
-                    
+
                     <source srcset="../img/foto-libreria2-700px.webp" type="image/png" media="(min-width: 1930px)">
                     <source srcset="../img/foto-libreria2-700px.png" type="image/png" media="(min-width: 1930px)">
                     <source srcset="../img/foto-libreria2-500px.webp" type="image/webp" media="(min-width: 1200px)">
@@ -133,7 +139,7 @@
                     <source srcset="../img/foto-libreria2-390px.png" type="image/png" media="(min-width: 390px)">
 
 
-                    <img src="../img/foto-libreria2-700px.jpg">
+                    <img src="../img/foto-libreria2-700px.jpg" alt="Foto de la librería">
                 </picture>
                 <p>Evento: “Curso de Narrativa de lunes a jueves de 17:00 a 18:00” </p>
             </article>
@@ -152,9 +158,11 @@
             </article>
             <article class="evento3">
                 <picture>
-                    <source srcset="../img/estanteria-iluminada-700px.webp" type="image/webp" media="(min-width: 1930px)">
+                    <source srcset="../img/estanteria-iluminada-700px.webp" type="image/webp"
+                        media="(min-width: 1930px)">
                     <source srcset="../img/estanteria-iluminada-700px.png" type="image/png" media="(min-width: 1930px)">
-                    <source srcset="../img/estanteria-iluminada-500px.webp" type="image/webp" media="(min-width: 1200px)">
+                    <source srcset="../img/estanteria-iluminada-500px.webp" type="image/webp"
+                        media="(min-width: 1200px)">
                     <source srcset="../img/estanteria-iluminada-500px.png" type="image/png" media="(min-width: 1200px)">
                     <source srcset="../img/estanteria-iluminada-390px.webp" type="image/png" media="(min-width: 390px)">
                     <source srcset="../img/estanteria-iluminada-390px.png" type="image/png" media="(min-width: 390px)">
@@ -164,14 +172,18 @@
                 <p>Evento: ”Club de lectura para aficionados. Los sábados y domingos de 10:00 a
                     11:00”</p>
             </article>
-            <button class="derecha"><i class="fa-solid fa-chevron-right"></i><i
-                    class="fa-solid fa-chevron-right"></i></button>
+            <button class="derecha" aria-label="Mover a la derecha">
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
         </section>
         <!-- Sección de libros novedosos -->
         <h2>Libros novedosos</h2>
         <section class="libros">
-            <button class="izquierda2"><i class="fa-solid fa-chevron-left"><i
-                        class="fa-solid fa-chevron-left"></i></i></button>
+            <button class="izquierda2" aria-label="Mover a la izquierda">
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
             <article class="libro">
                 <picture>
                     <source srcset="../img/Amor_de_verano_portada-200px.webp" type="image/webp">
@@ -184,27 +196,35 @@
                     <source srcset="../img/libro-exilio-300px.webp" type="image/webp" media="(min-width: 1930px)">
                     <source srcset="../img/libro-exilio-300px.png" type="image/png" media="(min-width: 1930px)">
                     <source srcset="../img/libro-exilio-200px.webp" type="image/webp" media="(min-width:400px)">
-                    <source srcset="../img/libro-exilio-200px.png" type="image/png"  media="(min-width:400px)">
+                    <source srcset="../img/libro-exilio-200px.png" type="image/png" media="(min-width:400px)">
 
                     <img src="../img/libro-exilio-200px.jpg" alt="libro2">
                 </picture>
             </article>
             <article class="libro">
                 <picture>
-                    <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-300px.webp" type="image/webp" media="(min-width: 1930px)">
-                    <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-300px.png" type="image/png" media="(min-width: 1930px)">
-                    <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-200px.webp" type="image/webp" media="(min-width:400px)">
-                    <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-200px.png" type="image/png" media="(min-width:400px)">
+                    <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-300px.webp" type="image/webp"
+                        media="(min-width: 1930px)">
+                    <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-300px.png" type="image/png"
+                        media="(min-width: 1930px)">
+                    <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-200px.webp" type="image/webp"
+                        media="(min-width:400px)">
+                    <source srcset="../img/Portada_del_libro_La_Sinfonía_del_Mar-200px.png" type="image/png"
+                        media="(min-width:400px)">
                     <img src="../img/Portada_del_libro_La_Sinfonía_del_Mar-200px.jpg" alt="libro3">
                 </picture>
             </article>
-            <button class="derecha2"><i class="fa-solid fa-chevron-right"></i><i
-                    class="fa-solid fa-chevron-right"></i></button>
+            <button class="derecha2" aria-label="Mover a la derecha">
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
         </section>
 
         <section class="categorias2">
-            <button class="izquierda3"><i class="fa-solid fa-chevron-left"></i><i
-                    class="fa-solid fa-chevron-left"></i></button>
+            <button class="izquierda3" aria-label="Mover a la izquierda">
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
 
             <article class="cat">
                 <picture>
@@ -230,8 +250,10 @@
                 </picture>
                 <p>Ciencia ficcion</p>
             </article>
-            <button class="derecha3"><i class="fa-solid fa-chevron-right"></i><i
-                    class="fa-solid fa-chevron-right"></i></button>
+            <button class="derecha3" aria-label="Mover a la derecha">
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
         </section>
     </main>
     <!-- Pie de página -->
@@ -248,17 +270,17 @@
         <!-- Información de contacto -->
         <section class="pie">
             <article class="contacto">
-                <p><strong>Contacto</strong></p>
+                <h2>Contacto</h2>
                 <p> Madrid: 000 00 00 00</p>
                 <p> Granada: 000 00 00 00</p>
             </article>
             <article class="link">
-                <p><strong>Links</strong></p>
+                <h2>Links</h2>
                 <p><a href="./pagina_Libros.html">Pagina de libros</a></p>
                 <p><a href="./sobre_Nosotros.html">Sobre Nosotros</a></p>
             </article>
             <article class="terminos">
-                <p><strong>Términos y condiciones</strong></p>
+                <h2>Terminos y condiciones</h2>
                 <p> Política de privacidad: <a href="#">https://www.politicapri.com/</a></p>
                 <p> Términos de uso: <a href="#">https://www.terminosuso.com/</a></p>
             </article>

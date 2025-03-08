@@ -50,8 +50,32 @@ Para comprobar la accesibilidad de mi web, deberemos seguir el proceso comentado
 - Errores Skynet Technologies: 
  ![Skynet Errores](fuente/img/errores_skynet.JPG)<br><br>
 
-### 4. Análisis de Fallos y Solución
+ Cada web muestra fallos o errores en función del criterio o reglas que usen para analizar la web. Pero sí que muestran una serie de errores en común que voy a solucionar de la forma que me indican.
 
+- Errores comunes:
+    - Links
+
+    - Nombres accesibles
+
+
+### 4. Análisis de Fallos y Solución
+Ahora mostrare los fallos que me han idicado las páginas y mostraré una foto con el resultado de arreglar esos fallos. 
+
+- Los botones deben estar etiquetados correctamente: Los botones deben incluir texto que explique su funcionalidad y, si se utilizan íconos como botones, se debe utilizar solo un texto para lector de pantalla o un atributo "aria-label" para esa descripción.
+
+- La etiqueta de encabezado no debe estar vacía.
+
+- Los títulos deben tener una jerarquía consistente
+
+- Se debe proporcionar un título para el documento, utilizando un elemento de título que no esté vacío en la sección del encabezado.
+
+- Todas las etiquetas img deben tener atributos alt.
+
+- Todos los campos del formulario deben estar etiquetados correctamente.
+
+- Se debe proporcionar una relación de contraste de al menos 3:1.
+
+- Los atributos ARIA deben ser válidos.
 
 ### 5. Comprobación de las Soluciones
 
