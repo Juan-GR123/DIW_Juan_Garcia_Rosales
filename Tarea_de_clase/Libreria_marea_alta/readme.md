@@ -59,7 +59,7 @@ Para comprobar la accesibilidad de mi web, deberemos seguir el proceso comentado
 
 
 ### 4. Análisis de Fallos y Solución
-Ahora mostrare los fallos que me han idicado las páginas y mostraré una foto con el resultado de arreglar esos fallos. 
+Ahora ire indicando los fallos que me han ido mostrando las páginas y mostraré una foto con el resultado de arreglar esos fallos. 
 
 - Los botones deben estar etiquetados correctamente: Los botones deben incluir texto que explique su funcionalidad y, si se utilizan íconos como botones, se debe utilizar solo un texto para lector de pantalla o un atributo "aria-label" para esa descripción.
 
@@ -81,5 +81,19 @@ Ahora mostrare los fallos que me han idicado las páginas y mostraré una foto c
 
 ### 5. Comprobación de las Soluciones
 
+Una vez arreglados todos los fallos que me han ido diciendo el resultado que deberán darnos las pruebas de accesibilidad tendrá que ser parecido a los siguientes resultados:
 
-#### 5.1. Resultados + Soluciones Errores
+- Accesibility Checker:
+![Accesibility_Correccion](fuente/img/accessibility-corregido.JPG)<br><br>
+
+
+- Skynet Technologies
+ ![Skynet_Correccion](fuente/img/skynet-corregido.JPG)<br><br>
+
+
+Como podemos ver a continuación la puntuación de la accesibilidad de mi página a aumentado bastante:
+
+- En Accesibility Checker, la puntuación era 69. Ahora, con todos los cambios, la puntuación ha pasado a ser 95.
+- En Skynet Technologies, la puntuación era de 68.10%. Ahora, con todos los cambios, la puntuación a pasado ha ser de 93.33%.
+
+
