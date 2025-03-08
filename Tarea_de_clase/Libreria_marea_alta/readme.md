@@ -77,6 +77,8 @@ Ahora mostrare los fallos que me han idicado las páginas y mostraré una foto c
 
 - Los atributos ARIA deben ser válidos.
 
+- Asegúrese de que el objetivo táctil tenga el tamaño y el espacio suficientes
+
 ### 5. Comprobación de las Soluciones
 
 
