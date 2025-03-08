@@ -15,6 +15,23 @@
       margin-left: 200px;
     }
 
+    .pagina_principal {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column-reverse;
+      margin-left: 200px;
+      // color: #2b3a42;
+
+      img {
+        display: flex;
+        width: 40px;
+        height: auto;
+        border-radius: 50%;
+        align-self: center;
+        margin-left: 0px;
+      }
+    }
+
     /* Estilos para los botones dentro de la clase 'enlaces' */
     .enlaces {
       button {
