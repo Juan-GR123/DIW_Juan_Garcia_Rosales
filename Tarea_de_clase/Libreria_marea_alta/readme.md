@@ -145,7 +145,7 @@ A cada usuario se le pedirá que realice una serie de tareas para evaluar la fun
 - Cerrar sesión: Una vez que hayas completado la compra, cierra sesión correctamente desde la interfaz de usuario.
 
 ### 3. Resultados de las Pruebas
-Tras realizar las pruebas con los cinco usuarios seleccionados, si se hubiera implementeado toda la funcionalidad de la web se habrían obtenido resultados parecidos a los siguientes:
+Tras realizar las pruebas con los cinco usuarios seleccionados, si se hubiera implementado toda la funcionalidad de la web se habrían obtenido resultados parecidos a los siguientes:
 
 | Usuario   | Tarea completada      | Dificultades encontradas                  | Comentarios                                        |
 |-----------|------------------------|---------------------------------------------|----------------------------------------------------|
@@ -158,7 +158,7 @@ Tras realizar las pruebas con los cinco usuarios seleccionados, si se hubiera im
 
 ### 4. Propuestas de Mejora
 
-Con base en los resultados obtenidos en las pruebas de usuario, se proponen las siguientes mejoras para optimizar la experiencia del usuario:
+Con base en los resultados obtenidos en las pruebas de usuario, se propondrán las siguientes mejoras para optimizar la experiencia de los usuarios:
 
 - Mejorar el formulario de registro: Añadir etiquetas claras y ayudas contextuales para los campos del formulario (ejemplo: formato de contraseña aceptado).
 
