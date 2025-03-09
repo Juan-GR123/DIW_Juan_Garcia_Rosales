@@ -145,7 +145,7 @@ A cada usuario se le pedirá que realice una serie de tareas para evaluar la fun
 - Cerrar sesión: Una vez que hayas completado la compra, cierra sesión correctamente desde la interfaz de usuario.
 
 ### 3. Resultados de las Pruebas
-Tras realizar las pruebas con los cinco usuarios seleccionados, si se hubiera implementeado toda la funcionalizada de la web se habrían obtenido resultados parecidos a los siguientes:
+Tras realizar las pruebas con los cinco usuarios seleccionados, si se hubiera implementeado toda la funcionalidad de la web se habrían obtenido resultados parecidos a los siguientes:
 
 | Usuario   | Tarea completada      | Dificultades encontradas                  | Comentarios                                        |
 |-----------|------------------------|---------------------------------------------|----------------------------------------------------|
