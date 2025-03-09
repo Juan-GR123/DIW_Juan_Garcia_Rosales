@@ -168,6 +168,8 @@ Con base en los resultados obtenidos en las pruebas de usuario, se proponen las 
 
 - Mejorar la accesibilidad para personas mayores: Aumentar el tamaño de la fuente y añadir una opción para cambiar el contraste de la página.
 
+- Reducir el número de opciones a realizar: Para que los usuarios no tarden en decidir su compra, puede ser mejor reducir el número de etiquetas de libros y hacer el interfaz de usuario más sencillo
+
 ### 5. Conclusión
 
 Las pruebas de usabilidad han permitido identificar puntos fuertes y áreas de mejora en el sitio web. Implementando las soluciones propuestas, se espera ofrecer una experiencia de usuario más intuitiva y accesible para todos los perfiles de clientes potenciales.
