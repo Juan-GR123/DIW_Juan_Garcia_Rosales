@@ -172,5 +172,5 @@ Con base en los resultados obtenidos en las pruebas de usuario, se proponen las 
 
 ### 5. Conclusión
 
-Las pruebas de usabilidad han permitido identificar puntos fuertes y áreas de mejora en el sitio web. Implementando las soluciones propuestas, se espera ofrecer una experiencia de usuario más intuitiva y accesible para todos los perfiles de clientes potenciales.
+Las pruebas de usabilidad permitirán identificar puntos fuertes y áreas de mejora en el sitio web. Implementando las soluciones propuestas, se podrá ofrecer una experiencia de usuario más intuitiva y accesible para todos los perfiles de clientes potenciales.
 
